@@ -9,9 +9,10 @@
     --bodyBgColor : linear-gradient(to right bottom, #f0f0f0, #f0f0f3, #eff1f6, #edf2f9, #eaf3fc, #e6f4fe, #e1f6ff, #dcf7ff, #d5f9ff, #cefbff, #c8fdfe, #c2fffb) no-repeat padding-box, fixed;
     --mainTitleFontColor : #000000;
     --reverseFontColor : #ffffff;
-    --paraFontColor : #4747476b;
+    --paraFontColor : #4646468c;
+    --paraFontColorSombre : #424242de;
     --hoverColor : #01628b;
-    --bgColorScrolled : #a1a1a1;
+    --bgColorScrolled : #161618;
 }
 
 body {
@@ -35,6 +36,10 @@ p {
     font-size: 21px;
     font-weight: 400;
     color: var(--paraFontColor);
+}
+
+p span {
+    color: var(--paraFontColorSombre);
 }
 
 /* HEADER */
@@ -148,6 +153,7 @@ section {
 /* NAVIGATION PAGES */
 
 #navigationPages {
+    margin-left: 30px;
     font-weight: 400;
 }
 
@@ -204,18 +210,18 @@ section {
 .desc { grid-area: desc; }
 .butt { grid-area: butt; }
 
-.presentation img {
+.presentation img, .formules img {
     width: 100%;
     height: auto;
 }
 
-.butt {
+.butt, .buttForm {
     padding: 30px;
     text-decoration: none;
     width: 50%;
 }
 
-.butt button {
+.butt button, .buttForm button {
     /* padding-left: 90px;
     padding-right: 90px; */
     text-decoration: none;
@@ -271,3 +277,32 @@ section {
         left: -40px;
     }
 }
+
+
+/* ==== FORMULES ==== */
+
+.formules {  
+    margin-top: 60px;
+    width: 90%;
+    height: 84vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    ". titreSec titreSec titreSec titreSec . . . . ."
+    "descFormules descFormules descFormules descFormules descFormules . imgFor imgFor imgFor imgFor"
+    "descFormules descFormules descFormules descFormules descFormules . imgFor imgFor imgFor imgFor"
+    "descFormules descFormules descFormules descFormules descFormules . imgFor imgFor imgFor imgFor"
+    ". buttForm buttForm buttForm . . imgIcon imgIcon imgIcon imgIcon"
+    ". . . . . . imgIcon imgIcon imgIcon imgIcon";
+}
+
+.titreSec { grid-area: titreSec; }
+.imgFor { grid-area: imgFor; }
+.imgIcon { grid-area: imgIcon; }
+.descFormules { grid-area: descFormules; }
+.buttForm { grid-area: buttForm; }
+
