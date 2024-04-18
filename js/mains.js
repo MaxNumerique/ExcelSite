@@ -2,24 +2,31 @@
 
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
-    const logoHeader = document.querySelector('.logo-header img');
+    const logoHeader = this.document.querySelector('.logo-header img');
+    const logoHeaderNoir = document.querySelector('.logo-headerNoir');
+    const logoHeaderBlanc = document.querySelector('.logo-headerBlanc');
+
     const links = document.querySelectorAll('.links');
     
     links.forEach(link => {
         link.style.color = window.scrollY > 350 ? 'white' : 'black';
     });
-    
+
     if (window.scrollY + 10 >= 350) {
         header.classList.add('scrolled');
         logoHeader.style.transition = 'all 0.2s ease-in-out';
         logoHeader.style.width = '90px';
         logoHeader.style.height = 'auto';
+        logoHeaderBlanc.style.display = 'block';
+        logoHeaderNoir.style.display = 'none';
         header.style.height = '8vh';
     } else {
         header.classList.remove('scrolled');
         logoHeader.style.transition = 'all 0.2s ease-in-out';
         logoHeader.style.width = '120px';
         logoHeader.style.height = 'auto';
+        logoHeaderNoir.style.display = 'block';
+        logoHeaderBlanc.style.display = 'none';
         header.style.height = '10vh';
     }
 });

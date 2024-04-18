@@ -11,7 +11,7 @@
     --reverseFontColor : #ffffff;
     --paraFontColor : #4747476b;
     --hoverColor : #01628b;
-    --bgColorScrolled : #a1a1a1;
+    --bgColorScrolled : #161618;
 }
 
 body {
@@ -148,6 +148,7 @@ section {
 /* NAVIGATION PAGES */
 
 #navigationPages {
+    margin-left: 30px;
     font-weight: 400;
 }
 
