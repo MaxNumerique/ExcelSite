@@ -9,12 +9,12 @@ window.addEventListener('scroll', function() {
     const links = document.querySelectorAll('.links');
     
     links.forEach(link => {
-        link.style.color = window.scrollY > 350 ? 'white' : 'black';
+        link.style.color = window.scrollY > 250 ? 'white' : 'black';
     });
 
-    if (window.scrollY + 10 >= 350) {
+    if (window.scrollY + 10 >= 250) {
         header.classList.add('scrolled');
-        logoHeader.style.transition = 'all 0.2s ease-in-out';
+        logoHeader.style.transition = 'all 0.3s ease-in-out';
         logoHeader.style.width = '90px';
         logoHeader.style.height = 'auto';
         logoHeaderBlanc.style.display = 'block';
@@ -57,7 +57,7 @@ window.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-// BUTTON DELAY 
+// ==== BUTTON DELAY =====
 
 const delayedLinks = document.querySelectorAll('a[href$=".html"]');
 
