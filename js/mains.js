@@ -2,10 +2,7 @@
 
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
-    const logoHeader = this.document.querySelector('.logo-header img');
-    const logoHeaderNoir = document.querySelector('.logo-headerNoir');
-    const logoHeaderBlanc = document.querySelector('.logo-headerBlanc');
-
+    const logoHeader = document.querySelector('.logo-header img');
     const links = document.querySelectorAll('.links');
     const scrollPosition = window.scrollY;
     const headerHeight = 350;
@@ -15,16 +12,14 @@ window.addEventListener('scroll', function() {
     logoHeader.style.width = `${logoWidth}px`;
     
     links.forEach(link => {
-        link.style.color = window.scrollY > 350 ? 'white' : 'black';
+        link.style.color = window.scrollY > 250 ? 'white' : 'black';
     });
 
-    
-    if (window.scrollY + 10 >= 350) {
+    if (window.scrollY + 10 >= 250) {
         header.classList.add('scrolled');
-        logoHeader.style.transition = 'all 0.2s ease-in-out';
+        logoHeader.style.transition = 'all 0.3s ease-in-out';
+        logoHeader.style.width = '90px';
         logoHeader.style.height = 'auto';
-        logoHeaderBlanc.style.display = 'block';
-        logoHeaderNoir.style.display = 'none';
         header.style.height = '8vh';
     } else {
         header.classList.remove('scrolled');
@@ -62,7 +57,7 @@ window.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-// BUTTON DELAY 
+// ==== BUTTON DELAY =====
 
 const delayedLinks = document.querySelectorAll('a[href$=".html"]');
 
