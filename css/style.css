@@ -24,16 +24,19 @@ body {
 
 
 h1 {
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: bolder;
     color: var(--mainTitleFontColor);
-    /* text-decoration: underline;
-    text-underline-offset: 8px;
-    text-decoration-thickness: 2px; */
+}
+
+h2 {
+    font-size: 1.9rem;
+    font-weight: bolder;
+    color: var(--mainTitleFontColor);
 }
 
 p {
-    font-size: 21px;
+    font-size: 1.45em;
     font-weight: 400;
     color: var(--paraFontColor);
 }
@@ -46,7 +49,7 @@ p span {
 
 .logo-header img {
     width: 120px;
-    height: 60px;
+    /* height: 60px; */
     margin-top: 5px;
 }
 
@@ -93,7 +96,7 @@ nav ul {
     color: var(--mainTitleFontColor);
     font-weight: 600;
     position: relative;
-    font-size: 17px;
+    font-size: 1.1rem;
     &:hover {
         color: var(--hoverColor);
     }
@@ -292,12 +295,11 @@ section {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-    ". titreSec titreSec titreSec titreSec . . . . ."
-    "descFormules descFormules descFormules descFormules descFormules . imgFor imgFor imgFor imgFor"
-    "descFormules descFormules descFormules descFormules descFormules . imgFor imgFor imgFor imgFor"
-    "descFormules descFormules descFormules descFormules descFormules . imgFor imgFor imgFor imgFor"
-    ". buttForm buttForm buttForm . . imgIcon imgIcon imgIcon imgIcon"
-    ". . . . . . imgIcon imgIcon imgIcon imgIcon";
+    ". titreSec titreSec titreSec . . . . . ."
+    "descFormules descFormules descFormules descFormules . . imgFor imgFor imgFor imgFor"
+    "descFormules descFormules descFormules descFormules . . imgFor imgFor imgFor imgFor"
+    "descFormules descFormules descFormules descFormules . . imgFor imgFor imgFor imgFor"
+    ". buttForm buttForm buttForm . . . . . ."
 }
 
 .titreSec { grid-area: titreSec; }
@@ -306,3 +308,6 @@ section {
 .descFormules { grid-area: descFormules; }
 .buttForm { grid-area: buttForm; }
 
+.formules h2 {
+    text-align: right;
+}

@@ -3,6 +3,8 @@
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
     const logoHeader = document.querySelector('.logo-header img');
+    const logoHeaderNoir = document.querySelector('.logo-headerNoir');
+    const logoHeaderBlanc = document.querySelector('.logo-headerBlanc');
     const links = document.querySelectorAll('.links');
     const scrollPosition = window.scrollY;
     const headerHeight = 350;
@@ -18,8 +20,10 @@ window.addEventListener('scroll', function() {
     if (window.scrollY + 10 >= 250) {
         header.classList.add('scrolled');
         logoHeader.style.transition = 'all 0.3s ease-in-out';
-        logoHeader.style.width = '90px';
+        logoHeader.style.width = '20px';
         logoHeader.style.height = 'auto';
+        logoHeaderNoir.style.display = 'none';
+        logoHeaderBlanc.style.display = 'block';
         header.style.height = '8vh';
     } else {
         header.classList.remove('scrolled');
@@ -62,14 +66,14 @@ window.addEventListener("DOMContentLoaded", function() {
 const delayedLinks = document.querySelectorAll('a[href$=".html"]');
 
 delayedLinks.forEach((link) => {
-  link.addEventListener('click', function(event) {
+link.addEventListener('click', function(event) {
     event.preventDefault();
     const url = link.getAttribute('href');
 
     setTimeout(() => {
-      window.location.href = url;
+    window.location.href = url;
     }, 500);
-  });
+});
 });
 
 
