@@ -35,6 +35,12 @@ h2 {
     color: var(--mainTitleFontColor);
 }
 
+h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--mainTitleFontColor);
+}
+
 p {
     font-size: 1.4em;
     font-weight: 400;
@@ -223,7 +229,7 @@ section {
     width: 50%;
 }
 
-.butt button, .buttForm button, .buttTab button {
+.butt button, .buttForm button, .buttTab button, .btnSlide button {
     /* padding-left: 90px;
     padding-right: 90px; */
     text-decoration: none;
@@ -353,7 +359,7 @@ section {
 
 /* ==== CAROUSSEL ==== */
 
-.BasesC { display: block;}
+.BasesC { display: flex;}
 .FonctionsC { display: none;}
 .TableauxC { display: none;}
 
@@ -383,11 +389,14 @@ section {
 .exercices {
     position: relative;
     overflow: hidden; 
+    display: flex;
 }
 
 .carouselExo {
     display: flex;
     align-items: center; 
+    padding-left: 120px;
+    padding-right: 120px;
     margin-bottom: 20px; 
 }
 
@@ -399,20 +408,22 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: center; 
+    /* justify-content: center;  */
     height: 100%; 
 }
 
 .leftSideSlide img {
-    height: 80%; 
+
+    height: 60%; 
     margin-bottom: 10px; 
 }
 
 .rightSideSlide {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    /* justify-content: center;  */
     height: 100%; 
+    margin-left: 20px;
 }
 
 .rightSideSlide h3 {
@@ -424,6 +435,10 @@ section {
     margin: 0;
 }
 
+.btnSlide {
+    text-decoration: none;
+    width: 30%;
+}
 
 
 /* ==== FOOTER ==== */
