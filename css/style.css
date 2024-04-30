@@ -24,19 +24,19 @@ body {
 
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.7rem;
     font-weight: bolder;
     color: var(--mainTitleFontColor);
 }
 
 h2 {
-    font-size: 1.9rem;
+    font-size: 2.2rem;
     font-weight: bolder;
     color: var(--mainTitleFontColor);
 }
 
 p {
-    font-size: 1.45em;
+    font-size: 1.4em;
     font-weight: 400;
     color: var(--paraFontColor);
 }
@@ -145,7 +145,6 @@ main {
 section {
     width: 100%;
     height: 100vh;
-    width: 100%;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -213,18 +212,18 @@ section {
 .desc { grid-area: desc; }
 .butt { grid-area: butt; }
 
-.presentation img, .formules img {
+.presentation img, .formules img, .tableaux img {
     width: 100%;
     height: auto;
 }
 
-.butt, .buttForm {
+.butt, .buttForm, .buttTab {
     padding: 30px;
     text-decoration: none;
     width: 50%;
 }
 
-.butt button, .buttForm button {
+.butt button, .buttForm button, .buttTab button {
     /* padding-left: 90px;
     padding-right: 90px; */
     text-decoration: none;
@@ -256,7 +255,7 @@ section {
         width: 350px;
         height: 130px;
         z-index: -1;
-        border-radius: 50%;
+        border-radius: 49%;
     }
 
     &:before {
@@ -277,7 +276,7 @@ section {
 
     &:hover::before {
         top: -30px;
-        left: -40px;
+        left: -65px;
     }
 }
 
@@ -295,10 +294,11 @@ section {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-    ". titreSec titreSec titreSec . . . . . ."
-    "descFormules descFormules descFormules descFormules . . imgFor imgFor imgFor imgFor"
-    "descFormules descFormules descFormules descFormules . . imgFor imgFor imgFor imgFor"
-    "descFormules descFormules descFormules descFormules . . imgFor imgFor imgFor imgFor"
+    "titreSec titreSec titreSec titreSec . . . . . ."
+    "descFormules descFormules descFormules descFormules . imgFor imgFor imgFor imgFor imgFor"
+    "descFormules descFormules descFormules descFormules . imgFor imgFor imgFor imgFor imgFor"
+    "descFormules descFormules descFormules descFormules . imgFor imgFor imgFor imgFor imgFor"
+    "descFormules descFormules descFormules descFormules . imgFor imgFor imgFor imgFor imgFor"
     ". buttForm buttForm buttForm . . . . . ."
 }
 
@@ -310,4 +310,127 @@ section {
 
 .formules h2 {
     text-align: right;
+}
+
+
+/* ==== TABLEAUX ==== */
+
+
+.tableaux {
+    margin-top: 60px;
+    width: 90%;
+    height: 84vh;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    ". . . . . titreTer titreTer titreTer titreTer ."
+    "imgTab imgTab imgTab imgTab . descTab descTab descTab descTab descTab"
+    "imgTab imgTab imgTab imgTab . descTab descTab descTab descTab descTab"
+    "imgTab imgTab imgTab imgTab . descTab descTab descTab  descTab descTab"
+    "imgTab imgTab imgTab imgTab . .  . . . ."
+    ". . . . . . buttTab buttTab buttTab ."; 
+}
+
+.titreTer { grid-area: titreTer;}
+.imgTab { grid-area: imgTab; }
+.descTab { grid-area: descTab; }
+.buttTab { grid-area: buttTab; }
+
+
+/* ==== EXERCICES ==== */
+
+#exercices {
+    height: 70vh;
+}
+
+.exercices {
+    margin-top: 60px;
+    width: 100%;
+    height: 100%;
+}
+
+/* ==== CAROUSSEL ==== */
+
+.BasesC { display: block;}
+.FonctionsC { display: none;}
+.TableauxC { display: none;}
+
+.exercices .prev-btn,
+.exercices .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 3rem;
+    color: var(--mainTitleFontColor);
+}
+
+.exercices .prev-btn {
+    left: 0;
+    margin-left: 30px;
+}
+
+.exercices .next-btn {
+    right: 0;
+    margin-right: 30px;
+}
+
+.exercices {
+    position: relative;
+    overflow: hidden; 
+}
+
+.carouselExo {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+.leftSideSlide, .rightSideSlide {
+    flex: 1;
+}
+
+.leftSideSlide {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height: 100%; 
+}
+
+.leftSideSlide img {
+    height: 80%; 
+    margin-bottom: 10px; 
+}
+
+.rightSideSlide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 100%; 
+}
+
+.rightSideSlide h3 {
+    margin: 0;
+    height: 15%; 
+}
+
+.rightSideSlide p {
+    margin: 0;
+}
+
+
+
+/* ==== FOOTER ==== */
+
+footer {
+    /* margin-top: 60px; */
+    width: 100%;
+    height: 40vh;
+    background-color: var(--bgColorScrolled);
 }
