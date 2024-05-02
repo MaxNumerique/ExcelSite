@@ -13,7 +13,7 @@
     --paraFontColorSombre : #424242de;
     --footerparaFontColor : #6d6d6d;
     --hoverColor : #01628b;
-    --activeColor : #035070;
+    --activeColor : #0d6cb9;
     --bgColorScrolled : #161618;
 }
 
@@ -505,16 +505,33 @@ footer img {
 }
 
 
-
-
 /* ==== COURS.HTML ==== */
+
+.coursTittle {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
 
 #mainCours {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
-    
+}
+
+.NavCours h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.NavCours {
+    margin-left: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    height: 50%;
+    padding-top: 120px;
 }
 
 .NavCours ul li {
@@ -523,8 +540,11 @@ footer img {
 
     &:hover {
         color: var(--hoverColor);
-    }
-    &:active {
-        color: var(--activeColor);
+        font-weight: 500;
     }
 }
+
+.active {
+    color: var(--activeColor);
+}
+
