@@ -13,6 +13,7 @@
     --paraFontColorSombre : #424242de;
     --footerparaFontColor : #6d6d6d;
     --hoverColor : #01628b;
+    --activeColor : #035070;
     --bgColorScrolled : #161618;
 }
 
@@ -501,4 +502,29 @@ hr {
 footer img {
     width: 100px;
     height: auto;
+}
+
+
+
+
+/* ==== COURS.HTML ==== */
+
+#mainCours {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.NavCours ul li {
+    list-style: none;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--hoverColor);
+    }
+    &:active {
+        color: var(--activeColor);
+    }
 }
