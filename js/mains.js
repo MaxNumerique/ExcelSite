@@ -136,7 +136,7 @@ dropdownBtns.forEach(btn => {
     btn.addEventListener('click', function (event) {
         // Empêcher le comportement par défaut du lien
         event.preventDefault();
-
+ 
         // Récupération des données du lien
         const titre = btn.dataset.title;
         const contenu = btn.dataset.content;
