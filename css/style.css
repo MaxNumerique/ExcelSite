@@ -516,9 +516,10 @@ footer img {
 
 #mainCours {
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: row;
+    
 }
 
 .NavCours h5 {
@@ -528,6 +529,7 @@ footer img {
 
 .NavCours {
     margin-left: 30px;
+    margin-bottom: 20px;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -550,3 +552,15 @@ footer img {
     color: var(--activeColor);
 }
 
+.coursContent {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-bottom: 80px;
+}
+
+.coursContent h2 {
+    margin-bottom: 30px;
+}
