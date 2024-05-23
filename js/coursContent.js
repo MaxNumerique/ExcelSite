@@ -4,10 +4,11 @@ export const coursContent = {
     "prise-en-main": {
         "title": "Prise en main",
         "content": `
-            <h4>Qu'est-ce qu'Excel ?</h4>
-            <p>Microsoft Excel est un logiciel de tableur faisant partie de la suite Microsoft Office. Il permet de manipuler des données sous forme de tableaux, de réaliser des calculs complexes, de créer des graphiques, et bien plus encore. Excel est largement utilisé dans divers domaines tels que la finance, le marketing, la gestion de projet et la recherche.</p>
 
-            <img src="/assets/development-animate (1).svg" alt="Development" id="developmentImage">
+        <img src="/assets/development-animate (1).svg" alt="Development" id="developmentImage">
+
+            <h3>Qu'est-ce qu'Excel ?</h3>
+            <p>Microsoft Excel est un logiciel de tableur faisant partie de la suite Microsoft Office. Il permet de manipuler des données sous forme de tableaux, de réaliser des calculs complexes, de créer des graphiques, et bien plus encore. Excel est largement utilisé dans divers domaines tels que la finance, le marketing, la gestion de projet et la recherche.</p>
 
             <h4>Interface Utilisateur</h4>
             <p>Lorsque vous ouvrez Excel, vous êtes accueilli par une interface utilisateur composée de plusieurs éléments clés :</p>
@@ -41,7 +42,7 @@ export const coursContent = {
             </ol>
 
 
-            <h2>Manipulation de Base</h2>
+            <h3>Manipulation de Base</h3>
             <h4>Saisie et Édition des Données</h4>
             
             <ol>
@@ -82,7 +83,34 @@ export const coursContent = {
                     <li>Remplissage de cellule : Utilisez des couleurs unies ou des motifs pour remplir les cellules et les rendre plus visibles.</li>
             </ol>
 
+
+            <h3>Formules et Fonctions</h3>
+            <h4>Introduction aux Formules</h4>
+            <p>Les formules permettent d'effectuer des calculs sur les données de votre feuille de calcul. Chaque formule commence par un signe égal (=).</p>
+            <p>Exemples de Formules :</p>
+            <ul>
+                <li>Addition : '=A1 + B1'</li>
+                <li>Soustraction : '=A1 - B1'</li>
+                <li>Multiplication : '=A1 * B1'</li>
+                <li>Division : '=A1 / B1'</li>
+            </ul>
+
+            <h4>Utilisation de Fonctions</h4>
+            <p>Excel dispose d'une vaste bibliothèque de fonctions prédéfinies pour effectuer des calculs avancés.</p>
+            <p>Exemples de Fonctions :</p>
+            <ul>
+                <li>SOMME : '=SOMME(A1:A5)' additionne les valeurs des cellules de A1 à A5é</li>
+                <li>MOYENNE : '=MOYENNE(A1:A5)' calcule la moyenne des valeurs des cellules de A1 à A5</li>
+                <li>MIN : '=MIN(A1:A5)' trouve la valeur minimalle dans les cellules de A1 à A5</li>
+                <li>MAX : '=MAX(A1:A5)' trouve la valeur maximale dans les cellules de A1 à A5</li>
+                <li>SI : Effectue un test logique et renvoie une valeur si le test est vrai, sinon une autre valeur. Si la valeur est une chaîne de caractères, elle est automatiquement convertie en une chaîne de caractères.</li>
+            </ul>
+            
+            <br>
+
             <p>Ce cours couvre les bases essentielles d'Excel, incluant la saisie de données, la modification, la navigation, et le formatage des cellules. Ces compétences fondamentales vous permettront de commencer à utiliser Excel de manière efficace pour organiser et présenter vos données. Pratiquez régulièrement pour renforcer vos compétences et explorez les options de formatage pour rendre vos feuilles de calcul plus attrayantes et fonctionnelles.</p>
+
+            
         `
     },
 

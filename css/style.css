@@ -561,14 +561,19 @@ footer img {
     margin-bottom: 80px;
 }
 
-.coursContent h4 {
-    margin-bottom: 30px;
-    margin-top: 5px;
+.coursContent h4, .coursContent h3 {
+    margin-bottom: 20px;
+    margin-top: 20px;
     color: var(--mainTitleFontColor);
 }
 
-.coursContent p, ol {
+.coursContent p, .coursContent ol, .coursContent ul {
     color: var(--paraFontColorSombre);
+}
+
+.coursContent li::marker {
+    color: var(--bgColorScrolled);
+    font-weight: 500;
 }
 
 .coursContent ol {
