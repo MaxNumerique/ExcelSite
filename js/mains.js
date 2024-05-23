@@ -43,13 +43,18 @@ window.addEventListener("DOMContentLoaded", function () {
 
     const previousPage = document.referrer.split("/").pop().split(".")[0];
 
+    function capitalizeWords(str) {
+        return str.replace(/\b\w/g, char => char.toUpperCase());
+    }
+
     let navigationChemin = "";
 
     if (currentPage === "Formation Excel") {
         navigationChemin += `${currentPage}`;
     } else {
         if (previousPage) {
-            navigationChemin += ` <a href="${previousPage}.html">${previousPage}</a> > `;
+            const previousPageFormatted = capitalizeWords(previousPage.replace(/-/g, ' '));
+            navigationChemin += ` <a href="${previousPageFormatted}.html">${previousPageFormatted}</a> > `;
         }
         navigationChemin += `${currentPage}`;
     }
@@ -57,7 +62,7 @@ window.addEventListener("DOMContentLoaded", function () {
     navigation.innerHTML = navigationChemin;
 
     const previousPageLink = navigation.querySelector("a");
-    if (previousPage && currentPage !== "accueil") {
+    if (previousPage && currentPage !== "Accueil") {
         previousPageLink.addEventListener("click", function (event) {
             event.preventDefault();
             window.history.back();

@@ -553,7 +553,7 @@ footer img {
 }
 
 .coursContent {
-    width: 80%;
+    width: 70%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -561,6 +561,27 @@ footer img {
     margin-bottom: 80px;
 }
 
-.coursContent h2 {
+.coursContent h4 {
     margin-bottom: 30px;
+    margin-top: 5px;
+    color: var(--mainTitleFontColor);
+}
+
+.coursContent p, ol {
+    color: var(--paraFontColorSombre);
+}
+
+.coursContent ol {
+    list-style: decimal;
+    margin-top: 16px;
+    
+    ::marker {
+        color: var(--bgColorScrolled);
+        font-weight: 500;
+    }
+
+    ul {
+        margin-bottom: 10px;
+        list-style:inside;
+    }
 }

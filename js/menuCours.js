@@ -1,7 +1,10 @@
+import { coursContent } from "/js/coursContent.js";
+
 // ==== MENU DEROULANT POUR LES COURS =====
 
 const dropdownBtns = document.querySelectorAll('.dropdown-btn');
 const mainCours = document.querySelector('.coursContent');
+const pageTitle = document.querySelector('h1');
 
 // ==== GENERER LES IDs DEPUIS LE NOM DES IMAGES =====
 
@@ -12,10 +15,11 @@ function generateIdFromImage(imageUrl) {
 }
 
 // ==== AFFICHER LE CONTENU =====
-function afficherContenu(titre, contenu, image) {
-    const imageId = generateIdFromImage(image);
-    const htmlContenu = `<h2>${titre}</h2> <img src="${image}" alt="Image" id="${imageId}">  <p>${contenu}</p>`;
-    mainCours.innerHTML = htmlContenu;
+function afficherContenu(id) {
+    const cours = coursContent[id];
+    if (cours) {
+        mainCours.innerHTML = `<h2>${cours.title}</h2> ${cours.content}`;
+    }
 }
 
 // ==== AFFICHER LE CONTENU AU CLIC =====
@@ -30,11 +34,15 @@ dropdownBtns.forEach(btn => {
         });
         this.classList.add('active');
 
-        const titre = btn.dataset.title;
-        const contenu = btn.dataset.content;
-        const image = btn.dataset.image;
-        // const id = btn.dataset.id;
+        // const titre = btn.dataset.title;
+        // const contenu = btn.dataset.content;
+        // const image = btn.dataset.image;
+        const id = btn.dataset.id;
+
+        if (pageTitle) {
+            pageTitle.style.display = 'none';
+        }
         
-        afficherContenu(titre, contenu, image);
+        afficherContenu(id);
     });
 });
