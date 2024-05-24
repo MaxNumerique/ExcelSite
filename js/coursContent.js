@@ -350,5 +350,133 @@ export const coursContent = {
         `,
     },
 
-    
+    "graphiques-et-impression": {
+        title: "Graphiques & Impression",
+        content: `
+            <p>Les graphiques dans Excel permettent de visualiser les données de manière graphique, facilitant ainsi la compréhension et l'analyse des informations. Voici comment créer et personnaliser des graphiques de base dans Excel :</p>
+
+            <img src="/assets/development-animate (1).svg" alt="Development" id="developmentImage">
+
+            <h4>Insertion d'un Graphique</h4>
+
+            <ol>
+                <li>Sélection des Données : Sélectionnez la plage de données que vous souhaitez représenter graphiquement.</li>
+                <ul>
+                    <li>Exemple : Sélectionnez les cellules A1:B10 pour créer un graphique basé sur ces données.</li>
+                </ul>
+                <li>Accéder à l'Onglet Insertion : Cliquez sur l'onglet "Insertion" dans le Ruban.</li>
+                <li>Choix du Type de Graphique : Sélectionnez le type de graphique souhaité parmi les options disponibles (Histogramme, Courbes, Secteurs, Barres, etc.).</li>
+                <ul>
+                    <li>Exemple : Cliquez sur "Histogramme" pour insérer un graphique à barres.</li>
+            </ol>
+
+            <h4>Personnalisation des Graphiques</h4>
+
+            <ol>
+                <li>Titre du Graphique : Cliquez sur le titre du graphique pour le modifier.</li>
+                <ul>
+                    <li>Exemple : Double-cliquez sur le titre et tapez "Ventes Mensuelles".</li>
+                </ul>
+                <li>Étiquettes des Axes : Ajoutez ou modifiez les étiquettes des axes en accédant à l'onglet "Mise en forme".</li>
+                <ul>
+                    <li>Exemple : Ajoutez "Mois" pour l'axe des X et "Ventes" pour l'axe des Y.</li>
+                </ul>
+                <li>Légende : Affichez ou déplacez la légende du graphique.</li>
+                <ul>
+                    <li>Exemple : Cliquez sur la légende et déplacez-la en bas du graphique.</li>
+                </ul>
+                <li>Couleurs et Styles : Changez les couleurs et le style des éléments du graphique en utilisant les options de l'onglet "Création".</li>
+                <ul>
+                    <li>Exemple : Appliquez un style de graphique prédéfini pour harmoniser les couleurs et les polices.</li>
+                </ul>
+            </ol>
+
+            <h4>Mise en Forme des Éléments de Graphique</h4>
+
+            <ol>
+                <li>Axes : Formatez les axes pour améliorer la lisibilité.</li>
+                <ul>
+                    <li>Exemple : Changez l'échelle de l'axe des Y en cliquant avec le bouton droit sur l'axe, puis en sélectionnant "Format de l'axe".</li>
+                </ul>
+                <li>Séries de Données : Modifiez la couleur, le style ou l'épaisseur des lignes ou des barres.</li>
+                <ul>
+                    <li>Exemple : Cliquez avec le bouton droit sur une série de données et choisissez "Formater la série de données".</li>
+                </ul>
+                <li>Étiquettes de Données : Ajoutez des étiquettes de données pour montrer les valeurs exactes des points de données.</li>
+                <ul>
+                    <li>Exemple : Cliquez sur une série de données, puis sélectionnez "Ajouter des étiquettes de données".</li>
+                </ul>
+            </ol>
+
+            <h4>Impression des Feuilles de Calcul</h4>
+            <p>L'impression dans Excel nécessite souvent une préparation pour s'assurer que les données sont présentées clairement sur le papier. Voici comment configurer vos feuilles de calcul pour l'impression :</p>
+
+            <h4>Préparation de l'Impression</h4>
+
+            <ol>
+                <li>Aperçu avant Impression : Accédez à l'aperçu avant impression pour voir comment votre feuille de calcul sera imprimée.</li>
+                <ul>
+                    <li>Exemple : Cliquez sur "Fichier" puis "Imprimer" pour afficher l'aperçu avant impression.</li>
+                </ul>
+                <li>Zone d'Impression : Définissez la zone d'impression pour imprimer uniquement les parties de la feuille de calcul souhaitées.</li>
+                <ul>
+                    <li>Exemple : Sélectionnez les cellules à imprimer, puis cliquez sur "Mise en page" > "Zone d'impression" > "Définir".</li>
+                </ul>
+                <li>Ajustement à la Page : Ajustez la feuille de calcul pour qu'elle tienne sur une seule page si nécessaire.</li>
+                <ul>
+                    <li>Exemple : Dans l'onglet "Mise en page", choisissez "Ajuster à" et spécifiez 1 page de large sur 1 page de haut.</li>
+                </ul>
+            </ol>
+
+            <h4>Configuration de la Mise en Page</h4>
+
+            <ol>
+                <li>Marges : Réglez les marges pour optimiser l'utilisation de l'espace sur la page.</li>
+                <ul>
+                    <li>Exemple : Cliquez sur "Mise en page" > "Marges" et sélectionnez une option prédéfinie ou personnalisez les marges.</li>
+                </ul>
+                <li>Orientation : Changez l'orientation de la page en mode portrait ou paysage.</li>
+                <ul>
+                    <li>Exemple : Cliquez sur "Mise en page" > "Orientation" et sélectionnez "Portrait" ou "Paysage".</li>
+                </ul>
+                <li>Taille du Papier : Sélectionnez la taille de papier adéquate pour l'impression.</li>
+                <ul>
+                    <li>Exemple : Cliquez sur "Mise en page" > "Taille" et choisissez "A4".</li>
+                </ul>
+            </ol>
+
+            <h4>Options d'Impression</h4>
+
+            <ol>
+                <li>Impression des Titres : Répétez les en-têtes de colonnes ou de lignes sur chaque page imprimée.</li>
+                <ul>
+                    <li>Exemple : Cliquez sur "Mise en page" > "Imprimer les titres" et sélectionnez les lignes ou colonnes à répéter.</li>
+                </ul>
+                <li>Impression des Grilles : Choisissez d'imprimer ou non les lignes de grille.</li>
+                <ul>
+                    <li>Exemple : Cliquez sur "Mise en page" > "Options de la feuille" et cochez "Imprimer" sous "Lignes de grille".</li>
+                </ul>
+                <li>En-têtes et Pieds de Page : Ajoutez des en-têtes et pieds de page pour inclure des informations supplémentaires comme le numéro de page, la date, etc.</li>
+                <ul>
+                    <li>Exemple : Cliquez sur "Mise en page" > "En-tête/Pied de page" et personnalisez-les selon vos besoins.</li>
+                </ul>
+            </ol>
+
+            <h4>Imprimer</h4>
+
+            <ol>
+                <li>Choisir l'Imprimante : Sélectionnez l'imprimante à utiliser.</li>
+                <ul>
+                    <li>Exemple : Dans le menu "Fichier" > "Imprimer", sélectionnez l'imprimante souhaitée dans la liste déroulante.</li>
+                </ul>
+                <li>Nombre de Copies : Spécifiez le nombre de copies à imprimer.</li>
+                <ul>
+                    <li>Exemple : Entrez le nombre de copies dans la zone "Copies".</li>
+                </ul>
+                <li>Lancer l'Impression : Cliquez sur "Imprimer" pour lancer l'impression de la feuille de calcul.</li>
+            </ol>
+
+            <p>En maîtrisant ces techniques de création et de personnalisation de graphiques, ainsi que la préparation et l'impression de vos feuilles de calcul, vous pouvez améliorer la présentation et la communication de vos données dans Excel. Pratiquez régulièrement pour renforcer vos compétences et explorer davantage de fonctionnalités pour optimiser vos documents.</p>
+        `,
+    },
 };
