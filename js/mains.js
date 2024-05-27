@@ -53,7 +53,7 @@ window.addEventListener("DOMContentLoaded", function () {
         navigationChemin += `Accueil`;
     } else {
         if (previousPage) {
-            const previousPageFormatted = capitalizeWords(previousPage.replace(/-/g, ' '));
+            const previousPageFormatted = previousPage === "index" ? "Accueil" : capitalizeWords(previousPage.replace(/-/g, ' '));
             navigationChemin += ` <a href="${previousPageFormatted}.html">${previousPageFormatted}</a> > `;
         }
         navigationChemin += `${currentPage}`;
