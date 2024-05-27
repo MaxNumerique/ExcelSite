@@ -50,7 +50,7 @@ window.addEventListener("DOMContentLoaded", function () {
     let navigationChemin = "";
 
     if (currentPage === "Formation Excel") {
-        navigationChemin += `${currentPage}`;
+        navigationChemin += `Accueil`;
     } else {
         if (previousPage) {
             const previousPageFormatted = capitalizeWords(previousPage.replace(/-/g, ' '));
