@@ -43,31 +43,186 @@
         <h1 class="coursTittle">COURS 💼</h1>
         <div id="mainCours">
             <div class="NavCours">
-                <h5>Les Bases</h5>
-                <ul>
-                    <li class="dropdown-btn" data-id="prise-en-main">Prise en main</li>
-                    <li class="dropdown-btn" data-id="format-embellissement">Format - Embellissement</li>
-                    <li class="dropdown-btn" data-id="operation-simples">Opérations simples</li>
-                    <li class="dropdown-btn" data-id="graphiques-et-impression">Graphiques & Impression</li>
-                    <li>Raccourcis</li>
-                </ul>
-                <br />
-                <h5>Avancé</h5>
-                <ul>
-                    <li>Format de cellule</li>
-                    <li>Référence absolue</li>
-                    <li>Les filtres</li>
-                    <li>Mise en forme conditionnelle</li>
-                    <li>Outils de données</li>
-                    <li>Lier les feuilles</li>
-                    <li>Nommer les cellules</li>
-                    <li>Les sous-totaux</li>
-                    <li>Consolidation</li>
-                    <li>Formulaire</li>
-                </ul>
+                <div class="dropdown introduction">
+                    <h5>Introduction</h5>
+                    <a href="#" class="toggle-icon" data-target="introduction"><ion-icon
+                            name="caret-forward-outline"></ion-icon></a>
+                </div>
+                <div class="Menucontent introduction-content" style="display: block;">
+                    <div class="dropdown interface">
+                        <h5>Interface & Manipulation</h5>
+                        <a href="#" class="toggle-icon" data-target="interface"><ion-icon
+                                name="caret-forward-outline"></ion-icon></a>
+                    </div>
+                    <ul class="Menucontent interface-content" style="display: none;">
+                        <li class="dropdown-btn" data-id="prise-en-main">Prise en main</li>
+                        <li class="dropdown-btn" data-id="interface-travail">Interface de travail</li>
+                        <li class="dropdown-btn" data-id="utilisation-raccourcis">Utilisation des raccourcis clavier
+                        </li>
+                    </ul>
+                    <div class="dropdown fichiers">
+                        <h5>Comprendre les fichiers Excel et ses formats</h5>
+                        <a href="#" class="toggle-icon" data-target="fichiers"><ion-icon
+                                name="caret-forward-outline"></ion-icon></a>
+                    </div>
+                    <ul class="Menucontent fichiers-content" style="display: none;">
+                        <li class="dropdown-btn" data-id="types-fichiers">Types de fichiers (XLSX, XLSM, CSV, etc)</li>
+                        <li class="dropdown-btn" data-id="importation-exportation">Importation et exportation des
+                            données</li>
+                    </ul>
+                </div>
+                <div class="dropdown WantToDo">
+                    <h5>Je veux faire...</h5>
+                    <a href="#" class="toggle-icon" data-target="WantToDo"><ion-icon
+                            name="caret-forward-outline"></ion-icon></a>
+                </div>
+                <div class="Menucontent WantToDo-content" style="display: block;">
+                    <div class="dropdown saisieDonnees">
+                        <h5>De la saisie de données</h5>
+                        <a href="#" class="toggle-icon" data-target="saisieDonnees"><ion-icon
+                                name="caret-forward-outline"></ion-icon></a>
+                    </div>
+                    <ul class="Menucontent saisieDonnees-content" style="display: none;">
+                        <li class="dropdown-btn gras" data-id="saisie-simple">La saisie simple</li>
+                        <li class="dropdown-btn" data-id="entrer-donnees-saisie">Entrer des données de saisie</li>
+                        <li class="dropdown-btn" data-id="raccourcis-saisie">Utilisation des raccourcis de saisie</li>
+                        <li class="dropdown-btn gras" data-id="adapter-format-cellule">Adapter le format des cellules</li>
+                        <li class="dropdown-btn" data-id="format-cellule">Format de cellules (nombre, texte, date,...)</li>
+                        <li class="dropdown-btn" data-id="format-personnalise">Format personnalisé</li>
+                        <li class="dropdown-btn gras" data-id="validation-donnees">Par validation de données à partir de liste</li>
+                        <li class="dropdown-btn" data-id="creation-utilisation-liste">Création et utilisation de listes déroulantes</li>
+                        <li class="dropdown-btn" data-id="validation-pour-eviter-erreurs">Validation des données pour éviter les erreurs</li>
+                        <li class="dropdown-btn gras" data-id="embellissement">Embellissement</li>
+                        <li class="dropdown-btn" data-id="miseEnForme-alignement">Mise en forme et alignement</li>
+                        <li class="dropdown-btn" data-id="Référence absolue et relative">Utilisation des bordures et remplissage</li>
+                        <li class="dropdown-btn gras" data-id="filtres">Les filtres</li>
+                        <li class="dropdown-btn" data-id="trier-donnees">Trier et afficher des données spécifiques</li>
+                    </ul>
+                    <div class="Menucontent WantToDo-content" style="display: block;">
+                        <div class="dropdown formulesPour">
+                            <h5>Des formules pour...</h5>
+                            <a href="#" class="toggle-icon" data-target="formulesPour"><ion-icon
+                                    name="caret-forward-outline"></ion-icon></a>
+                        </div>
+                        <ul class="Menucontent formulesPour-content" style="display: none;">
+                            <li class="dropdown-btn gras" data-id="saisie-simple">Additionner</li>
+                            <li class="dropdown-btn" data-id="somme">SOMME</li>
+                            <li class="dropdown-btn" data-id="somme-si">SOMME.SI</li>
+                            <li class="dropdown-btn" data-id="somme-si-ens">SOMME.SI.ENS</li>
+                            <li class="dropdown-btn gras" data-id="manipuler-nombre">Manipuler les nombres</li>
+                            <li class="dropdown-btn" data-id="produit">PRODUIT</li>
+                            <li class="dropdown-btn" data-id="arrondir">ARRONDI</li>
+                            <li class="dropdown-btn" data-id="ent">ENT</li>
+                            <li class="dropdown-btn" data-id="tronquer">TRONQUE</li>
+                            <li class="dropdown-btn" data-id="quotient">QUOTIENT</li>
+                            <li class="dropdown-btn" data-id="mod">MOD</li>
+                            <li class="dropdown-btn" data-id="pair">PAIR</li>
+                            <li class="dropdown-btn" data-id="impair">IMPAIR</li>
+                            <li class="dropdown-btn gras" data-id="calculer-moyenne">Calculer une moyenne</li>
+                            <li class="dropdown-btn" data-id="moyenne">MOYENNE</li>
+                            <li class="dropdown-btn" data-id="moyenne-si">MOYENNE.SI</li>
+                            <li class="dropdown-btn" data-id="moyenne-si-ens">MOYENNE.SI.ENS</li>
+                            <li class="dropdown-btn gras" data-id="compter-cellules">Compter des cellules</li>
+                            <li class="dropdown-btn" data-id="compte">COMPTE</li>
+                            <li class="dropdown-btn" data-id="nb-si">NB.SI</li>
+                            <li class="dropdown-btn" data-id="nb-si-ens">NB.SI.ENS</li>
+                            <li class="dropdown-btn" data-id="nbval">NBVAL</li>
+                            <li class="dropdown-btn" data-id="nb-vide">NB.VIDE</li>
+                            <li class="dropdown-btn gras" data-id="trouver-valeurs-extremes">Trouver des valeurs extrêmes</li>
+                            <li class="dropdown-btn" data-id="min">MIN</li>
+                            <li class="dropdown-btn" data-id="max">MAX</li>
+                            <li class="dropdown-btn gras" data-id="traiter-dates">Traiter des dates</li>
+                            <li class="dropdown-btn" data-id="aujourdhui">AUJOURD'HUI</li>
+                            <li class="dropdown-btn" data-id="maintenant">MAINTENANT</li>
+                            <li class="dropdown-btn" data-id="jour">JOUR</li>
+                            <li class="dropdown-btn" data-id="mois">MOIS</li>
+                            <li class="dropdown-btn" data-id="annee">ANNEE</li>
+                            <li class="dropdown-btn" data-id="joursem">JOURSEM</li>
+                            <li class="dropdown-btn" data-id="heure">HEURE</li>
+                            <li class="dropdown-btn" data-id="minute">MINUTE</li>
+                            <li class="dropdown-btn" data-id="seconde">SECONDE</li>
+                            <li class="dropdown-btn gras" data-id="utiliser-operateurs-logiques">Utiliser des opérateurs logiques</li>
+                            <li class="dropdown-btn" data-id="si">SI</li>
+                            <li class="dropdown-btn" data-id="et">ET</li>
+                            <li class="dropdown-btn" data-id="ou">OU</li>
+                            <li class="dropdown-btn" data-id="estvide">ESTVIDE</li>
+                            <li class="dropdown-btn" data-id="sierreur">SIERREUR</li>
+                            <li class="dropdown-btn gras" data-id="utiliser-logique-position">Utiliser la logique de position</li>
+                            <li class="dropdown-btn" data-id="gauche">GAUCHE</li>
+                            <li class="dropdown-btn" data-id="droite">DROITE</li>
+                            <li class="dropdown-btn" data-id="trouve">TROUVE</li>
+                            <li class="dropdown-btn" data-id="concatener">CONCATENER</li>
+                            <li class="dropdown-btn gras" data-id="traiter-texte">Traiter du texte</li>
+                            <li class="dropdown-btn" data-id="minuscule-majuscule">MINUSCULE / MAJUSCULE</li>
+                            <li class="dropdown-btn" data-id="NBCAR">NBCAR</li>
+                            <li class="dropdown-btn" data-id="remplacer">REMPLACER</li>
+                            <li class="dropdown-btn" data-id="exact">EXACT</li>
+                            <li class="dropdown-btn gras" data-id="recherche-valeur">Faire des recherches de valeurs</li>
+                            <li class="dropdown-btn" data-id="rechercheV-rechercheH">RECHERCHEV / RECHERCHEH</li>
+                            <li class="dropdown-btn" data-id="rechercheX">RECHERCHEX</li>
+                            <li class="dropdown-btn" data-id="index">INDEX</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="Menucontent WantToDo-content" style="display: block;">
+                    <div class="dropdown analyseDonnees">
+                        <h5>De l'analyse et de la présentation de données</h5>
+                        <a href="#" class="toggle-icon" data-target="analyseDonnees"><ion-icon
+                                name="caret-forward-outline"></ion-icon></a>
+                    </div>
+                    <ul class="Menucontent analyseDonnees-content" style="display: none;">
+                        <li class="dropdown-btn gras" data-id="tableau-croise-dynamique">Tableaux Croisés Dynamiques (TCD)</li>
+                        <li class="dropdown-btn" data-id="creation-tcd">Création de TCD</li>
+                        <li class="dropdown-btn" data-id="selection-donnees">Sélection des données</li>
+                        <li class="dropdown-btn" data-id="insertion-tcd">Insertion d'un TCD</li>
+                        <li class="dropdown-btn" data-id="configuration-tcd">Configuration des TCD</li>
+                        <li class="dropdown-btn" data-id="valeur-lignes-colonnes-filtres">Champs de valeurs, lignes, colonnes et filtres</li>
+                        <li class="dropdown-btn" data-id="groupement-donnees">Groupement de données</li>
+                        <li class="dropdown-btn" data-id="personnalisation-mise-en-forme">Personnalisation et mise en forme</li>
+                        <li class="dropdown-btn" data-id="format-donnees">Format de données</li>
+                        <li class="dropdown-btn" data-id="disposition-style">Disposition et style</li>
+                        <li class="dropdown-btn" data-id="calculs-tcd">Calculs dans les tableaux croisés dynamiques</li>
+                        <li class="dropdown-btn" data-id="champs-calcules">Champs calculés</li>
+                        <li class="dropdown-btn" data-id="elements-calcules">Éléménts calculés</li>
+                        <li class="dropdown-btn" data-id="segment-filtrage">Utilisation des segments pour filtrer les données</li>
+                        <li class="dropdown-btn" data-id="filtres-chronologiques">Utilisation des filtres chroologiques</li>
+                        <li class="dropdown-btn gras" data-id="graphiques">Graphiques</li>
+                        <li class="dropdown-btn" data-id="insertion-graphique">Insertion de graphiques</li>
+                        <li class="dropdown-btn" data-id="typeGraphiques">Types de graphiques (histogramme, Courbes,...)</li>
+                        <li class="dropdown-btn" data-id="selection-donneesGraphique">Sélection des données</li>
+                        <li class="dropdown-btn" data-id="personnalisation-graphiques">Personnalisation des graphiques</li>
+                        <li class="dropdown-btn" data-id="titres-legendes-etiquettes">Titres, légendes, étiquettes de données</li>
+                        <li class="dropdown-btn" data-id="couleur-style">Couleurs et styles</li>
+                        <li class="dropdown-btn" data-id="graphiques-avances">Graphiques avancés</li>
+                        <li class="dropdown-btn" data-id="graphique-et-tcd">Graphique à partir d'un TCD</li>
+                        <li class="dropdown-btn" data-id="graphiques-combines">Graphiques combinés</li>
+                        <li class="dropdown-btn gras" data-id="outils-analyse">Outils d'analyse</li>
+                        <li class="dropdown-btn" data-id="consolidation-donnees">Consolidation de données</li>
+                        <li class="dropdown-btn" data-id="regrouper-donnees">Regrouper les données provenant de plusieurs feuilles / fichiers</li>
+                        <li class="dropdown-btn" data-id="filtres-avances">Utilisation des filtres avancés</li>
+                        <li class="dropdown-btn" data-id="criteres-filtres">Critères de filtre complexe</li>
+                        <li class="dropdown-btn" data-id="extraction-donnees-filtres">Extraction de données filtrées</li>
+                        <li class="dropdown-btn gras" data-id="sous-totaux">Les sous-totaux</li>
+                </div>
+                <div class="Menucontent WantToDo-content" style="display: block;">
+                    <div class="dropdown organisationDonnees">
+                        <h5>De l'organisation et de la gestion de données</h5>
+                        <a href="#" class="toggle-icon" data-target="organisationDonnees"><ion-icon
+                                name="caret-forward-outline"></ion-icon></a>
+                    </div>
+                    <ul class="Menucontent organisationDonnees-content" style="display: none;">
+                        <li class="dropdown-btn gras" data-id="lier-feuilles">Lier les feuilles ou les fichiers</li>
+                        <li class="dropdown-btn" data-id="selection-donnees">Sélection des données</li>
+                        <li class="dropdown-btn" data-id="liaion-donnees">Gestion des références entre les feuilles / fichiers</li>
+                        <li class="dropdown-btn" data-id="traiter-donnees">Traiter les données liées</li>
+                        <li class="dropdown-btn gras" data-id="nommer-cellules">Nommer les cellules</li>
+                        <li class="dropdown-btn" data-id="gestion-noms-cellules">Création et gestion des noms de cellules</li>
+                        <li class="dropdown-btn" data-id="utilisation-nom-formules">Utilisation des noms dans les formules</li>
+                </div>
+            
             </div>
+        <div class="coursContent"></div>
 
-            <div class="coursContent"></div>
         </div>
     </main>
 

@@ -48,3 +48,46 @@ dropdownBtns.forEach(btn => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
+
+
+// ==== AFFICHER LE CONTENU DU MENU AU CLIC =====
+
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleIcons = document.querySelectorAll('.toggle-icon');
+
+    toggleIcons.forEach(icon => {
+        icon.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            const targetClass = this.getAttribute('data-target');
+            const content = document.querySelector(`.${targetClass}-content`);
+            const isIntroduction = targetClass === 'introduction';
+
+            // Bascule l'affichage de l'élément suivant et change l'icône en conséquence
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                this.innerHTML = '<ion-icon name="caret-down-outline"></ion-icon>';
+            } else {
+                content.style.display = 'none';
+                this.innerHTML = '<ion-icon name="caret-forward-outline"></ion-icon>';
+            }
+
+            // Si on clique sur l'introduction, bascule tout le contenu associé
+            if (isIntroduction) {
+                const submenus = document.querySelectorAll('.Menucontent.interface-content, .Menucontent.fichiers-content');
+                const subIcons = document.querySelectorAll('.interface .toggle-icon ion-icon, .fichiers .toggle-icon ion-icon');
+                
+                submenus.forEach(submenu => {
+                    submenu.style.display = 'none';
+                });
+                subIcons.forEach(subIcon => {
+                    subIcon.setAttribute('name', 'caret-forward-outline');
+                });
+            }
+        });
+    });
+});
+
+
+
+
