@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const targetClass = this.getAttribute('data-target');
             const content = document.querySelector(`.${targetClass}-content`);
             const isIntroduction = targetClass === 'introduction';
+            const isWantToDo = targetClass === 'WantToDo';
 
             // Bascule l'affichage de l'élément suivant et change l'icône en conséquence
             if (content.style.display === 'none' || content.style.display === '') {
@@ -77,6 +78,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 const submenus = document.querySelectorAll('.Menucontent.interface-content, .Menucontent.fichiers-content');
                 const subIcons = document.querySelectorAll('.interface .toggle-icon ion-icon, .fichiers .toggle-icon ion-icon');
                 
+                submenus.forEach(submenu => {
+                    submenu.style.display = 'none';
+                });
+                subIcons.forEach(subIcon => {
+                    subIcon.setAttribute('name', 'caret-forward-outline');
+                });
+            }
+            if (isWantToDo) {
+                const submenus = document.querySelectorAll('.Menucontent.saisieDonnees-content, .Menucontent.formulesPour-content, .Menucontent.analyseDonnees-content, .Menucontent.organisationDonnees-content');
+                const subIcons = document.querySelectorAll('.saisieDonnees .toggle-icon ion-icon, .formulesPour .toggle-icon ion-icon, .analyseDonnees .toggle-icon ion-icon, .organisationDonnees .toggle-icon ion-icon');
+
                 submenus.forEach(submenu => {
                     submenu.style.display = 'none';
                 });
