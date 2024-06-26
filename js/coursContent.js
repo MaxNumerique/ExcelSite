@@ -885,15 +885,15 @@ export const coursContent = {
 
 <p>Ce cours vous guidera à travers les différentes étapes pour effectuer efficacement la saisie de données dans Excel. Vous apprendrez à entrer des données, adapter le format des cellules, valider les données, embellir votre tableau et utiliser des filtres pour trier et afficher des données spécifiques.</p>
 
-<h4>1. La saisie simple</h4>
+<h4 id="saisie-simple">La saisie simple</h4>
 
 <h5>Entrer des données de saisie</h5>
 <p>Pour saisir des données dans Excel, cliquez sur une cellule et commencez à taper. Voici quelques conseils pour la saisie efficace :</p>
 <ul>
     <li>Utilisez les touches fléchées pour naviguer entre les cellules. Par exemple, <strong>Flèche vers le bas</strong> pour descendre d'une cellule, <strong>Flèche vers la droite</strong> pour passer à la cellule suivante à droite.</li>
-    <li>Appuyez sur <strong>Entrée</strong> pour valider l'entrée et passer à la cellule suivante en dessous. Si vous préférez rester dans la même cellule après avoir validé, appuyez sur <kbd>Ctrl</kbd> + <kbd>Entrée</kbd>.</li>
+    <li>Appuyez sur <strong><kbd>Entrée</kbd></strong> pour valider l'entrée et passer à la cellule suivante en dessous. Si vous préférez rester dans la même cellule après avoir validé, appuyez sur <kbd>Ctrl</kbd> + <kbd>Entrée</kbd>.</li>
     <li>Appuyez sur <kbd>Tab</kbd> pour valider l'entrée et passer à la cellule suivante à droite. Utilisez <kbd>Shift</kbd> + <kbd>Tab</kbd> pour revenir à la cellule précédente.</li>
-    <li>Pour annuler une saisie en cours, appuyez sur <strong>Echap</strong>.</li>
+    <li>Pour annuler une saisie en cours, appuyez sur <strong><kbd>Echap</kbd></strong>.</li>
 </ul>
 
 <h5>Utilisation des raccourcis de saisie</h5>
@@ -913,7 +913,9 @@ export const coursContent = {
     <li><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd> : Activer ou désactiver les filtres pour la plage de données sélectionnée. Utilisez ceci pour ajouter rapidement des filtres à vos données.</li>
 </ul>
 
-<h4>2. Adapter le format des cellules</h4>
+<hr>
+
+<h4 id="format-cellules"> Adapter le format des cellules</h4>
 
 <h5>Format de cellules (nombres, texte, date, ...)</h5>
 <p>Excel propose plusieurs formats de cellule pour adapter la présentation des données :</p>
@@ -956,8 +958,9 @@ export const coursContent = {
 </ul>
 <p>Un format incorrect peut entraîner des erreurs dans les formules, des difficultés de tri et de filtrage des données, et des présentations inexactes. Prenez le temps de choisir le format approprié pour chaque type de données pour optimiser votre travail dans Excel.</p>
 
+<hr>
 
-<h4>3. Par validation de données à partir de liste</h4>
+<h4 id="validation-donnees"> Par validation de données à partir de liste</h4>
 <p>L'outil de validation des données dans Excel permet de contrôler ce que les utilisateurs peuvent saisir dans une cellule. Cela est particulièrement utile pour éviter les erreurs de saisie et garantir la cohérence des données. Par exemple, vous pouvez limiter les entrées à une liste prédéfinie de valeurs, ce qui réduit les risques d'erreurs et facilite l'analyse des données.</p>
 
 <h5>Création et utilisation de listes déroulantes</h5>
@@ -981,7 +984,9 @@ export const coursContent = {
     <li>Cliquez sur <strong>OK</strong> pour appliquer la validation des données. Les cellules sélectionnées appliqueront maintenant les règles de validation définies, aidant à éviter les erreurs de saisie.</li>
 </ol>
 
-<h4>4. Embellissement</h4>
+<hr>
+
+<h4 id="embellissement">Embellissement</h4>
 
 <h5>Mise en forme et alignement</h5>
 <p>Pour mettre en forme vos cellules :</p>
@@ -1000,22 +1005,109 @@ export const coursContent = {
     <li>Utilisez le bouton <strong>Couleur de remplissage</strong> pour ajouter une couleur de fond aux cellules sélectionnées. Par exemple, utilisez une couleur claire pour mettre en évidence des données spécifiques ou pour différencier les en-têtes de colonne des données.</li>
 </ol>
 
-<h4>5. Les filtres</h4>
+<h5>Autres techniques d'embellissement</h5>
+<p>Pour rendre vos données plus attractives et plus faciles à interpréter, vous pouvez également utiliser les techniques suivantes :</p>
+
+<h5>Formatage conditionnel</h5>
+<p>Le formatage conditionnel permet de modifier l'apparence des cellules en fonction de certaines conditions :</p>
+<ol>
+    <li>Sélectionnez la plage de cellules que vous souhaitez formater conditionnellement.</li>
+    <li>Allez dans l'onglet <strong>Accueil</strong> et cliquez sur <strong>Format conditionnel</strong>.</li>
+    <li>Choisissez un type de règle (par exemple, <strong>Valeurs des cellules</strong>, <strong>Barres de données</strong>, <strong>Nuances de couleur</strong>, ou <strong>Jeux d'icônes</strong>).</li>
+    <li>Configurez la règle selon vos besoins. Par exemple, vous pouvez appliquer une mise en forme spécifique aux cellules dont la valeur est supérieure à un certain seuil.</li>
+    <li>Cliquez sur <strong>OK</strong> pour appliquer la mise en forme conditionnelle.</li>
+</ol>
+
+<h5>Styles de cellule</h5>
+<p>Les styles de cellule sont des ensembles de mise en forme prédéfinis que vous pouvez appliquer rapidement pour garantir une apparence cohérente :</p>
+<ol>
+    <li>Sélectionnez les cellules que vous souhaitez formater.</li>
+    <li>Allez dans l'onglet <strong>Accueil</strong> et cliquez sur <strong>Styles de cellule</strong> dans le groupe <strong>Styles</strong>.</li>
+    <li>Choisissez un style dans la galerie pour l'appliquer aux cellules sélectionnées. Par exemple, vous pouvez utiliser des styles pour les titres, les en-têtes, les totaux, etc.</li>
+</ol>
+
+<h5>Thèmes et couleurs</h5>
+<p>Utilisez les thèmes et les couleurs pour uniformiser l'apparence de votre classeur :</p>
+<ol>
+    <li>Allez dans l'onglet <strong>Création</strong> (ou <strong>Disposition</strong>, selon votre version d'Excel).</li>
+    <li>Choisissez un thème prédéfini pour appliquer une combinaison cohérente de couleurs, de polices et d'effets à votre classeur.</li>
+    <li>Pour personnaliser davantage, cliquez sur <strong>Couleurs</strong> ou <strong>Polices</strong> et choisissez ou créez vos propres jeux de couleurs et de polices.</li>
+</ol>
+
+<h5>Insertion d'images et de graphiques</h5>
+<p>Pour rendre vos données plus visuelles et attractives, vous pouvez insérer des images et des graphiques :</p>
+<ol>
+    <li>Pour insérer une image, allez dans l'onglet <strong>Insertion</strong>, cliquez sur <strong>Images</strong> et sélectionnez une image à partir de votre ordinateur ou d'une source en ligne.</li>
+    <li>Pour insérer un graphique, sélectionnez les données que vous souhaitez représenter graphiquement, allez dans l'onglet <strong>Insertion</strong> et choisissez un type de graphique (par exemple, histogramme, courbe, secteur, etc.).</li>
+    <li>Utilisez les outils de graphique pour personnaliser l'apparence de votre graphique (couleurs, titres, légendes, etc.).</li>
+</ol>
+
+<p>Ces techniques d'embellissement vous permettent de rendre vos feuilles de calcul plus lisibles, plus attrayantes et plus professionnelles. En utilisant des mises en forme cohérentes et des éléments visuels, vous pouvez faciliter la compréhension de vos données et améliorer la présentation de vos analyses.</p>
+
+<hr>
+
+<h4 id="filtres">Les filtres</h4>
 
 <h5>Trier et afficher des données spécifiques</h5>
-<p>Pour utiliser les filtres :</p>
+<p>Les filtres sont des outils puissants dans Excel pour afficher uniquement les données qui répondent à certains critères. Ils permettent de simplifier l'analyse des données en masquant temporairement les données qui ne sont pas pertinentes. Voici comment les utiliser :</p>
+
+<h5>Ajouter des filtres</h5>
 <ol>
     <li>Sélectionnez les cellules contenant les données que vous souhaitez filtrer. Il est souvent préférable de sélectionner toute la plage de données, y compris les en-têtes de colonne.</li>
     <li>Allez dans l'onglet <strong>Données</strong> et cliquez sur <strong>Filtrer</strong>. Des flèches de filtre apparaîtront dans les en-têtes de colonne.</li>
-    <li>Cliquez sur une flèche de filtre pour afficher les options de filtre. Vous pouvez choisir de filtrer par valeurs spécifiques, par conditions (par exemple, texte contenant, supérieur à, etc.), ou par couleur.</li>
-    <li>Sélectionnez les critères de filtrage pour afficher les données spécifiques. Par exemple, pour afficher uniquement les enregistrements où la valeur d'une colonne est supérieure à 100, sélectionnez <strong>Supérieur à...</strong> et entrez 100.</li>
-    <li>Utilisez les options de tri pour organiser les données. Par exemple, vous pouvez trier les données du plus petit au plus grand, du plus grand au plus petit, ou par ordre alphabétique.</li>
-    <li>Pour effacer un filtre, cliquez sur la flèche de filtre et sélectionnez <strong>Effacer le filtre</strong>.</li>
+    <li>Cliquez sur une flèche de filtre pour afficher les options de filtre.</li>
 </ol>
 
-<br>
+<h5>Utiliser les filtres de texte</h5>
+<p>Pour filtrer des données textuelles :</p>
+<ol>
+    <li>Cliquez sur la flèche de filtre dans l'en-tête de la colonne contenant le texte que vous souhaitez filtrer.</li>
+    <li>Sélectionnez <strong>Filtres de texte</strong> et choisissez une condition (par exemple, <strong>Contient</strong>, <strong>Ne contient pas</strong>, <strong>Commence par</strong>, <strong>Se termine par</strong>, etc.).</li>
+    <li>Entrez le texte ou la condition de filtre et cliquez sur <strong>OK</strong>.</li>
+</ol>
 
-<p>Ce cours vous a présenté les bases de la saisie de données dans Excel. En maîtrisant ces techniques, vous pouvez saisir, formater, valider, embellir et filtrer des données efficacement, améliorant ainsi votre productivité et la qualité de vos travaux dans Excel.</p>
+<h5>Utiliser les filtres de nombre</h5>
+<p>Pour filtrer des données numériques :</p>
+<ol>
+    <li>Cliquez sur la flèche de filtre dans l'en-tête de la colonne contenant les nombres que vous souhaitez filtrer.</li>
+    <li>Sélectionnez <strong>Filtres de nombre</strong> et choisissez une condition (par exemple, <strong>Supérieur à</strong>, <strong>Inférieur à</strong>, <strong>Entre</strong>, etc.).</li>
+    <li>Entrez les valeurs de filtre et cliquez sur <strong>OK</strong>.</li>
+</ol>
+
+<h5>Utiliser les filtres de date</h5>
+<p>Pour filtrer des données de date :</p>
+<ol>
+    <li>Cliquez sur la flèche de filtre dans l'en-tête de la colonne contenant les dates que vous souhaitez filtrer.</li>
+    <li>Sélectionnez <strong>Filtres de date</strong> et choisissez une condition (par exemple, <strong>Aujourd'hui</strong>, <strong>La semaine dernière</strong>, <strong>Le mois prochain</strong>, etc.).</li>
+    <li>Entrez les valeurs de filtre et cliquez sur <strong>OK</strong>.</li>
+</ol>
+
+<h5>Utiliser les filtres de couleur</h5>
+<p>Pour filtrer des données par couleur de cellule ou couleur de police :</p>
+<ol>
+    <li>Cliquez sur la flèche de filtre dans l'en-tête de la colonne contenant les cellules avec des couleurs de remplissage ou de police.</li>
+    <li>Sélectionnez <strong>Filtrer par couleur</strong> et choisissez la couleur de cellule ou de police à utiliser comme critère de filtre.</li>
+</ol>
+
+<h5>Effacer un filtre</h5>
+<p>Pour effacer un filtre et afficher toutes les données :</p>
+<ol>
+    <li>Cliquez sur la flèche de filtre dans l'en-tête de la colonne filtrée.</li>
+    <li>Sélectionnez <strong>Effacer le filtre</strong> de [Nom de la colonne].</li>
+</ol>
+
+<h5>Filtrer à l'aide de segments (pour les tableaux croisés dynamiques)</h5>
+<p>Les segments permettent de filtrer rapidement les données dans les tableaux croisés dynamiques :</p>
+<ol>
+    <li>Sélectionnez le tableau croisé dynamique à filtrer.</li>
+    <li>Allez dans l'onglet <strong>Analyse de tableau croisé dynamique</strong> et cliquez sur <strong>Insérer un segment</strong>.</li>
+    <li>Cochez les cases des champs pour lesquels vous souhaitez créer des segments et cliquez sur <strong>OK</strong>.</li>
+    <li>Utilisez les segments pour filtrer les données en cliquant sur les boutons correspondants aux valeurs souhaitées.</li>
+</ol>
+
+<p>Les filtres vous permettent de gérer et d'analyser vos données plus efficacement, en vous concentrant sur les informations les plus pertinentes. En maîtrisant les différentes options de filtrage, vous pouvez naviguer et exploiter vos données de manière optimale.</p>
 `,
     },
+
+
 };

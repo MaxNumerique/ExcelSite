@@ -641,7 +641,8 @@ kbd {
 }
 
 .coursContent h4 {
-    margin-top: 70px;
+    font-size: 30px;
+    margin-top: 40px;
     margin-bottom: 10px;
 }
 
@@ -653,4 +654,22 @@ kbd {
 
 .coursContent li {
     font-size: 1rem;
+    /* margin-bottom: 20px; */
+}
+
+.coursContent ul, .coursContent ol {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.coursContent ul {
+    list-style: inside;
+}
+
+.coursContent hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.452), rgb(0, 0, 0), rgb(0, 0, 0.452));
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

@@ -34,9 +34,6 @@ dropdownBtns.forEach(btn => {
         });
         this.classList.add('active');
 
-        // const titre = btn.dataset.title;
-        // const contenu = btn.dataset.content;
-        // const image = btn.dataset.image;
         const id = btn.dataset.id;
 
         if (pageTitle) {
@@ -44,6 +41,12 @@ dropdownBtns.forEach(btn => {
         }
         
         afficherContenu(id);
+
+        // Faire défiler vers la section correspondante
+        const targetSection = document.getElementById(id);
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
 
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
