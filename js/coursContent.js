@@ -8,7 +8,7 @@ export const coursContent = {
             <h3>Qu'est-ce qu'Excel ?</h3>
             <p>Microsoft Excel est un logiciel de tableur faisant partie de la suite Microsoft Office. Il permet de manipuler des données sous forme de tableaux, de réaliser des calculs complexes, de créer des graphiques, et bien plus encore. Excel est largement utilisé dans divers domaines tels que la finance, le marketing, la gestion de projet et la recherche.</p>
 
-            <h4>Interface Utilisateur</h4>
+            <h4 class="sous-thematique">Interface Utilisateur</h4>
             <p>Lorsque vous ouvrez Excel, vous êtes accueilli par une interface utilisateur composée de plusieurs éléments clés :</p>
 
             <ol>
@@ -41,7 +41,7 @@ export const coursContent = {
 
 
             <h3>Manipulation de Base</h3>
-            <h4>Saisie et Édition des Données</h4>
+            <h4 class="sous-thematique">Saisie et Édition des Données</h4>
             
             <ol>
                 <li>Saisie de Données : Cliquez sur une cellule et commencez à taper pour entrer des données. Appuyez sur Enter pour valider et passer à la cellule suivante.</li>
@@ -61,7 +61,7 @@ export const coursContent = {
                     <li>Tab et Shift+Tab : Utilisez la touche Tab pour passer à la cellule suivante à droite et Shift+Tab pour revenir à la cellule précédente.</li>
             </ol>
 
-            <h4>Formatage des cellules</h4>
+            <h4 class="sous-thematique">Formatage des cellules</h4>
             
             <ol>
                 <li>Police et Couleur : Utilisez les options de l'onglet Accueil pour changer la police, la taille, et la couleur du texte.</li>
@@ -885,7 +885,7 @@ export const coursContent = {
 
 <p>Ce cours vous guidera à travers les différentes étapes pour effectuer efficacement la saisie de données dans Excel. Vous apprendrez à entrer des données, adapter le format des cellules, valider les données, embellir votre tableau et utiliser des filtres pour trier et afficher des données spécifiques.</p>
 
-<h4 id="saisie-simple">La saisie simple</h4>
+<h4 id="saisie-simple" class="sous-thematique">La saisie simple</h4>
 
 <h5>Entrer des données de saisie</h5>
 <p>Pour saisir des données dans Excel, cliquez sur une cellule et commencez à taper. Voici quelques conseils pour la saisie efficace :</p>
@@ -915,7 +915,7 @@ export const coursContent = {
 
 <hr>
 
-<h4 id="format-cellules"> Adapter le format des cellules</h4>
+<h4 id="format-cellules" class="sous-thematique"> Adapter le format des cellules</h4>
 
 <h5>Format de cellules (nombres, texte, date, ...)</h5>
 <p>Excel propose plusieurs formats de cellule pour adapter la présentation des données :</p>
@@ -960,7 +960,7 @@ export const coursContent = {
 
 <hr>
 
-<h4 id="validation-donnees"> Par validation de données à partir de liste</h4>
+<h4 id="validation-donnees" class="sous-thematique"> Par validation de données à partir de liste</h4>
 <p>L'outil de validation des données dans Excel permet de contrôler ce que les utilisateurs peuvent saisir dans une cellule. Cela est particulièrement utile pour éviter les erreurs de saisie et garantir la cohérence des données. Par exemple, vous pouvez limiter les entrées à une liste prédéfinie de valeurs, ce qui réduit les risques d'erreurs et facilite l'analyse des données.</p>
 
 <h5>Création et utilisation de listes déroulantes</h5>
@@ -986,7 +986,7 @@ export const coursContent = {
 
 <hr>
 
-<h4 id="embellissement">Embellissement</h4>
+<h4 id="embellissement" class="sous-thematique">Embellissement</h4>
 
 <h5>Mise en forme et alignement</h5>
 <p>Pour mettre en forme vos cellules :</p>
@@ -1046,7 +1046,7 @@ export const coursContent = {
 
 <hr>
 
-<h4 id="filtres">Les filtres</h4>
+<h4 id="filtres" class="sous-thematique">Les filtres</h4>
 
 <h5>Trier et afficher des données spécifiques</h5>
 <p>Les filtres sont des outils puissants dans Excel pour afficher uniquement les données qui répondent à certains critères. Ils permettent de simplifier l'analyse des données en masquant temporairement les données qui ne sont pas pertinentes. Voici comment les utiliser :</p>

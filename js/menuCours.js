@@ -6,14 +6,6 @@ const dropdownBtns = document.querySelectorAll('.dropdown-btn');
 const mainCours = document.querySelector('.coursContent');
 const pageTitle = document.querySelector('h1');
 
-// ==== GENERER LES IDs DEPUIS LE NOM DES IMAGES =====
-
-function generateIdFromImage(imageUrl) {
-    if (!imageUrl) return "defaultImageId";
-    const imageName = imageUrl.split('/').pop().split('.')[0];
-    return `${imageName.replace(/[^a-zA-Z0-9]/g, '')}Image`;
-}
-
 // ==== AFFICHER LE CONTENU =====
 function afficherContenu(id) {
     const cours = coursContent[id];
@@ -26,9 +18,8 @@ function afficherContenu(id) {
 
 dropdownBtns.forEach(btn => {
     btn.addEventListener('click', function (event) {
-        
         event.preventDefault();
-        
+
         dropdownBtns.forEach(li => {
             li.classList.remove('active');
         });
@@ -39,19 +30,12 @@ dropdownBtns.forEach(btn => {
         if (pageTitle) {
             pageTitle.style.display = 'none';
         }
-        
-        afficherContenu(id);
 
-        // Faire défiler vers la section correspondante
-        const targetSection = document.getElementById(id);
-        if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth' });
-        }
+        afficherContenu(id);
 
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
-
 
 // ==== AFFICHER LE CONTENU DU MENU AU CLIC =====
 
@@ -80,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (isIntroduction) {
                 const submenus = document.querySelectorAll('.Menucontent.interface-content, .Menucontent.fichiers-content');
                 const subIcons = document.querySelectorAll('.interface .toggle-icon ion-icon, .fichiers .toggle-icon ion-icon');
-                
+
                 submenus.forEach(submenu => {
                     submenu.style.display = 'none';
                 });
@@ -103,6 +87,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// ==== NAVIGATION VERS LES SOUS-THEMATIQUES ====
 
+document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.dropdown-btn');
 
+    links.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            const targetId = this.getAttribute('data-id');
+            const targetElement = document.querySelector(`.coursContent [data-id="${targetId}"]`);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+});
 
