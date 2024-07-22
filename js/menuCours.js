@@ -19,25 +19,32 @@ function afficherContenu(id) {
 dropdownBtns.forEach(btn => {
     btn.addEventListener('click', function (event) {
         event.preventDefault();
-
         dropdownBtns.forEach(li => {
             li.classList.remove('active');
         });
         this.classList.add('active');
-
         const id = btn.dataset.id;
-
         if (pageTitle) {
             pageTitle.style.display = 'none';
         }
-
-        afficherContenu(id);
-
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        // Vérifiez si l'élément cliqué possède la classe "saisie-subtheme"
+        if (this.classList.contains('saisie-subtheme')) {
+            console.log("test");
+            afficherContenu('saisie-simple'); // Affichez le contenu du thème "De la saisie"
+        } else {
+            afficherContenu(id); // Affichez le contenu de la sous-thématique correspondante
+        }
+        // Défilement vers l'ancre correspondante
+        const targetElement = document.getElementById(id);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            window.scrollTo({ top: 0 , behavior: 'smooth' });
+        }
     });
 });
 
-// ==== AFFICHER LE CONTENU DU MENU AU CLIC =====
+// ==== COMPORTEMENT DE L'AFFICHAGE DU MENU =====
 
 document.addEventListener('DOMContentLoaded', function () {
     const toggleIcons = document.querySelectorAll('.toggle-icon');
@@ -87,22 +94,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// ==== NAVIGATION VERS LES SOUS-THEMATIQUES ====
-
-document.addEventListener('DOMContentLoaded', function () {
-    const links = document.querySelectorAll('.dropdown-btn');
-
-    links.forEach(link => {
-        link.addEventListener('click', function (event) {
-            event.preventDefault();
-
-            const targetId = this.getAttribute('data-id');
-            const targetElement = document.querySelector(`.coursContent [data-id="${targetId}"]`);
-
-            if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        });
-    });
-});
 
