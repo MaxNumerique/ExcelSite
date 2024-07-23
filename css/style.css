@@ -525,7 +525,6 @@ footer img {
 .dropdown {
     display: flex;
     align-items: center;
-    /* margin-bottom: -6px; */
     width: 100%;
 }
 
@@ -545,22 +544,23 @@ footer img {
 }
 
 .NavCours {
-    margin-left: 20px;
     position: sticky;
-    top: 0;
+    top: 10vh;
     z-index: 2;
-    height: 50%;
-    width: 15%;
-    padding-top: 90px;
-    min-height: 50%;
-    max-height: 60%;
+    width: 17%;
+    margin-top: 10vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--hoverColor) transparent; 
 }
+
 
 .NavCours ul li {
     list-style: none;
     cursor: pointer;
     font-size: 12px;
-    /* font-weight: 400; */
 
     &:hover {
         color: var(--hoverColor);
@@ -594,6 +594,8 @@ ul .gras {
 
 
 /* LE CONTENU DU COURS - AGENCEMENT DE LA PAGE ET DE SON CONTENU */
+
+
 
 .coursContent {
     width: 70%;
@@ -654,7 +656,6 @@ kbd {
 
 .coursContent li {
     font-size: 1rem;
-    /* margin-bottom: 20px; */
 }
 
 .coursContent ul, .coursContent ol {

@@ -27,14 +27,12 @@ dropdownBtns.forEach(btn => {
         if (pageTitle) {
             pageTitle.style.display = 'none';
         }
-        // Vérifiez si l'élément cliqué possède la classe "saisie-subtheme"
         if (this.classList.contains('saisie-subtheme')) {
             console.log("test");
-            afficherContenu('saisie-simple'); // Affichez le contenu du thème "De la saisie"
+            afficherContenu('saisie-simple'); 
         } else {
-            afficherContenu(id); // Affichez le contenu de la sous-thématique correspondante
+            afficherContenu(id); 
         }
-        // Défilement vers l'ancre correspondante
         const targetElement = document.getElementById(id);
         if (targetElement) {
             targetElement.scrollIntoView({ behavior: 'smooth' });
@@ -58,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const isIntroduction = targetClass === 'introduction';
             const isWantToDo = targetClass === 'WantToDo';
 
-            // Bascule l'affichage de l'élément suivant et change l'icône en conséquence
             if (content.style.display === 'none' || content.style.display === '') {
                 content.style.display = 'block';
                 this.innerHTML = '<ion-icon name="caret-down-outline"></ion-icon>';
@@ -67,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 this.innerHTML = '<ion-icon name="caret-forward-outline"></ion-icon>';
             }
 
-            // Si on clique sur l'introduction, bascule tout le contenu associé
             if (isIntroduction) {
                 const submenus = document.querySelectorAll('.Menucontent.interface-content, .Menucontent.fichiers-content');
                 const subIcons = document.querySelectorAll('.interface .toggle-icon ion-icon, .fichiers .toggle-icon ion-icon');
@@ -94,4 +90,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// COMPORTEMENT DE LA TAILLE DU MENU EN FONCTION DU SCROLL
+
+window.addEventListener('scroll', function() {
+    const navCours = document.querySelector('.NavCours');
+    const footer = document.querySelector('footer');
+    const footerTop = footer.offsetTop;
+    const scrollPosition = window.scrollY + window.innerHeight;
+
+    if (scrollPosition >= footerTop) {
+        navCours.style.height = 'calc(100vh - 10vh - ' + (scrollPosition - footerTop) + 'px)';
+    } else {
+        navCours.style.height = 'calc(100vh - 10vh)';
+    }
+});
 
