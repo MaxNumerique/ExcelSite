@@ -108,7 +108,7 @@
                             <h5>Des formules pour...</h5>
                         </div>
                         <ul class="Menucontent formulesPour-content" style="display: none;">
-                            <li class="dropdown-btn gras" data-id="saisie-simple">Additionner</li>
+                            <li class="dropdown-btn gras" data-id="additionner">Additionner</li>
                             <li class="dropdown-btn" data-id="somme">SOMME</li>
                             <li class="dropdown-btn" data-id="somme-si">SOMME.SI</li>
                             <li class="dropdown-btn" data-id="somme-si-ens">SOMME.SI.ENS</li>
@@ -125,17 +125,19 @@
                             <li class="dropdown-btn" data-id="moyenne">MOYENNE</li>
                             <li class="dropdown-btn" data-id="moyenne-si">MOYENNE.SI</li>
                             <li class="dropdown-btn" data-id="moyenne-si-ens">MOYENNE.SI.ENS</li>
-                            <li class="dropdown-btn gras" data-id="compter-cellules">Compter des cellules</li>
+                            <li class="dropdown-btn gras" data-id="compter_cellules">Compter des cellules</li>
                             <li class="dropdown-btn" data-id="compte">COMPTE</li>
                             <li class="dropdown-btn" data-id="nb-si">NB.SI</li>
                             <li class="dropdown-btn" data-id="nb-si-ens">NB.SI.ENS</li>
                             <li class="dropdown-btn" data-id="nbval">NBVAL</li>
                             <li class="dropdown-btn" data-id="nb-vide">NB.VIDE</li>
-                            <li class="dropdown-btn gras" data-id="trouver-valeurs-extremes">Trouver des valeurs
+                            <li class="dropdown-btn gras" data-id="trouver_valeurs_extremes">Trouver des valeurs
                                 extrêmes</li>
                             <li class="dropdown-btn" data-id="min">MIN</li>
+                            <li class="dropdown-btn" data-id="min-si-ens">MIN.SI.ENS</li>
                             <li class="dropdown-btn" data-id="max">MAX</li>
-                            <li class="dropdown-btn gras" data-id="traiter-dates">Traiter des dates</li>
+                            <li class="dropdown-btn" data-id="max-si-ens">MAX.SI.ENS</li>
+                            <li class="dropdown-btn gras" data-id="traiter_dates">Traiter des dates</li>
                             <li class="dropdown-btn" data-id="aujourdhui">AUJOURD'HUI</li>
                             <li class="dropdown-btn" data-id="maintenant">MAINTENANT</li>
                             <li class="dropdown-btn" data-id="jour">JOUR</li>
@@ -293,6 +295,25 @@
         </div>
     </footer>
 
+    <script>
+        function copyToClipboard(text, element) {
+    const tempInput = document.createElement('input');
+    tempInput.value = text;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+
+    // Change the icon to checkmark for a short duration
+    const originalIcon = element.textContent;
+    element.textContent = '✔';
+    setTimeout(() => {
+        element.textContent = originalIcon;
+    }, 600);
+}
+
+    </script>
+    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 

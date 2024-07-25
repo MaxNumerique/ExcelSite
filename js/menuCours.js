@@ -28,7 +28,6 @@ dropdownBtns.forEach(btn => {
             pageTitle.style.display = 'none';
         }
         if (this.classList.contains('saisie-subtheme')) {
-            console.log("test");
             afficherContenu('saisie-simple'); 
         } else {
             afficherContenu(id); 
@@ -104,4 +103,8 @@ window.addEventListener('scroll', function() {
         navCours.style.height = 'calc(100vh - 10vh)';
     }
 });
+
+
+// COPIER-COLLER DU TEXTE DE LA PAGE COURS
+
 

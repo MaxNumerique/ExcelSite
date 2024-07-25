@@ -1108,6 +1108,1091 @@ export const coursContent = {
 <p>Les filtres vous permettent de gérer et d'analyser vos données plus efficacement, en vous concentrant sur les informations les plus pertinentes. En maîtrisant les différentes options de filtrage, vous pouvez naviguer et exploiter vos données de manière optimale.</p>
 `,
     },
+    
+    "additionner": {
+    "title": "Additionner",
+    "content": `
+    <h4 id="additionner" class="formule-subtheme sous-thematique">Additionner</h4>
+    
+    <p>Excel propose plusieurs méthodes pour additionner des valeurs. Vous pouvez utiliser des formules simples, des fonctions pré-intégrées, et même des outils de somme automatique. Cette section vous guidera à travers ces différentes techniques pour effectuer des additions efficacement dans vos feuilles de calcul.</p>
+    
+    <h5>Utiliser l'opérateur d'addition</h5>
+    <p>Pour additionner des valeurs de manière simple, vous pouvez utiliser l'opérateur d'addition (+) dans une formule :</p>
+    <ul>
+        <li>Saisissez une formule dans une cellule, en utilisant l'opérateur + pour additionner deux ou plusieurs valeurs. Par exemple :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=A1 + B1 + C1', this)">📋</span>
+        <code>=A1 + B1 + C1</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Additionner les valeurs dans les cellules A1, B1 et C1, puis soustraire la somme des cellules D1 et E1 :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=A1 + B1 + C1 - (D1 + E1)', this)">📋</span>
+        <code>=A1 + B1 + C1 - (D1 + E1)</code>
+    </div>
+    
+    <h5>La fonction SOMME</h5>
+    <p>La fonction <code>=SOMME()</code> est une méthode puissante et flexible pour additionner des plages de cellules :</p>
+    <ul>
+        <li>Saisissez <code>=SOMME(</code> dans une cellule, puis sélectionnez la plage de cellules à additionner. Par exemple :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=SOMME(A1:A10)', this)">📋</span>
+        <code>=SOMME(A1:A10)</code>
+    </div>
+    <p>Vous pouvez également additionner des cellules non contiguës en utilisant des points-virgules pour séparer les plages et les cellules :</p>
+    <ul>
+        <li>Par exemple :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=SOMME(A1:A10; B1:B10; C1:C10)', this)">📋</span>
+        <code>=SOMME(A1:A10; B1:B10; C1:C10)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Additionner les valeurs des plages A1:A10 et C1:C10, en excluant les valeurs négatives :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=SOMME(SI(A1:A10>0; A1:A10; 0); SI(C1:C10>0; C1:C10; 0))', this)">📋</span>
+        <code>=SOMME(SI(A1:A10>0; A1:A10; 0); SI(C1:C10>0; C1:C10; 0))</code>
+    </div>
+    
+    <h5>Utiliser l'outil Somme automatique</h5>
+    <p>L'outil Somme automatique permet de calculer rapidement la somme d'une plage de cellules :</p>
+    <ul>
+        <li>Sélectionnez la cellule en dessous ou à droite de la plage que vous souhaitez additionner.</li>
+        <li>Allez dans l'onglet <strong>Accueil</strong> et cliquez sur <strong>Somme automatique</strong> dans le groupe <strong>Edition</strong>. Excel insérera automatiquement une formule <code>=SOMME()</code> pour la plage sélectionnée.</li>
+        <li>Appuyez sur <kbd>Entrée</kbd> pour valider la formule et afficher le résultat.</li>
+    </ul>
+    
+    <h5>Ajouter des valeurs basées sur des critères spécifiques avec la fonction SOMME.SI</h5>
+    <p>La fonction <code>=SOMME.SI()</code> permet d'additionner des valeurs qui répondent à un critère spécifique :</p>
+    <ul>
+        <li>La syntaxe est <code>=SOMME.SI(plage; critère; [somme_plage])</code>.</li>
+        <li>Par exemple, pour additionner les valeurs de la colonne B où les valeurs de la colonne A sont supérieures à 100 :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=SOMME.SI(A1:A10; &quot;>100&quot;; B1:B10)', this)">📋</span>
+        <code>=SOMME.SI(A1:A10; \">100\"; B1:B10)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Ajouter les valeurs de la colonne B où les valeurs de la colonne A sont supérieures à 100 et les valeurs de la colonne C sont inférieures à 50 :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=SOMME.SI(A1:A10; &quot;>100&quot;; SI(C1:C10 < 50; B1:B10; 0))', this)">📋</span>
+        <code>=SOMME.SI(A1:A10; \">100\"; SI(C1:C10 < 50; B1:B10; 0))</code>
+    </div>
+    
+    <h5>Utiliser des critères multiples avec la fonction SOMME.SI.ENS</h5>
+    <p>La fonction <code>=SOMME.SI.ENS()</code> permet d'additionner des valeurs en fonction de plusieurs critères :</p>
+    <ul>
+        <li>La syntaxe est <code>=SOMME.SI.ENS(somme_plage; plage_critère1; critère1; [plage_critère2; critère2]; ...)</code>.</li>
+        <li>Par exemple, pour additionner les valeurs de la colonne C où les valeurs de la colonne A sont supérieures à 100 et les valeurs de la colonne B sont égales à "Oui" :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=SOMME.SI.ENS(C1:C10; A1:A10; &quot;>100&quot;; B1:B10; &quot;Oui&quot;)', this)">📋</span>
+        <code>=SOMME.SI.ENS(C1:C10; A1:A10; \">100\"; B1:B10; \"Oui\")</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Ajouter les valeurs de la colonne C où les valeurs de la colonne A sont supérieures à 100, les valeurs de la colonne B sont égales à "Oui", et les valeurs de la colonne D sont inférieures à 500 :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=SOMME.SI.ENS(C1:C10; A1:A10; &quot;>100&quot;; B1:B10; &quot;Oui&quot;; D1:D10; &quot;<500&quot;)', this)">📋</span>
+        <code>=SOMME.SI.ENS(C1:C10; A1:A10; \">100\"; B1:B10; \"Oui\"; D1:D10; \"<500\")</code>
+    </div>
+    
+    <h5>Utiliser la fonction SOMMEPROD</h5>
+    <p>La fonction <code>=SOMMEPROD()</code> multiplie les valeurs correspondantes dans des plages spécifiées et additionne les produits :</p>
+    <ul>
+        <li>La syntaxe est <code>=SOMMEPROD(plage1; [plage2]; [plage3]; ...)</code>.</li>
+        <li>Par exemple, pour additionner les produits des valeurs des colonnes A et B :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=SOMMEPROD(A1:A10; B1:B10)', this)">📋</span>
+        <code>=SOMMEPROD(A1:A10; B1:B10)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Ajouter les produits des valeurs dans les colonnes A et B, en excluant les lignes où les valeurs dans la colonne C sont nulles :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=SOMMEPROD((C1:C10<>&quot; &quot;) * (A1:A10; B1:B10))', this)">📋</span>
+        <code>=SOMMEPROD((C1:C10<>\"\") * (A1:A10; B1:B10))</code>
+    </div>
 
+    <p>En maîtrisant ces différentes techniques, vous serez capable d'effectuer des additions complexes et précises dans Excel, optimisant ainsi votre gestion des données et vos analyses.</p>
+    `
+},
+
+
+
+    "manipuler-nombre": {
+        title: "Manipuler les nombres",
+        content: `
+<h4 id="manipulerLesNombres" class="formule-subtheme sous-thematique">Manipuler les nombres</h4>
+
+<p>Excel offre une gamme de fonctions pour manipuler les nombres selon vos besoins. Cette section couvre les fonctions courantes pour les produits, les arrondis, les valeurs entières, les tronquages, les quotients, les restes, et pour vérifier la parité des nombres.</p>
+
+<h5>La fonction PRODUIT</h5>
+<p>La fonction <code>=PRODUIT()</code> multiplie les valeurs spécifiées :</p>
+<ul>
+    <li>La syntaxe est <code>=PRODUIT(nombre1; [nombre2]; ...)</code>.</li>
+    <li>Par exemple, pour multiplier les valeurs des cellules A1, A2 et A3 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button" onclick="copyToClipboard('=PRODUIT(A1; A2; A3)', this)">📋</span>
+    <code>=PRODUIT(A1; A2; A3)</code>
+</div>
+
+<h5>La fonction ARRONDI</h5>
+<p>La fonction <code>=ARRONDI()</code> arrondit un nombre à un certain nombre de chiffres :</p>
+<ul>
+    <li>La syntaxe est <code>=ARRONDI(nombre; nombre_de_chiffres)</code>.</li>
+    <li>Par exemple, pour arrondir la valeur de A1 à 2 chiffres après la virgule :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button" onclick="copyToClipboard('=ARRONDI(A1; 2)', this)">📋</span>
+    <code>=ARRONDI(A1; 2)</code>
+</div>
+
+<h5>La fonction ENT</h5>
+<p>La fonction <code>=ENT()</code> renvoie la partie entière d'un nombre en arrondissant à l'inférieur :</p>
+<ul>
+    <li>La syntaxe est <code>=ENT(nombre)</code>.</li>
+    <li>Par exemple, pour obtenir la partie entière de la valeur de A1 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button" onclick="copyToClipboard('=ENT(A1)', this)">📋</span>
+    <code>=ENT(A1)</code>
+</div>
+
+<h5>La fonction TRONQUE</h5>
+<p>La fonction <code>=TRONQUE()</code> tronque un nombre à un certain nombre de chiffres sans arrondir :</p>
+<ul>
+    <li>La syntaxe est <code>=TRONQUE(nombre; [nombre_de_chiffres])</code>.</li>
+    <li>Par exemple, pour tronquer la valeur de A1 à 2 chiffres après la virgule :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button" onclick="copyToClipboard('=TRONQUE(A1; 2)', this)">📋</span>
+    <code>=TRONQUE(A1; 2)</code>
+</div>
+
+<h5>La fonction QUOTIENT</h5>
+<p>La fonction <code>=QUOTIENT()</code> renvoie la partie entière de la division de deux nombres :</p>
+<ul>
+    <li>La syntaxe est <code>=QUOTIENT(numérateur; dénominateur)</code>.</li>
+    <li>Par exemple, pour obtenir le quotient de la division de A1 par B1 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button" onclick="copyToClipboard('=QUOTIENT(A1; B1)', this)">📋</span>
+    <code>=QUOTIENT(A1; B1)</code>
+</div>
+
+<h5>La fonction MOD</h5>
+<p>La fonction <code>=MOD()</code> renvoie le reste de la division de deux nombres :</p>
+<ul>
+    <li>La syntaxe est <code>=MOD(numérateur; dénominateur)</code>.</li>
+    <li>Par exemple, pour obtenir le reste de la division de A1 par B1 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button" onclick="copyToClipboard('=MOD(A1; B1)', this)">📋</span>
+    <code>=MOD(A1; B1)</code>
+</div>
+
+<h5>La fonction PAIR</h5>
+<p>La fonction <code>=EST.PAIR()</code> vérifie si un nombre est pair :</p>
+<ul>
+    <li>La syntaxe est <code>=EST.PAIR(nombre)</code>.</li>
+    <li>Par exemple, pour vérifier si la valeur de A1 est paire :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button" onclick="copyToClipboard('=EST.PAIR(A1)', this)">📋</span>
+    <code>=EST.PAIR(A1)</code>
+</div>
+
+<h5>La fonction IMPAIR</h5>
+<p>La fonction <code>=EST.IMPAIR()</code> vérifie si un nombre est impair :</p>
+<ul>
+    <li>La syntaxe est <code>=EST.IMPAIR(nombre)</code>.</li>
+    <li>Par exemple, pour vérifier si la valeur de A1 est impaire :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button" onclick="copyToClipboard('=EST.IMPAIR(A1)', this)">📋</span>
+    <code>=EST.IMPAIR(A1)</code>
+</div>
+`,
+    },
+
+"manipuler-nombre": {
+    "title": "Manipuler les nombres",
+    "content": `
+    <h4 id="manipulerLesNombres" class="formule-subtheme sous-thematique">Manipuler les nombres</h4>
+
+    <p>Excel offre une gamme de fonctions pour manipuler les nombres selon vos besoins. Cette section couvre les fonctions courantes pour les produits, les arrondis, les valeurs entières, les tronquages, les quotients, les restes, et pour vérifier la parité des nombres.</p>
+
+    <h5>La fonction PRODUIT</h5>
+    <p>La fonction <code>=PRODUIT()</code> multiplie les valeurs spécifiées :</p>
+    <ul>
+        <li>La syntaxe est <code>=PRODUIT(nombre1; [nombre2]; ...)</code>.</li>
+        <li>Par exemple, pour multiplier les valeurs des cellules A1, A2 et A3 :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=PRODUIT(A1; A2; A3)', this)">📋</span>
+        <code>=PRODUIT(A1; A2; A3)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Multiplier les valeurs des cellules A1 à A5 et les diviser par le produit des valeurs des cellules B1 à B5 :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=PRODUIT(A1:A5) / PRODUIT(B1:B5)', this)">📋</span>
+        <code>=PRODUIT(A1:A5) / PRODUIT(B1:B5)</code>
+    </div>
+
+    <h5>La fonction ARRONDI</h5>
+    <p>La fonction <code>=ARRONDI()</code> arrondit un nombre à un certain nombre de chiffres :</p>
+    <ul>
+        <li>La syntaxe est <code>=ARRONDI(nombre; nombre_de_chiffres)</code>.</li>
+        <li>Par exemple, pour arrondir la valeur de A1 à 2 chiffres après la virgule :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=ARRONDI(A1; 2)', this)">📋</span>
+        <code>=ARRONDI(A1; 2)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Arrondir la moyenne des valeurs des cellules A1 à A10 à 1 chiffre après la virgule :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=ARRONDI(MOYENNE(A1:A10); 1)', this)">📋</span>
+        <code>=ARRONDI(MOYENNE(A1:A10); 1)</code>
+    </div>
+
+    <h5>La fonction ENT</h5>
+    <p>La fonction <code>=ENT()</code> renvoie la partie entière d'un nombre en arrondissant à l'inférieur :</p>
+    <ul>
+        <li>La syntaxe est <code>=ENT(nombre)</code>.</li>
+        <li>Par exemple, pour obtenir la partie entière de la valeur de A1 :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=ENT(A1)', this)">📋</span>
+        <code>=ENT(A1)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Obtenir la partie entière de la somme des valeurs des cellules A1 à A10 divisée par 3 :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=ENT(SOMME(A1:A10) / 3)', this)">📋</span>
+        <code>=ENT(SOMME(A1:A10) / 3)</code>
+    </div>
+
+    <h5>La fonction TRONQUE</h5>
+    <p>La fonction <code>=TRONQUE()</code> tronque un nombre à un certain nombre de chiffres sans arrondir :</p>
+    <ul>
+        <li>La syntaxe est <code>=TRONQUE(nombre; [nombre_de_chiffres])</code>.</li>
+        <li>Par exemple, pour tronquer la valeur de A1 à 2 chiffres après la virgule :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=TRONQUE(A1; 2)', this)">📋</span>
+        <code>=TRONQUE(A1; 2)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Tronquer la somme des valeurs des cellules A1 à A10 à 1 chiffre après la virgule :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=TRONQUE(SOMME(A1:A10); 1)', this)">📋</span>
+        <code>=TRONQUE(SOMME(A1:A10); 1)</code>
+    </div>
+
+    <h5>La fonction QUOTIENT</h5>
+    <p>La fonction <code>=QUOTIENT()</code> renvoie la partie entière de la division de deux nombres :</p>
+    <ul>
+        <li>La syntaxe est <code>=QUOTIENT(numérateur; dénominateur)</code>.</li>
+        <li>Par exemple, pour obtenir le quotient de la division de A1 par B1 :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=QUOTIENT(A1; B1)', this)">📋</span>
+        <code>=QUOTIENT(A1; B1)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Obtenir le quotient de la somme des valeurs des cellules A1 à A10 divisée par le produit des valeurs des cellules B1 à B10 :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=QUOTIENT(SOMME(A1:A10); PRODUIT(B1:B10))', this)">📋</span>
+        <code>=QUOTIENT(SOMME(A1:A10); PRODUIT(B1:B10))</code>
+    </div>
+
+    <h5>La fonction MOD</h5>
+    <p>La fonction <code>=MOD()</code> renvoie le reste de la division de deux nombres :</p>
+    <ul>
+        <li>La syntaxe est <code>=MOD(numérateur; dénominateur)</code>.</li>
+        <li>Par exemple, pour obtenir le reste de la division de A1 par B1 :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=MOD(A1; B1)', this)">📋</span>
+        <code>=MOD(A1; B1)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Obtenir le reste de la division de la somme des valeurs des cellules A1 à A10 par la somme des valeurs des cellules B1 à B10 :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=MOD(SOMME(A1:A10); SOMME(B1:B10))', this)">📋</span>
+        <code>=MOD(SOMME(A1:A10); SOMME(B1:B10))</code>
+    </div>
+
+    <h5>La fonction PAIR</h5>
+    <p>La fonction <code>=EST.PAIR()</code> vérifie si un nombre est pair :</p>
+    <ul>
+        <li>La syntaxe est <code>=EST.PAIR(nombre)</code>.</li>
+        <li>Par exemple, pour vérifier si la valeur de A1 est paire :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=EST.PAIR(A1)', this)">📋</span>
+        <code>=EST.PAIR(A1)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Vérifier si le produit des valeurs des cellules A1 à A5 est pair :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=EST.PAIR(PRODUIT(A1:A5))', this)">📋</span>
+        <code>=EST.PAIR(PRODUIT(A1:A5))</code>
+    </div>
+
+    <h5>La fonction IMPAIR</h5>
+    <p>La fonction <code>=EST.IMPAIR()</code> vérifie si un nombre est impair :</p>
+    <ul>
+        <li>La syntaxe est <code>=EST.IMPAIR(nombre)</code>.</li>
+        <li>Par exemple, pour vérifier si la valeur de A1 est impaire :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=EST.IMPAIR(A1)', this)">📋</span>
+        <code>=EST.IMPAIR(A1)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Vérifier si la différence entre les valeurs des cellules A1 et B1 est impaire :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button" onclick="copyToClipboard('=EST.IMPAIR(A1 - B1)', this)">📋</span>
+        <code>=EST.IMPAIR(A1 - B1)</code>
+    </div>
+    `
+},
+
+"compter_cellules": {
+    "title": "Compter des cellules",
+    "content": `
+    <h4 id="compter_des_cellules" class="formule-subtheme sous-thematique">Compter des cellules</h4>
+
+    <p>Excel offre plusieurs fonctions pour compter des cellules en fonction de différents critères. Cette section vous guidera à travers l'utilisation des fonctions COMPTE, NB.SI, NB.SI.ENS, NBVAL et NB.VIDE pour effectuer des comptages dans vos feuilles de calcul.</p>
+
+    <h5>Utiliser la fonction COMPTE</h5>
+    <p>La fonction <code>=COMPTE()</code> permet de compter le nombre de cellules contenant des nombres dans une plage :</p>
+    <ul>
+        <li>Saisissez <code>=COMPTE(</code> dans une cellule, puis sélectionnez la plage de cellules que vous souhaitez compter. Par exemple :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=COMPTE(A1:A10)', this)">📋</span>
+        <code>=COMPTE(A1:A10)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Compter le nombre de cellules contenant des nombres dans les colonnes A et B :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=COMPTE(A1:A10) + COMPTE(B1:B10)', this)">📋</span>
+        <code>=COMPTE(A1:A10) + COMPTE(B1:B10)</code>
+    </div>
+
+    <h5>Utiliser la fonction NB.SI</h5>
+    <p>La fonction <code>=NB.SI()</code> permet de compter le nombre de cellules qui répondent à un critère spécifique :</p>
+    <ul>
+        <li>La syntaxe est <code>=NB.SI(plage; critère)</code>.</li>
+        <li>Par exemple, pour compter le nombre de cellules dans la colonne A contenant la valeur "Oui" :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=NB.SI(A1:A10; &quot;Oui&quot;)', this)">📋</span>
+        <code>=NB.SI(A1:A10; "Oui")</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Compter le nombre de cellules dans la colonne A contenant la valeur "Oui" et celles dans la colonne B contenant la valeur "Non" :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=NB.SI(A1:A10; &quot;Oui&quot;) + NB.SI(B1:B10; &quot;Non&quot;)', this)">📋</span>
+        <code>=NB.SI(A1:A10; "Oui") + NB.SI(B1:B10; "Non")</code>
+    </div>
+
+    <h5>Utiliser des critères multiples avec la fonction NB.SI.ENS</h5>
+    <p>La fonction <code>=NB.SI.ENS()</code> permet de compter le nombre de cellules qui répondent à plusieurs critères :</p>
+    <ul>
+        <li>La syntaxe est <code>=NB.SI.ENS(plage_critère1; critère1; [plage_critère2; critère2]; ...)</code>.</li>
+        <li>Par exemple, pour compter le nombre de cellules dans la colonne C où les valeurs de la colonne A sont supérieures à 100 et les valeurs de la colonne B sont égales à "Oui" :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=NB.SI.ENS(C1:C10; A1:A10; &quot;>100&quot;; B1:B10; &quot;Oui&quot;)', this)">📋</span>
+        <code>=NB.SI.ENS(C1:C10; A1:A10; ">100"; B1:B10; "Oui")</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Compter le nombre de cellules dans la colonne D où les valeurs de la colonne A sont inférieures à 50, celles de la colonne B sont égales à "Oui", et celles de la colonne C sont non vides :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=NB.SI.ENS(D1:D10; A1:A10; &quot;<50&quot;; B1:B10; &quot;Oui&quot;; C1:C10; &quot;<>&quot;)', this)">📋</span>
+        <code>=NB.SI.ENS(D1:D10; A1:A10; "<50"; B1:B10; "Oui"; C1:C10; "<>")</code>
+    </div>
+
+    <h5>Utiliser la fonction NBVAL</h5>
+    <p>La fonction <code>=NBVAL()</code> permet de compter le nombre de cellules non vides dans une plage :</p>
+    <ul>
+        <li>Saisissez <code>=NBVAL(</code> dans une cellule, puis sélectionnez la plage de cellules que vous souhaitez compter. Par exemple :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=NBVAL(A1:A10)', this)">📋</span>
+        <code>=NBVAL(A1:A10)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Compter le nombre de cellules non vides dans les colonnes A et B :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=NBVAL(A1:A10) + NBVAL(B1:B10)', this)">📋</span>
+        <code>=NBVAL(A1:A10) + NBVAL(B1:B10)</code>
+    </div>
+
+    <h5>Utiliser la fonction NB.VIDE</h5>
+    <p>La fonction <code>=NB.VIDE()</code> permet de compter le nombre de cellules vides dans une plage :</p>
+    <ul>
+        <li>Saisissez <code>=NB.VIDE(</code> dans une cellule, puis sélectionnez la plage de cellules que vous souhaitez compter. Par exemple :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=NB.VIDE(A1:A10)', this)">📋</span>
+        <code>=NB.VIDE(A1:A10)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Compter le nombre de cellules vides dans les colonnes A et B :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=NB.VIDE(A1:A10) + NB.VIDE(B1:B10)', this)">📋</span>
+        <code>=NB.VIDE(A1:A10) + NB.VIDE(B1:B10)</code>
+    </div>
+
+    <p>En maîtrisant ces différentes fonctions, vous serez capable de compter des cellules de manière précise et adaptée à vos besoins dans Excel.</p>
+    `
+},
+
+
+"trouver_valeurs_extremes": {
+    "title": "Trouver des valeurs extrêmes",
+    "content": `
+    <h4 id="trouver_des_valeurs_extremes" class="formule-subtheme sous-thematique">Trouver des valeurs extrêmes</h4>
+
+    <p>Excel offre plusieurs fonctions pour trouver les valeurs minimales et maximales dans une plage de données. Cette section vous guidera à travers l'utilisation des fonctions MIN, MIN.SI.ENS, MAX et MAX.SI.ENS pour identifier les valeurs extrêmes dans vos feuilles de calcul.</p>
+
+    <h5>Utiliser la fonction MIN</h5>
+    <p>La fonction <code>=MIN()</code> permet de trouver la valeur minimale dans une plage de cellules :</p>
+    <ul>
+        <li>Saisissez <code>=MIN(</code> dans une cellule, puis sélectionnez la plage de cellules dont vous souhaitez trouver la valeur minimale. Par exemple :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=MIN(A1:A10)', this)">📋</span>
+        <code>=MIN(A1:A10)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Trouver la valeur minimale dans les colonnes A et B :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=MIN(MIN(A1:A10); MIN(B1:B10))', this)">📋</span>
+        <code>=MIN(MIN(A1:A10); MIN(B1:B10))</code>
+    </div>
+
+    <h5>Utiliser la fonction MIN.SI.ENS</h5>
+    <p>La fonction <code>=MIN.SI.ENS()</code> permet de trouver la valeur minimale dans une plage en fonction de plusieurs critères :</p>
+    <ul>
+        <li>La syntaxe est <code>=MIN.SI.ENS(min_plage; plage_critère1; critère1; [plage_critère2; critère2]; ...)</code>.</li>
+        <li>Par exemple, pour trouver la valeur minimale dans la colonne C où les valeurs de la colonne A sont supérieures à 100 et les valeurs de la colonne B sont égales à "Oui" :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=MIN.SI.ENS(C1:C10; A1:A10; &quot;>100&quot;; B1:B10; &quot;Oui&quot;)', this)">📋</span>
+        <code>=MIN.SI.ENS(C1:C10; A1:A10; ">100"; B1:B10; "Oui")</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Trouver la valeur minimale dans la colonne C où les valeurs de la colonne A sont supérieures à 50, les valeurs de la colonne B sont égales à "Oui", et les valeurs de la colonne D sont inférieures à 500 :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=MIN.SI.ENS(C1:C10; A1:A10; &quot;>50&quot;; B1:B10; &quot;Oui&quot;; D1:D10; &quot;<500&quot;)', this)">📋</span>
+        <code>=MIN.SI.ENS(C1:C10; A1:A10; ">50"; B1:B10; "Oui"; D1:D10; "<500")</code>
+    </div>
+
+    <h5>Utiliser la fonction MAX</h5>
+    <p>La fonction <code>=MAX()</code> permet de trouver la valeur maximale dans une plage de cellules :</p>
+    <ul>
+        <li>Saisissez <code>=MAX(</code> dans une cellule, puis sélectionnez la plage de cellules dont vous souhaitez trouver la valeur maximale. Par exemple :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=MAX(A1:A10)', this)">📋</span>
+        <code>=MAX(A1:A10)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Trouver la valeur maximale dans les colonnes A et B :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=MAX(MAX(A1:A10); MAX(B1:B10))', this)">📋</span>
+        <code>=MAX(MAX(A1:A10); MAX(B1:B10))</code>
+    </div>
+
+    <h5>Utiliser la fonction MAX.SI.ENS</h5>
+    <p>La fonction <code>=MAX.SI.ENS()</code> permet de trouver la valeur maximale dans une plage en fonction de plusieurs critères :</p>
+    <ul>
+        <li>La syntaxe est <code>=MAX.SI.ENS(max_plage; plage_critère1; critère1; [plage_critère2; critère2]; ...)</code>.</li>
+        <li>Par exemple, pour trouver la valeur maximale dans la colonne C où les valeurs de la colonne A sont supérieures à 100 et les valeurs de la colonne B sont égales à "Oui" :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=MAX.SI.ENS(C1:C10; A1:A10; &quot;>100&quot;; B1:B10; &quot;Oui&quot;)', this)">📋</span>
+        <code>=MAX.SI.ENS(C1:C10; A1:A10; ">100"; B1:B10; "Oui")</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Trouver la valeur maximale dans la colonne C où les valeurs de la colonne A sont inférieures à 200, les valeurs de la colonne B sont égales à "Non", et les valeurs de la colonne D sont supérieures à 50 :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=MAX.SI.ENS(C1:C10; A1:A10; &quot;<200&quot;; B1:B10; &quot;Non&quot;; D1:D10; &quot;>50&quot;)', this)">📋</span>
+        <code>=MAX.SI.ENS(C1:C10; A1:A10; "<200"; B1:B10; "Non"; D1:D10; ">50")</code>
+    </div>
+    `
+},
+
+"traiter_dates": {
+    "title": "Traiter des dates",
+    "content": `
+    <h4 id="traiter_des_dates" class="formule-subtheme sous-thematique">Traiter des dates</h4>
+
+    <p>Excel offre plusieurs fonctions pour manipuler et extraire des informations à partir de dates et d'heures. Cette section vous guidera à travers les fonctions AUJOURD'HUI, MAINTENANT, JOUR, MOIS, ANNEE, JOURSEM, HEURE, MINUTE, et SECONDE pour vous aider à gérer efficacement les dates dans vos feuilles de calcul.</p>
+
+    <h5>Utiliser la fonction AUJOURD'HUI</h5>
+    <p>La fonction <code>=AUJOURD'HUI()</code> renvoie la date actuelle sans l'heure :</p>
+    <ul>
+        <li>Entrez <code>=AUJOURD'HUI()</code> dans une cellule pour afficher la date du jour.</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=AUJOURD\\'HUI()', this)">📋</span>
+        <code>=AUJOURD'HUI()</code>
+    </div>
+
+    <h5>Utiliser la fonction MAINTENANT</h5>
+    <p>La fonction <code>=MAINTENANT()</code> renvoie la date et l'heure actuelles :</p>
+    <ul>
+        <li>Entrez <code>=MAINTENANT()</code> dans une cellule pour afficher la date et l'heure courantes.</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=MAINTENANT()', this)">📋</span>
+        <code>=MAINTENANT()</code>
+    </div>
+
+    <h5>Utiliser la fonction JOUR</h5>
+    <p>La fonction <code>=JOUR()</code> extrait le jour du mois à partir d'une date :</p>
+    <ul>
+        <li>Saisissez <code>=JOUR(date)</code> dans une cellule, où <code>date</code> est la cellule contenant la date ou une date au format <code>JJ/MM/AAAA</code>. Par exemple :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=JOUR(A1)', this)">📋</span>
+        <code>=JOUR(A1)</code>
+    </div>
+
+    <h5>Utiliser la fonction MOIS</h5>
+    <p>La fonction <code>=MOIS()</code> extrait le mois à partir d'une date :</p>
+    <ul>
+        <li>Saisissez <code>=MOIS(date)</code> dans une cellule, où <code>date</code> est la cellule contenant la date ou une date au format <code>JJ/MM/AAAA</code>. Par exemple :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=MOIS(A1)', this)">📋</span>
+        <code>=MOIS(A1)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Calculer le mois courant et le mois précédent :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=MOIS(MAINTENANT())-1', this)">📋</span>
+        <code>=MOIS(MAINTENANT())-1</code>
+    </div>
+
+    <h5>Utiliser la fonction ANNEE</h5>
+    <p>La fonction <code>=ANNEE()</code> extrait l'année à partir d'une date :</p>
+    <ul>
+        <li>Saisissez <code>=ANNEE(date)</code> dans une cellule, où <code>date</code> est la cellule contenant la date ou une date au format <code>JJ/MM/AAAA</code>. Par exemple :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=ANNEE(A1)', this)">📋</span>
+        <code>=ANNEE(A1)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Vérifier si une année est bissextile :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=SI(MOD(ANNEE(A1);4)=0; SI(MOD(ANNEE(A1);100)<>0; VRAI; MOD(ANNEE(A1);400)=0); FAUX)', this)">📋</span>
+        <code>=SI(MOD(ANNEE(A1);4)=0; SI(MOD(ANNEE(A1);100)<>0; VRAI; MOD(ANNEE(A1);400)=0); FAUX)</code>
+    </div>
+
+    <h5>Utiliser la fonction JOURSEM</h5>
+    <p>La fonction <code>=JOURSEM()</code> renvoie le jour de la semaine pour une date donnée :</p>
+    <ul>
+        <li>Saisissez <code>=JOURSEM(date; [type])</code> dans une cellule. Le paramètre <code>[type]</code> détermine le format du jour (1 pour dimanche, 2 pour lundi, etc.). Par exemple :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=JOURSEM(A1; 2)', this)">📋</span>
+        <code>=JOURSEM(A1; 2)</code>
+    </div>
+
+    <h5>Utiliser la fonction HEURE</h5>
+    <p>La fonction <code>=HEURE()</code> extrait l'heure d'une date-heure :</p>
+    <ul>
+        <li>Saisissez <code>=HEURE(date_heure)</code> dans une cellule, où <code>date_heure</code> est la cellule contenant une date et une heure. Par exemple :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=HEURE(A1)', this)">📋</span>
+        <code>=HEURE(A1)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Calculer l'heure en format 24 heures à partir d'une heure au format texte (e.g., "2:30 PM") :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=HEURE(TEMPSVAL(&quot;2:30 PM&quot;))', this)">📋</span>
+        <code>=HEURE(TEMPSVAL("2:30 PM"))</code>
+    </div>
+
+    <h5>Utiliser la fonction MINUTE</h5>
+    <p>La fonction <code>=MINUTE()</code> extrait les minutes d'une date-heure :</p>
+    <ul>
+        <li>Saisissez <code>=MINUTE(date_heure)</code> dans une cellule, où <code>date_heure</code> est la cellule contenant une date et une heure. Par exemple :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=MINUTE(A1)', this)">📋</span>
+        <code>=MINUTE(A1)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Extraire les minutes d'une heure au format texte (e.g., "14:45") :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=MINUTE(TEMPSVAL(&quot;14:45&quot;))', this)">📋</span>
+        <code>=MINUTE(TEMPSVAL("14:45"))</code>
+    </div>
+
+    <h5>Utiliser la fonction SECONDE</h5>
+    <p>La fonction <code>=SECONDE()</code> extrait les secondes d'une date-heure :</p>
+    <ul>
+        <li>Saisissez <code>=SECONDE(date_heure)</code> dans une cellule, où <code>date_heure</code> est la cellule contenant une date et une heure. Par exemple :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=SECONDE(A1)', this)">📋</span>
+        <code>=SECONDE(A1)</code>
+    </div>
+    <p>Un exemple plus complexe pourrait être :</p>
+    <ul>
+        <li>Extraire les secondes d'un temps au format texte (e.g., "15:20:35") :</li>
+    </ul>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=SECONDE(TEMPSVAL(&quot;15:20:35&quot;))', this)">📋</span>
+        <code>=SECONDE(TEMPSVAL("15:20:35"))</code>
+    </div>
+    `
+},
+
+"utiliser-operateurs-logiques": {
+    "title": "Utiliser des opérateurs logiques",
+    "content": `
+<h4 id="utiliser_des_operateurs_logiques" class="formule-subtheme sous-thematique">Utiliser des opérateurs logiques</h4>
+
+<p>Les opérateurs logiques dans Excel permettent de créer des formules conditionnelles pour effectuer des actions basées sur des critères spécifiques. Cette section couvre les fonctions SI, ET, OU, ESTVIDE, et SIERREUR pour vous aider à intégrer des conditions et gérer les erreurs dans vos formules.</p>
+
+<h5>Utiliser la fonction SI</h5>
+<p>La fonction <code>=SI()</code> évalue une condition et renvoie une valeur si la condition est vraie et une autre valeur si elle est fausse :</p>
+<ul>
+    <li>La syntaxe est <code>=SI(condition; valeur_si_vrai; valeur_si_faux)</code>.</li>
+    <li>Par exemple, pour afficher "Pass" si la valeur en A1 est supérieure à 10, et "Fail" sinon :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=SI(A1 > 10; &quot;Pass&quot;; &quot;Fail&quot;)', this)">📋</span>
+    <code>=SI(A1 > 10; "Pass"; "Fail")</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Affiche "Bon" si la valeur en A1 est supérieure à 100, "Moyen" si elle est entre 50 et 100, et "Faible" si elle est inférieure à 50 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=SI(A1 > 100; &quot;Bon&quot;; SI(A1 >= 50; &quot;Moyen&quot;; &quot;Faible&quot;))', this)">📋</span>
+    <code>=SI(A1 > 100; &quot;Bon&quot;; SI(A1 >= 50; &quot;Moyen&quot;; &quot;Faible&quot;))</code>
+</div>
+
+<h5>Utiliser la fonction ET</h5>
+<p>La fonction <code>=ET()</code> vérifie si toutes les conditions spécifiées sont vraies :</p>
+<ul>
+    <li>La syntaxe est <code>=ET(condition1; condition2; ...)</code>.</li>
+    <li>Par exemple, pour vérifier si la valeur en A1 est supérieure à 10 et en B1 est inférieure à 20 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=ET(A1 > 10; B1 < 20)', this)">📋</span>
+    <code>=ET(A1 > 10; B1 < 20)</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Vérifie si la valeur en A1 est supérieure à 50, la valeur en B1 est inférieure à 100, et la valeur en C1 est égale à "OK" :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=ET(A1 > 50; B1 < 100; C1 = &quot;OK&quot;)', this)">📋</span>
+    <code>=ET(A1 > 50; B1 < 100; C1 = "OK")</code>
+</div>
+
+<h5>Utiliser la fonction OU</h5>
+<p>La fonction <code>=OU()</code> vérifie si au moins une des conditions spécifiées est vraie :</p>
+<ul>
+    <li>La syntaxe est <code>=OU(condition1; condition2; ...)</code>.</li>
+    <li>Par exemple, pour vérifier si la valeur en A1 est inférieure à 5 ou en B1 est supérieure à 10 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=OU(A1 < 5; B1 > 10)', this)">📋</span>
+    <code>=OU(A1 < 5; B1 > 10)</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Vérifie si la valeur en A1 est inférieure à 5, la valeur en B1 est supérieure à 10, ou la cellule C1 contient le texte "Urgent" :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=OU(A1 < 5; B1 > 10; C1 = &quot;Urgent&quot;)', this)">📋</span>
+    <code>=OU(A1 < 5; B1 > 10; C1 = "Urgent")</code>
+</div>
+
+<h5>Utiliser la fonction ESTVIDE</h5>
+<p>La fonction <code>=ESTVIDE()</code> vérifie si une cellule est vide :</p>
+<ul>
+    <li>La syntaxe est <code>=ESTVIDE(cellule)</code>.</li>
+    <li>Par exemple, pour vérifier si la cellule A1 est vide :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=ESTVIDE(A1)', this)">📋</span>
+    <code>=ESTVIDE(A1)</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Vérifie si les cellules A1 et B1 sont toutes les deux vides :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=ET(ESTVIDE(A1); ESTVIDE(B1))', this)">📋</span>
+    <code>=ET(ESTVIDE(A1); ESTVIDE(B1))</code>
+</div>
+
+<h5>Utiliser la fonction SIERREUR</h5>
+<p>La fonction <code>=SIERREUR()</code> renvoie une valeur spécifiée si une formule génère une erreur, sinon elle renvoie le résultat de la formule :</p>
+<ul>
+    <li>La syntaxe est <code>=SIERREUR(formule; valeur_si_erreur)</code>.</li>
+    <li>Par exemple, pour afficher 0 si une division en A1/B1 génère une erreur :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=SIERREUR(A1/B1; 0)', this)">📋</span>
+    <code>=SIERREUR(A1/B1; 0)</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Affiche "Erreur" si une recherche VLOOKUP en A1 génère une erreur, sinon affiche le résultat :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=SIERREUR(RECHERCHEV(A1; B1:C10; 2; FAUX); &quot;Erreur&quot;)', this)">📋</span>
+    <code>=SIERREUR(RECHERCHEV(A1; B1:C10; 2; FAUX); "Erreur")</code>
+</div>
+    `
+},
+
+"utiliser-logique-position": {
+    "title": "Utiliser la logique de position",
+    "content": `
+<h4 id="utiliser_la_logique_de_position" class="formule-subtheme sous-thematique">Utiliser la logique de position</h4>
+
+<p>Les fonctions de logique de position dans Excel permettent de manipuler et d'extraire des parties spécifiques de texte ou de trouver des informations à l'intérieur des chaînes de caractères. Cette section couvre les fonctions GAUCHE, DROITE, TROUVE, et CONCATENER pour vous aider à travailler efficacement avec du texte.</p>
+
+<h5>Utiliser la fonction GAUCHE</h5>
+<p>La fonction <code>=GAUCHE()</code> extrait un nombre spécifié de caractères à partir du début d'une chaîne de texte :</p>
+<ul>
+    <li>La syntaxe est <code>=GAUCHE(texte; [nombre_de_caractères])</code>.</li>
+    <li>Par exemple, pour extraire les 5 premiers caractères de la cellule A1 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=GAUCHE(A1; 5)', this)">📋</span>
+    <code>=GAUCHE(A1; 5)</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Extraire les 3 premiers caractères du texte après avoir trouvé le caractère "-" dans la cellule A1 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=GAUCHE(DROITE(A1; NBCAR(A1) - CHERCHE(&quot;-&quot;; A1)); 3)', this)">📋</span>
+    <code>=GAUCHE(DROITE(A1; NBCAR(A1) - CHERCHE("-"; A1)); 3)</code>
+</div>
+
+<h5>Utiliser la fonction DROITE</h5>
+<p>La fonction <code>=DROITE()</code> extrait un nombre spécifié de caractères à partir de la fin d'une chaîne de texte :</p>
+<ul>
+    <li>La syntaxe est <code>=DROITE(texte; [nombre_de_caractères])</code>.</li>
+    <li>Par exemple, pour extraire les 4 derniers caractères de la cellule A1 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=DROITE(A1; 4)', this)">📋</span>
+    <code>=DROITE(A1; 4)</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Extraire les caractères après le dernier espace dans la cellule A1 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=DROITE(A1; NBCAR(A1) - TROUVE(&quot; &quot;; A1; TROUVE(&quot; &quot;; A1) + 1))', this)">📋</span>
+    <code>=DROITE(A1; NBCAR(A1) - TROUVE(" "; A1; TROUVE(" "; A1) + 1))</code>
+</div>
+
+<h5>Utiliser la fonction TROUVE</h5>
+<p>La fonction <code>=TROUVE()</code> renvoie la position d'une chaîne de texte à l'intérieur d'une autre chaîne de texte :</p>
+<ul>
+    <li>La syntaxe est <code>=TROUVE(chaîne_cherchée; texte; [numéro_de_départ])</code>.</li>
+    <li>Par exemple, pour trouver la position du texte "ABC" dans la cellule A1 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=TROUVE(&quot;ABC&quot;; A1)', this)">📋</span>
+    <code>=TROUVE("ABC"; A1)</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Trouver la position du premier "-" dans une cellule contenant plusieurs mots séparés par des tirets :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=TROUVE(&quot;-&quot;; A1)', this)">📋</span>
+    <code>=TROUVE("-"; A1)</code>
+</div>
+
+<h5>Utiliser la fonction CONCATENER</h5>
+<p>La fonction <code>=CONCATENER()</code> combine plusieurs chaînes de texte en une seule chaîne :</p>
+<ul>
+    <li>La syntaxe est <code>=CONCATENER(texte1; [texte2]; ...)</code>.</li>
+    <li>Par exemple, pour combiner les textes des cellules A1 et B1 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=CONCATENER(A1; &quot; &quot;; B1)', this)">📋</span>
+    <code>=CONCATENER(A1; " "; B1)</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Combiner le prénom (A1), le nom (B1) et l'année de naissance (C1) avec un format spécifique :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=CONCATENER(A1; &quot; &quot;; B1; &quot;, né en &quot;; C1)', this)">📋</span>
+    <code>=CONCATENER(A1; " "; B1; ", né en "; C1)</code>
+</div>
+    `
+},
+
+"traiter-texte": {
+    "title": "Traiter du texte",
+    "content": `
+<h4 id="traiter_du_texte" class="formule-subtheme sous-thematique">Traiter du texte</h4>
+
+<p>Les fonctions de traitement du texte dans Excel vous permettent de manipuler et de formater des chaînes de caractères de différentes manières. Cette section couvre les fonctions MINUSCULE, MAJUSCULE, NBCAR, REMPLACER, et EXACT pour vous aider à gérer le texte dans vos feuilles de calcul.</p>
+
+<h5>Utiliser la fonction MINUSCULE</h5>
+<p>La fonction <code>=MINUSCULE()</code> convertit tous les caractères d'une chaîne de texte en minuscules :</p>
+<ul>
+    <li>La syntaxe est <code>=MINUSCULE(texte)</code>.</li>
+    <li>Par exemple, pour convertir le texte de la cellule A1 en minuscules :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=MINUSCULE(A1)', this)">📋</span>
+    <code>=MINUSCULE(A1)</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Convertir les caractères de texte après avoir extrait une partie spécifique de la chaîne :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=MINUSCULE(DROITE(A1; NBCAR(A1) - TROUVE(&quot; &quot;; A1)))', this)">📋</span>
+    <code>=MINUSCULE(DROITE(A1; NBCAR(A1) - TROUVE(" "; A1)))</code>
+</div>
+
+<h5>Utiliser la fonction MAJUSCULE</h5>
+<p>La fonction <code>=MAJUSCULE()</code> convertit tous les caractères d'une chaîne de texte en majuscules :</p>
+<ul>
+    <li>La syntaxe est <code>=MAJUSCULE(texte)</code>.</li>
+    <li>Par exemple, pour convertir le texte de la cellule A1 en majuscules :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=MAJUSCULE(A1)', this)">📋</span>
+    <code>=MAJUSCULE(A1)</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Convertir en majuscules le texte extrait d'une cellule après avoir trouvé un caractère spécifique :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=MAJUSCULE(GAUCHE(A1; TROUVE(&quot;-&quot;; A1) - 1))', this)">📋</span>
+    <code>=MAJUSCULE(GAUCHE(A1; TROUVE("-"; A1) - 1))</code>
+</div>
+
+<h5>Utiliser la fonction NBCAR</h5>
+<p>La fonction <code>=NBCAR()</code> renvoie le nombre de caractères dans une chaîne de texte :</p>
+<ul>
+    <li>La syntaxe est <code>=NBCAR(texte)</code>.</li>
+    <li>Par exemple, pour obtenir le nombre de caractères dans la cellule A1 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=NBCAR(A1)', this)">📋</span>
+    <code>=NBCAR(A1)</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Compter le nombre de caractères après avoir extrait une sous-chaîne à partir d'un certain point :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=NBCAR(DROITE(A1; NBCAR(A1) - TROUVE(&quot; &quot;; A1)))', this)">📋</span>
+    <code>=NBCAR(DROITE(A1; NBCAR(A1) - TROUVE(" "; A1)))</code>
+</div>
+
+<h5>Utiliser la fonction REMPLACER</h5>
+<p>La fonction <code>=REMPLACER()</code> remplace une partie spécifique d'une chaîne de texte par une autre chaîne :</p>
+<ul>
+    <li>La syntaxe est <code>=REMPLACER(texte; début; nombre_de_caractères; nouveau_texte)</code>.</li>
+    <li>Par exemple, pour remplacer les 5 premiers caractères de la cellule A1 par "XYZ" :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=REMPLACER(A1; 1; 5; &quot;XYZ&quot;)', this)">📋</span>
+    <code>=REMPLACER(A1; 1; 5; "XYZ")</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Remplacer tout le texte après un certain caractère avec une nouvelle chaîne :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=REMPLACER(A1; TROUVE(&quot;-&quot;; A1); NBCAR(A1) - TROUVE(&quot;-&quot;; A1) + 1; &quot;Nouveau Texte&quot;)', this)">📋</span>
+    <code>=REMPLACER(A1; TROUVE("-"; A1); NBCAR(A1) - TROUVE("-"; A1) + 1; "Nouveau Texte")</code>
+</div>
+
+<h5>Utiliser la fonction EXACT</h5>
+<p>La fonction <code>=EXACT()</code> compare deux chaînes de texte et renvoie VRAI si elles sont exactement identiques, y compris la casse :</p>
+<ul>
+    <li>La syntaxe est <code>=EXACT(texte1; texte2)</code>.</li>
+    <li>Par exemple, pour comparer les textes dans les cellules A1 et B1 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=EXACT(A1; B1)', this)">📋</span>
+    <code>=EXACT(A1; B1)</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Comparer un texte modifié avec le texte original :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=EXACT(MAJUSCULE(A1); MINUSCULE(B1))', this)">📋</span>
+    <code>=EXACT(MAJUSCULE(A1); MINUSCULE(B1))</code>
+</div>
+    `
+},
+
+"recherche-valeur": {
+    "title": "Faire des recherches de valeurs",
+    "content": `
+<h4 id="faire_des_recherches_de_valeurs" class="formule-subtheme sous-thematique">Faire des recherches de valeurs</h4>
+
+<p>Les fonctions de recherche dans Excel permettent de trouver des valeurs spécifiques dans vos données. Cette section couvre les fonctions RECHERCHEV, RECHERCHH, RECHERCHX, et INDEX pour vous aider à effectuer des recherches précises dans vos feuilles de calcul.</p>
+
+<h5>Utiliser la fonction RECHERCHEV</h5>
+<p>La fonction <code>=RECHERCHEV()</code> recherche une valeur dans la première colonne d'une plage et renvoie une valeur dans la même ligne d'une colonne spécifiée :</p>
+<ul>
+    <li>La syntaxe est <code>=RECHERCHEV(valeur_recherchée; table_array; col_index_num; [valeur_proche])</code>.</li>
+    <li>Par exemple, pour rechercher la valeur dans la cellule A1 dans la première colonne de la plage B1:C10 et retourner la valeur correspondante de la colonne 2 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=RECHERCHEV(A1; B1:C10; 2; FAUX)', this)">📋</span>
+    <code>=RECHERCHEV(A1; B1:C10; 2; FAUX)</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Rechercher une valeur dans une plage et obtenir la valeur dans une colonne dont l'index est défini par une cellule :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=RECHERCHEV(A1; B1:D10; B11; FAUX)', this)">📋</span>
+    <code>=RECHERCHEV(A1; B1:D10; B11; FAUX)</code>
+</div>
+
+<h5>Utiliser la fonction RECHERCHH</h5>
+<p>La fonction <code>=RECHERCHH()</code> recherche une valeur dans la première ligne d'une plage et renvoie une valeur dans la même colonne d'une ligne spécifiée :</p>
+<ul>
+    <li>La syntaxe est <code>=RECHERCHH(valeur_recherchée; table_array; row_index_num; [valeur_proche])</code>.</li>
+    <li>Par exemple, pour rechercher la valeur dans la cellule A1 dans la première ligne de la plage B1:D10 et retourner la valeur correspondante de la ligne 3 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=RECHERCHH(A1; B1:D10; 3; FAUX)', this)">📋</span>
+    <code>=RECHERCHH(A1; B1:D10; 3; FAUX)</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Rechercher une valeur dans une plage et obtenir la valeur dans une ligne dont l'index est défini par une cellule :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=RECHERCHH(A1; B1:D10; C1; FAUX)', this)">📋</span>
+    <code>=RECHERCHH(A1; B1:D10; C1; FAUX)</code>
+</div>
+
+<h5>Utiliser la fonction RECHERCHX</h5>
+<p>La fonction <code>=RECHERCHX()</code> est une fonction de recherche avancée qui peut remplacer RECHERCHEV et RECHERCHH. Elle recherche une valeur dans une plage et renvoie une valeur correspondante d'une autre plage :</p>
+<ul>
+    <li>La syntaxe est <code>=RECHERCHX(valeur_recherchée; plage_recherche; plage_retour; [valeur_si_non_trouvé])</code>.</li>
+    <li>Par exemple, pour rechercher la valeur dans la cellule A1 dans la plage B1:B10 et retourner la valeur correspondante de la plage C1:C10 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=RECHERCHX(A1; B1:B10; C1:C10)', this)">📋</span>
+    <code>=RECHERCHX(A1; B1:B10; C1:C10)</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Rechercher une valeur et retourner un résultat spécifique si la valeur n'est pas trouvée :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=RECHERCHX(A1; B1:B10; C1:C10; &quot;Non Trouvé&quot;)', this)">📋</span>
+    <code>=RECHERCHX(A1; B1:B10; C1:C10; "Non Trouvé")</code>
+</div>
+
+<h5>Utiliser la fonction INDEX</h5>
+<p>La fonction <code>=INDEX()</code> renvoie la valeur d'une cellule dans une plage en fonction des numéros de ligne et de colonne spécifiés :</p>
+<ul>
+    <li>La syntaxe est <code>=INDEX(plage; no_ligne; [no_colonne])</code>.</li>
+    <li>Par exemple, pour obtenir la valeur à l'intersection de la 2ème ligne et 3ème colonne de la plage A1:C10 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=INDEX(A1:C10; 2; 3)', this)">📋</span>
+    <code>=INDEX(A1:C10; 2; 3)</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Obtenir une valeur en fonction d'un critère de ligne dynamique, où le numéro de ligne est déterminé par une autre formule :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=INDEX(A1:C10; EQUIV(A1; A1:A10; 0); 2)', this)">📋</span>
+    <code>=INDEX(A1:C10; EQUIV(A1; A1:A10; 0); 2)</code>
+</div>
+
+<p>Ces fonctions vous permettent de rechercher et de récupérer des données de manière flexible dans vos feuilles de calcul Excel.</p>
+    `
+},
 
 };
