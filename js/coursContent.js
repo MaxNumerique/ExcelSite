@@ -8,7 +8,7 @@ export const coursContent = {
             <h3>Qu'est-ce qu'Excel ?</h3>
             <p>Microsoft Excel est un logiciel de tableur faisant partie de la suite Microsoft Office. Il permet de manipuler des données sous forme de tableaux, de réaliser des calculs complexes, de créer des graphiques, et bien plus encore. Excel est largement utilisé dans divers domaines tels que la finance, le marketing, la gestion de projet et la recherche.</p>
 
-            <h4 class="sous-thematique">Interface Utilisateur</h4>
+            <h4 class="">Interface Utilisateur</h4>
             <p>Lorsque vous ouvrez Excel, vous êtes accueilli par une interface utilisateur composée de plusieurs éléments clés :</p>
 
             <ol>
@@ -41,7 +41,7 @@ export const coursContent = {
 
 
             <h3>Manipulation de Base</h3>
-            <h4 class="sous-thematique">Saisie et Édition des Données</h4>
+            <h4 class="">Saisie et Édition des Données</h4>
             
             <ol>
                 <li>Saisie de Données : Cliquez sur une cellule et commencez à taper pour entrer des données. Appuyez sur Enter pour valider et passer à la cellule suivante.</li>
@@ -61,7 +61,7 @@ export const coursContent = {
                     <li>Tab et Shift+Tab : Utilisez la touche Tab pour passer à la cellule suivante à droite et Shift+Tab pour revenir à la cellule précédente.</li>
             </ol>
 
-            <h4 class="sous-thematique">Formatage des cellules</h4>
+            <h4 class="">Formatage des cellules</h4>
             
             <ol>
                 <li>Police et Couleur : Utilisez les options de l'onglet Accueil pour changer la police, la taille, et la couleur du texte.</li>
@@ -885,7 +885,7 @@ export const coursContent = {
 
 <p>Ce cours vous guidera à travers les différentes étapes pour effectuer efficacement la saisie de données dans Excel. Vous apprendrez à entrer des données, adapter le format des cellules, valider les données, embellir votre tableau et utiliser des filtres pour trier et afficher des données spécifiques.</p>
 
-<h4 id="saisie-simple" class="saisie-subtheme sous-thematique">La saisie simple</h4>
+<h4 id="saisie-simple" class="saisie-subtheme ">La saisie simple</h4>
 
 <h5>Entrer des données de saisie</h5>
 <p>Pour saisir des données dans Excel, cliquez sur une cellule et commencez à taper. Voici quelques conseils pour la saisie efficace :</p>
@@ -915,7 +915,7 @@ export const coursContent = {
 
 <hr>
 
-<h4 id="adapter-format-cellules" class="saisie-subtheme sous-thematique"> Adapter le format des cellules</h4>
+<h4 id="adapter-format-cellules" class="saisie-subtheme "> Adapter le format des cellules</h4>
 
 <h5>Format de cellules (nombres, texte, date, ...)</h5>
 <p>Excel propose plusieurs formats de cellule pour adapter la présentation des données :</p>
@@ -960,7 +960,7 @@ export const coursContent = {
 
 <hr>
 
-<h4 id="validation-donnees" class="saisie-subtheme sous-thematique"> Par validation de données à partir de liste</h4>
+<h4 id="validation-donnees" class="saisie-subtheme "> Par validation de données à partir de liste</h4>
 <p>L'outil de validation des données dans Excel permet de contrôler ce que les utilisateurs peuvent saisir dans une cellule. Cela est particulièrement utile pour éviter les erreurs de saisie et garantir la cohérence des données. Par exemple, vous pouvez limiter les entrées à une liste prédéfinie de valeurs, ce qui réduit les risques d'erreurs et facilite l'analyse des données.</p>
 
 <h5>Création et utilisation de listes déroulantes</h5>
@@ -986,7 +986,7 @@ export const coursContent = {
 
 <hr>
 
-<h4 id="embellissement" class="saisie-subtheme sous-thematique">Embellissement</h4>
+<h4 id="embellissement" class="saisie-subtheme ">Embellissement</h4>
 
 <h5>Mise en forme et alignement</h5>
 <p>Pour mettre en forme vos cellules :</p>
@@ -1046,7 +1046,7 @@ export const coursContent = {
 
 <hr>
 
-<h4 id="filtres" class="saisie-subtheme sous-thematique">Les filtres</h4>
+<h4 id="filtres" class="saisie-subtheme ">Les filtres</h4>
 
 <h5>Trier et afficher des données spécifiques</h5>
 <p>Les filtres sont des outils puissants dans Excel pour afficher uniquement les données qui répondent à certains critères. Ils permettent de simplifier l'analyse des données en masquant temporairement les données qui ne sont pas pertinentes. Voici comment les utiliser :</p>
@@ -1112,7 +1112,6 @@ export const coursContent = {
     "additionner": {
     "title": "Additionner",
     "content": `
-    <h4 id="additionner" class="formule-subtheme sous-thematique">Additionner</h4>
     
     <p>Excel propose plusieurs méthodes pour additionner des valeurs. Vous pouvez utiliser des formules simples, des fonctions pré-intégrées, et même des outils de somme automatique. Cette section vous guidera à travers ces différentes techniques pour effectuer des additions efficacement dans vos feuilles de calcul.</p>
     
@@ -1234,7 +1233,6 @@ export const coursContent = {
     "manipuler-nombre": {
         title: "Manipuler les nombres",
         content: `
-<h4 id="manipulerLesNombres" class="formule-subtheme sous-thematique">Manipuler les nombres</h4>
 
 <p>Excel offre une gamme de fonctions pour manipuler les nombres selon vos besoins. Cette section couvre les fonctions courantes pour les produits, les arrondis, les valeurs entières, les tronquages, les quotients, les restes, et pour vérifier la parité des nombres.</p>
 
@@ -1331,7 +1329,6 @@ export const coursContent = {
 "manipuler-nombre": {
     "title": "Manipuler les nombres",
     "content": `
-    <h4 id="manipulerLesNombres" class="formule-subtheme sous-thematique">Manipuler les nombres</h4>
 
     <p>Excel offre une gamme de fonctions pour manipuler les nombres selon vos besoins. Cette section couvre les fonctions courantes pour les produits, les arrondis, les valeurs entières, les tronquages, les quotients, les restes, et pour vérifier la parité des nombres.</p>
 
@@ -1489,10 +1486,73 @@ export const coursContent = {
     `
 },
 
+"calculer_moyenne": {
+    "title": "Calculer une moyenne",
+    "content": `
+<p>Les fonctions de calcul de moyenne dans Excel vous permettent de déterminer la valeur moyenne d'un ensemble de données. Cette section couvre les fonctions MOYENNE, MOYENNE.SI, et MOYENNE.SI.ENS pour vous aider à calculer des moyennes simples et conditionnelles dans vos feuilles de calcul.</p>
+
+<h5>Utiliser la fonction MOYENNE</h5>
+<p>La fonction <code>=MOYENNE()</code> calcule la moyenne arithmétique d'une plage de cellules :</p>
+<ul>
+    <li>La syntaxe est <code>=MOYENNE(nombre1; [nombre2]; ...)</code>.</li>
+    <li>Par exemple, pour calculer la moyenne des valeurs dans les cellules A1 à A10 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=MOYENNE(A1:A10)', this)">📋</span>
+    <code>=MOYENNE(A1:A10)</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Calculer la moyenne de plusieurs plages non contiguës :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=MOYENNE(A1:A10; C1:C10)', this)">📋</span>
+    <code>=MOYENNE(A1:A10; C1:C10)</code>
+</div>
+
+<h5>Utiliser la fonction MOYENNE.SI</h5>
+<p>La fonction <code>=MOYENNE.SI()</code> calcule la moyenne des cellules qui répondent à un critère spécifique :</p>
+<ul>
+    <li>La syntaxe est <code>=MOYENNE.SI(plage; critère; [plage_moyenne])</code>.</li>
+    <li>Par exemple, pour calculer la moyenne des valeurs dans les cellules A1 à A10 uniquement pour les cellules dont la valeur est supérieure à 50 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=MOYENNE.SI(A1:A10; &quot;>50&quot;)', this)">📋</span>
+    <code>=MOYENNE.SI(A1:A10; ">50")</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Calculer la moyenne des valeurs dans les cellules B1 à B10 uniquement pour les cellules A1 à A10 égales à "Oui" :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=MOYENNE.SI(A1:A10; &quot;Oui&quot;; B1:B10)', this)">📋</span>
+    <code>=MOYENNE.SI(A1:A10; "Oui"; B1:B10)</code>
+</div>
+
+<h5>Utiliser la fonction MOYENNE.SI.ENS</h5>
+<p>La fonction <code>=MOYENNE.SI.ENS()</code> calcule la moyenne des cellules qui répondent à plusieurs critères :</p>
+<ul>
+    <li>La syntaxe est <code>=MOYENNE.SI.ENS(plage_moyenne; plage_critère1; critère1; [plage_critère2; critère2]; ...)</code>.</li>
+    <li>Par exemple, pour calculer la moyenne des valeurs dans les cellules B1 à B10 pour lesquelles les cellules A1 à A10 sont égales à "Oui" et les cellules C1 à C10 sont supérieures à 100 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=MOYENNE.SI.ENS(B1:B10; A1:A10; &quot;Oui&quot;; C1:C10; &quot;>100&quot;)', this)">📋</span>
+    <code>=MOYENNE.SI.ENS(B1:B10; A1:A10; "Oui"; C1:C10; ">100")</code>
+</div>
+<p>Un exemple plus complexe pourrait être :</p>
+<ul>
+    <li>Calculer la moyenne des valeurs dans les cellules D1 à D10 pour lesquelles les cellules A1 à A10 sont égales à "Oui", les cellules B1 à B10 sont supérieures à 50, et les cellules C1 à C10 sont inférieures à 200 :</li>
+</ul>
+<div class="formula-box">
+    <span class="copy-button show" onclick="copyToClipboard('=MOYENNE.SI.ENS(D1:D10; A1:A10; &quot;Oui&quot;; B1:B10; &quot;>50&quot;; C1:C10; &quot;<200&quot;)', this)">📋</span>
+    <code>=MOYENNE.SI.ENS(D1:D10; A1:A10; "Oui"; B1:B10; ">50"; C1:C10; "<200")</code>
+</div>
+    `
+},
+
 "compter_cellules": {
     "title": "Compter des cellules",
     "content": `
-    <h4 id="compter_des_cellules" class="formule-subtheme sous-thematique">Compter des cellules</h4>
 
     <p>Excel offre plusieurs fonctions pour compter des cellules en fonction de différents critères. Cette section vous guidera à travers l'utilisation des fonctions COMPTE, NB.SI, NB.SI.ENS, NBVAL et NB.VIDE pour effectuer des comptages dans vos feuilles de calcul.</p>
 
@@ -1596,7 +1656,6 @@ export const coursContent = {
 "trouver_valeurs_extremes": {
     "title": "Trouver des valeurs extrêmes",
     "content": `
-    <h4 id="trouver_des_valeurs_extremes" class="formule-subtheme sous-thematique">Trouver des valeurs extrêmes</h4>
 
     <p>Excel offre plusieurs fonctions pour trouver les valeurs minimales et maximales dans une plage de données. Cette section vous guidera à travers l'utilisation des fonctions MIN, MIN.SI.ENS, MAX et MAX.SI.ENS pour identifier les valeurs extrêmes dans vos feuilles de calcul.</p>
 
@@ -1679,7 +1738,6 @@ export const coursContent = {
 "traiter_dates": {
     "title": "Traiter des dates",
     "content": `
-    <h4 id="traiter_des_dates" class="formule-subtheme sous-thematique">Traiter des dates</h4>
 
     <p>Excel offre plusieurs fonctions pour manipuler et extraire des informations à partir de dates et d'heures. Cette section vous guidera à travers les fonctions AUJOURD'HUI, MAINTENANT, JOUR, MOIS, ANNEE, JOURSEM, HEURE, MINUTE, et SECONDE pour vous aider à gérer efficacement les dates dans vos feuilles de calcul.</p>
 
@@ -1818,7 +1876,6 @@ export const coursContent = {
 "utiliser-operateurs-logiques": {
     "title": "Utiliser des opérateurs logiques",
     "content": `
-<h4 id="utiliser_des_operateurs_logiques" class="formule-subtheme sous-thematique">Utiliser des opérateurs logiques</h4>
 
 <p>Les opérateurs logiques dans Excel permettent de créer des formules conditionnelles pour effectuer des actions basées sur des critères spécifiques. Cette section couvre les fonctions SI, ET, OU, ESTVIDE, et SIERREUR pour vous aider à intégrer des conditions et gérer les erreurs dans vos formules.</p>
 
@@ -1922,7 +1979,6 @@ export const coursContent = {
 "utiliser-logique-position": {
     "title": "Utiliser la logique de position",
     "content": `
-<h4 id="utiliser_la_logique_de_position" class="formule-subtheme sous-thematique">Utiliser la logique de position</h4>
 
 <p>Les fonctions de logique de position dans Excel permettent de manipuler et d'extraire des parties spécifiques de texte ou de trouver des informations à l'intérieur des chaînes de caractères. Cette section couvre les fonctions GAUCHE, DROITE, TROUVE, et CONCATENER pour vous aider à travailler efficacement avec du texte.</p>
 
@@ -2007,7 +2063,6 @@ export const coursContent = {
 "traiter-texte": {
     "title": "Traiter du texte",
     "content": `
-<h4 id="traiter_du_texte" class="formule-subtheme sous-thematique">Traiter du texte</h4>
 
 <p>Les fonctions de traitement du texte dans Excel vous permettent de manipuler et de formater des chaînes de caractères de différentes manières. Cette section couvre les fonctions MINUSCULE, MAJUSCULE, NBCAR, REMPLACER, et EXACT pour vous aider à gérer le texte dans vos feuilles de calcul.</p>
 
@@ -2111,7 +2166,6 @@ export const coursContent = {
 "recherche-valeur": {
     "title": "Faire des recherches de valeurs",
     "content": `
-<h4 id="faire_des_recherches_de_valeurs" class="formule-subtheme sous-thematique">Faire des recherches de valeurs</h4>
 
 <p>Les fonctions de recherche dans Excel permettent de trouver des valeurs spécifiques dans vos données. Cette section couvre les fonctions RECHERCHEV, RECHERCHH, RECHERCHX, et INDEX pour vous aider à effectuer des recherches précises dans vos feuilles de calcul.</p>
 
@@ -2192,6 +2246,365 @@ export const coursContent = {
 </div>
 
 <p>Ces fonctions vous permettent de rechercher et de récupérer des données de manière flexible dans vos feuilles de calcul Excel.</p>
+    `,
+},
+
+
+
+
+"tableau-croise-dynamique": {
+    "title": "Les Tableaux Croisés Dynamiques (TCD)",
+    "content": `
+    <p>Les tableaux croisés dynamiques (TCD) sont un outil puissant d'Excel pour résumer, analyser, explorer et présenter des données. Cette section couvre les différentes facettes des Tableaux Croisés Dynamiques, de la présentation à la personnalisation et l'utilisation avancée.</p>
+
+    <h4 class="tcd-subtheme" id="presentation_tcd">Présentation d'un TCD</h4>
+    <p>Un tableau croisé dynamique (TCD) est une fonction d'Excel qui permet de synthétiser et analyser de grandes quantités de données rapidement et facilement. Voici un aperçu détaillé de ce que sont les TCD et de leurs principales caractéristiques :</p>
+    <img src="path/to/image1.png" alt="Présentation d'un TCD">
+
+    <h5 id="definition_et_utilite" class="">Définition et utilité</h5>
+    <p>Un TCD est un outil interactif qui vous permet de réorganiser et résumer des ensembles de données volumineux sans modifier les données originales. Il offre une vue d'ensemble rapide de vos données et vous aide à identifier les tendances et les motifs.</p>
+    <p>Les principales utilisations des TCD incluent :</p>
+    <ul>
+        <li>Résumé des données : Calcul de sommes, moyennes, comptages et autres totaux.</li>
+        <li>Analyse des tendances : Identification des modèles de données sur différentes périodes ou catégories.</li>
+        <li>Exploration des données : Permet de filtrer, trier et segmenter les données pour une analyse approfondie.</li>
+        <li>Présentation des données : Création de rapports clairs et concis pour les parties prenantes.</li>
+    </ul>
+
+    <h5 id="structure_du_tcd" class="tcd-subtheme">Structure du TCD</h5>
+    <p>Un TCD se compose de plusieurs éléments clés :</p>
+    <ul>
+        <li><strong>Champs de lignes</strong> : Catégories affichées verticalement dans le tableau. Par exemple, les noms de produits ou les régions.</li>
+        <li><strong>Champs de colonnes</strong> : Catégories affichées horizontalement. Par exemple, les périodes de temps comme les mois ou les années.</li>
+        <li><strong>Champs de valeurs</strong> : Les données numériques à résumer, comme les ventes ou les quantités. Ces champs peuvent être agrégés en utilisant des fonctions telles que la somme, la moyenne ou le comptage.</li>
+        <li><strong>Champs de filtres</strong> : Permettent de filtrer les données affichées dans le TCD. Par exemple, filtrer par année ou par région.</li>
+    </ul>
+    <p>Ces éléments peuvent être réorganisés pour explorer les données sous différents angles sans modifier les données sources.</p>
+    <img src="path/to/image2.png" alt="Structure du TCD">
+
+    <h5 id="creation_de_base" class="tcd-subtheme">Création de base</h5>
+    <p>Pour créer un TCD, suivez ces étapes de base :</p>
+    <ul>
+        <li>Sélectionnez vos données sources dans Excel.</li>
+        <li>Allez dans l'onglet <strong>Insertion</strong> du ruban, puis cliquez sur <strong>Tableau Croisé Dynamique</strong>.</li>
+        <li>Choisissez l'emplacement du TCD (nouvelle feuille ou feuille existante).</li>
+        <li>Une fois le TCD inséré, utilisez la liste de champs pour ajouter des champs de lignes, colonnes, valeurs et filtres.</li>
+    </ul>
+    <p>Ces étapes vous permettent de créer un TCD de base que vous pouvez ensuite personnaliser et configurer selon vos besoins.</p>
+    <img src="path/to/image3.png" alt="Création de base d'un TCD">
+
+    <h5 id="configuration_initiale" class="tcd-subtheme">Configuration initiale</h5>
+    <p>Après avoir créé un TCD, configurez-le en ajoutant des champs de données aux zones appropriées :</p>
+    <ul>
+        <li>Faites glisser les champs de la liste de champs vers les zones <em>Lignes</em>, <em>Colonnes</em>, <em>Valeurs</em> et <em>Filtres</em>.</li>
+        <li>Appliquez des filtres pour affiner les données affichées.</li>
+        <li>Utilisez les options de tri pour organiser les données de manière significative.</li>
+    </ul>
+    <p>La configuration initiale vous permet de structurer votre TCD pour afficher les informations les plus pertinentes pour votre analyse.</p>
+    <img src="path/to/image4.png" alt="Configuration initiale d'un TCD">
+
+    <h5 id="avantages_des_tcd" class="tcd-subtheme">Avantages des TCD</h5>
+    <p>Les TCD offrent de nombreux avantages par rapport à l'analyse manuelle des données :</p>
+    <ul>
+        <li><strong>Flexibilité</strong> : Réorganisez et modifiez facilement la structure des données sans modifier les données sources.</li>
+        <li><strong>Rapidité</strong> : Analyse rapide de grandes quantités de données en quelques clics.</li>
+        <li><strong>Interactivité</strong> : Filtrez et segmentez les données pour explorer différentes perspectives.</li>
+        <li><strong>Visualisation</strong> : Créez des rapports visuellement attrayants et faciles à comprendre.</li>
+    </ul>
+    <p>Ces avantages font des TCD un outil indispensable pour les analystes de données et les décideurs.</p>
+    <img src="path/to/image5.png" alt="Avantages des TCD">
+
+    <h5 id="limitations_des_tcd" class="tcd-subtheme">Limitations des TCD</h5>
+    <p>Bien que les TCD soient puissants, ils ont certaines limitations :</p>
+    <ul>
+        <li><strong>Données volumineuses</strong> : Les TCD peuvent devenir lents avec des ensembles de données extrêmement volumineux.</li>
+        <li><strong>Personnalisation limitée</strong> : Certaines personnalisations avancées peuvent nécessiter des connaissances supplémentaires ou des outils externes.</li>
+        <li><strong>Mise à jour des données</strong> : Si les données sources changent fréquemment, le TCD doit être régulièrement mis à jour.</li>
+    </ul>
+    <p>Connaître ces limitations vous permet de mieux utiliser les TCD et de choisir l'outil le plus adapté à vos besoins analytiques.</p>
+    <img src="path/to/image6.png" alt="Limitations des TCD">
+
+    <h5 id="meilleures_pratiques" class="tcd-subtheme">Meilleures pratiques</h5>
+    <p>Pour tirer le meilleur parti des TCD, suivez ces meilleures pratiques :</p>
+    <ul>
+        <li><strong>Organiser les données sources</strong> : Assurez-vous que vos données sont propres, bien structurées et sans doublons.</li>
+        <li><strong>Nommer les plages de données</strong> : Utilisez des noms de plages pour rendre les références de données plus claires et faciles à gérer.</li>
+        <li><strong>Mettre à jour régulièrement</strong> : Actualisez le TCD après chaque modification des données sources pour maintenir l'exactitude de l'analyse.</li>
+        <li><strong>Utiliser des segments et des filtres</strong> : Simplifiez la navigation et le filtrage des données pour une analyse plus rapide et plus précise.</li>
+        <li><strong>Documenter les analyses</strong> : Notez les étapes et les configurations importantes pour faciliter la reproduction et la compréhension des analyses par d'autres utilisateurs.</li>
+    </ul>
+    <p>En suivant ces pratiques, vous pouvez optimiser l'utilisation des TCD et obtenir des analyses de données plus efficaces et précises.</p>
+    <img src="path/to/image7.png" alt="Meilleures pratiques des TCD">
+
+    <h5 id="utilisation_de_liresdonneestabcroisdynamique" class="tcd-subtheme">Utilisation de la fonction LIREDONNEESTABCROISDYNAMIQUE()</h5>
+    <p>La fonction <code>=LIREDONNEESTABCROISDYNAMIQUE()</code> permet d'extraire des données spécifiques à partir d'un tableau croisé dynamique (TCD) dans Excel. Cette fonction est particulièrement utile pour créer des rapports dynamiques ou pour référencer des données de TCD dans d'autres parties de votre feuille de calcul.</p>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=LIREDONNEESTABCROISDYNAMIQUE(champ_valeur; tableau_croisé_dynamique; [champ1, élément1, champ2, élément2, ...])'; this)">📋</span>
+        <code>=LIREDONNEESTABCROISDYNAMIQUE(champ_valeur; tableau_croisé_dynamique; [champ1, élément1, champ2, élément2, ...])</code>
+    </div>
+    <ul>
+        <li>Pour extraire une valeur simple, spécifiez le champ de valeur et les critères correspondants.</li>
+        <li>Pour des extractions complexes, combinez plusieurs critères de champs et éléments.</li>
+    </ul>
+    <p>Exemple 1 : Extraction d'une valeur simple</p>
+    <p>Supposons que vous ayez un TCD dans la cellule A3 et que vous souhaitez extraire le total des ventes pour le produit "A" :</p>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=LIREDONNEESTABCROISDYNAMIQUE(&quot;Total des ventes&quot;, A3, &quot;Produit&quot;, &quot;A&quot;)', this)">📋</span>
+        <code>=LIREDONNEESTABCROISDYNAMIQUE("Total des ventes"; A3; "Produit"; "A")</code>
+    </div>
+    <p>Exemple 2 : Extraction avec plusieurs critères</p>
+    <p>Pour extraire le total des ventes pour le produit "A" dans la région "Nord" :</p>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=LIREDONNEESTABCROISDYNAMIQUE(&quot;Total des ventes&quot;; A3; &quot;Produit&quot;; &quot;A&quot;; &quot;Région&quot;; &quot;Nord&quot;)', this)">📋</span>
+        <code>=LIREDONNEESTABCROISDYNAMIQUE("Total des ventes"; A3; "Produit"; "A"; "Région"; "Nord")</code>
+    </div>
+    <p>Exemple 3 : Utilisation avec des dates</p>
+    <p>Pour extraire le total des ventes pour le produit "A" pour le mois de janvier :</p>
+    <div class="formula-box">
+        <span class="copy-button show" onclick="copyToClipboard('=LIREDONNEESTABCROISDYNAMIQUE(&quot;Total des ventes&quot;; A3; &quot;Produit&quot;; &quot;A&quot;; &quot;Mois&quot;; &quot;Janvier&quot;)', this)">📋</span>
+        <code>=LIREDONNEESTABCROISDYNAMIQUE("Total des ventes"; A3; "Produit"; "A"; "Mois"; "Janvier")</code>
+    </div>
+    <img src="../assets/TCD_Exemple01.png" alt="Utilisation de LIREDONNEESTABCROISDYNAMIQUE()">
+
+    <h4 id="configuration_tcd" class="tcd-subtheme">Configuration d'un TCD</h4>
+    <p>Après avoir inséré un TCD, la configuration permet de définir les champs de valeurs, lignes, colonnes et filtres. Ces configurations structurent le TCD pour afficher les données de manière significative.</p>
+    <img src="path/to/image8.png" alt="Configuration d'un TCD">
+
+    <h4 id="champs_de_valeurs_lignes_colonnes_filtres" class="tcd-subtheme">Champs de valeurs, lignes, colonnes et filtres</h4>
+    <p>Les champs de valeurs, lignes, colonnes et filtres sont essentiels pour structurer les TCD :</p>
+    <ul>
+        <li><strong>Champs de valeurs</strong> : Les données numériques à analyser (somme, moyenne, comptage, etc.).</li>
+        <li><strong>Champs de lignes</strong> : Les catégories à afficher verticalement.</li>
+        <li><strong>Champs de colonnes</strong> : Les catégories à afficher horizontalement.</li>
+        <li><strong>Champs de filtres</strong> : Permettent de filtrer les données affichées dans le TCD.</li>
+    </ul>
+    <img src="path/to/image9.png" alt="Champs de valeurs, lignes, colonnes et filtres">
+
+    <h4 id="groupement_de_donnees" class="tcd-subtheme">Groupement de données</h4>
+    <p>Le groupement de données permet de regrouper des champs par date, nombre ou autres critères pour une analyse plus précise. Par exemple, vous pouvez regrouper des dates par mois ou trimestre, ou regrouper des valeurs numériques en intervalles.</p> 
+    <img src="path/to/image10.png" alt="Groupement de données">
+
+    <h4 id="personnalisation_mise_en_forme" class="tcd-subtheme">Personnalisation et mise en forme</h4>
+    <p>Personnalisez et mettez en forme votre TCD pour améliorer la lisibilité et l'impact visuel. Utilisez les options de format de données, disposition et styles pour créer des rapports professionnels.</p>
+    <img src="path/to/image11.png" alt="Personnalisation et mise en forme">
+
+    <h4 id="format_de_donnees" class="tcd-subtheme">Format de données</h4>
+    <p>Appliquez des formats de données appropriés aux champs de valeurs pour une meilleure compréhension. Par exemple, formatez les nombres en monnaie, en pourcentages ou en dates selon le contexte de votre analyse.</p>
+    <img src="path/to/image12.png" alt="Format de données">
+
+    <h4 id="disposition_et_style" class="tcd-subtheme">Disposition et style</h4>
+    <p>Changez la disposition des TCD pour améliorer la présentation des données :</p>
+    <ul>
+        <li>Utilisez différentes dispositions de rapport pour afficher les données de manière compacte ou étendue.</li>
+        <li>Appliquez des styles de TCD pour un aspect visuel professionnel.</li>
+    </ul>
+    <img src="path/to/image13.png" alt="Disposition et style">
+
+    <h4 id="calculs_tcd" class="tcd-subtheme">Calculs dans les tableaux croisés dynamiques</h4>
+    <p>Les TCD permettent d'effectuer des calculs avancés pour des analyses plus poussées. Utilisez des champs calculés et des éléments calculés pour créer des nouvelles métriques à partir des données existantes.</p>
+    <img src="path/to/image14.png" alt="Calculs dans les TCD">
+
+    <h4 id="champs_calcules" class="tcd-subtheme">Champs calculés</h4>
+    <p>Les champs calculés sont des colonnes supplémentaires dans votre TCD qui effectuent des calculs sur les autres champs :</p>
+    <ul>
+        <li>Accédez à l'onglet <strong>Analyse</strong> et cliquez sur <strong>Champs, éléments et jeux</strong> &gt; <strong>Champ calculé</strong>.</li>
+        <li>Créez un champ calculé en définissant une formule qui utilise d'autres champs du TCD.</li>
+    </ul>
+    <img src="path/to/image15.png" alt="Champs calculés">
+
+    <h4 id="elements_calcules" class="tcd-subtheme">Eléments calculés</h4>
+    <p>Les éléments calculés permettent de créer de nouveaux éléments à partir des données existantes :</p>
+    <ul>
+        <li>Accédez à l'onglet <strong>Analyse</strong> et cliquez sur <strong>Champs, éléments et jeux</strong> &gt; <strong>Elément calculé</strong>.</li>
+        <li>Créez un nouvel élément en définissant une formule qui combine les éléments existants. Par exemple, pour créer une catégorie "Haute valeur" pour les ventes supérieures à un certain montant, définissez une formule conditionnelle.</li>
+    </ul>
+    <img src="path/to/image16.png" alt="Eléments calculés">
+
+    <h4 id="utilisation_des_segments" class="tcd-subtheme">Utilisation des segments pour filtrer les données</h4>
+    <p>Les segments sont des outils visuels pour filtrer rapidement les données dans un TCD :</p>
+    <ul>
+        <li>Pour ajouter un segment, sélectionnez le TCD et allez dans <strong>Outils de tableau croisé dynamique</strong> &gt; <strong>Analyser</strong> &gt; <strong>Insérer un segment</strong>.</li>
+        <li>Cochez les champs à utiliser pour les segments. Par exemple, sélectionnez "Région" pour créer un segment basé sur les régions.</li>
+        <li>Utilisez les segments pour filtrer les données en cliquant simplement sur les boutons correspondants dans le segment.</li>
+    </ul>
+    <img src="path/to/image17.png" alt="Utilisation des segments pour filtrer les données">
+
+    <h4 id="utilisation_des_filtres_chronologiques" class="tcd-subtheme">Utilisation des filtres chronologiques</h4>
+    <p>Les filtres chronologiques permettent de filtrer les données d'un TCD par date :</p>
+    <ul>
+        <li>Pour ajouter un filtre chronologique, sélectionnez le TCD et allez dans <strong>Outils de tableau croisé dynamique</strong> &gt; <strong>Analyser</strong> &gt; <strong>Insérer un filtre chronologique</strong>.</li>
+        <li>Sélectionnez le champ de date à utiliser. Un filtre chronologique s'affiche alors, permettant de filtrer les données par jours, mois, trimestres ou années.</li>
+        <li>Utilisez le curseur du filtre chronologique pour sélectionner la période souhaitée. Les données du TCD se mettront à jour automatiquement pour refléter cette période.</li>
+    </ul>
+    <img src="path/to/image18.png" alt="Utilisation des filtres chronologiques">
+
+    <p>En maîtrisant ces techniques, vous pourrez créer, configurer et personnaliser des tableaux croisés dynamiques pour analyser vos données efficacement.</p>
+    `
+},
+
+
+"graphiques": {
+    "title": "Les Graphiques",
+    "content": `
+    <p>Les graphiques sont des outils puissants dans Excel pour visualiser et analyser des données. Ils permettent de transformer des données brutes en représentations visuelles claires et compréhensibles. Ce chapitre couvre tout ce que vous devez savoir pour créer et personnaliser des graphiques dans Excel.</p>
+
+    <h4 id="insertion_de_graphiques" class="graph-subtheme">Insertion de graphiques</h4>
+<p>Les graphiques permettent de visualiser les données de manière plus compréhensible. Voici comment insérer un graphique dans Excel :</p>
+<ul>
+    <li>Sélectionnez les données que vous souhaitez représenter graphiquement.</li>
+    <li>Allez dans l'onglet <strong>Insertion</strong> de la barre de menu.</li>
+    <li>Choisissez le type de graphique que vous souhaitez insérer (histogramme, courbe, etc.).</li>
+    <li>Cliquez sur le type de graphique pour l'insérer dans votre feuille de calcul.</li>
+</ul>
+<img src="path/to/image_insertion_graphique.png" alt="Insertion de graphiques">
+Types de graphiques
+<h4 id="types_de_graphiques" class="graph-subtheme">Types de graphiques</h4>
+<p>Excel offre une variété de types de graphiques pour répondre à divers besoins analytiques :</p>
+<ul>
+    <li><strong>Histogrammes :</strong> Utilisés pour représenter des données catégorielles.</li>
+    <li><strong>Courbes :</strong> Idéales pour visualiser les tendances dans le temps.</li>
+    <li><strong>Graphiques en secteurs :</strong> Utilisés pour montrer les proportions dans un ensemble de données.</li>
+    <li><strong>Graphiques en barres :</strong> Similaires aux histogrammes mais avec une orientation horizontale.</li>
+    <li><strong>Graphiques en aires :</strong> Utilisés pour montrer l'évolution des valeurs cumulatives.</li>
+    <li><strong>Graphiques en nuage de points :</strong> Utilisés pour montrer la relation entre deux variables numériques.</li>
+</ul>
+<img src="path/to/image_types_graphiques.png" alt="Types de graphiques">
+Sélection des données
+<h4 id="selection_des_donnees" class="graph-subtheme">Sélection des données</h4>
+<p>La sélection des données est cruciale pour la création de graphiques précis et significatifs :</p>
+<ul>
+    <li>Sélectionnez les données que vous souhaitez inclure dans le graphique, y compris les étiquettes de colonnes et de lignes.</li>
+    <li>Pour modifier la sélection des données d’un graphique existant, cliquez sur le graphique, puis utilisez l'onglet <strong>Création</strong> > <strong>Sélectionner les données</strong>.</li>
+    <li>Dans la fenêtre <strong>Sélectionner la source de données</strong>, vous pouvez ajouter, supprimer ou modifier les séries de données et les étiquettes.</li>
+</ul>
+<img src="path/to/image_selection_donnees.png" alt="Sélection des données">
+Personnalisation des graphiques
+<h4 id="personnalisation_des_graphiques" class="graph-subtheme">Personnalisation des graphiques</h4>
+<p>La personnalisation permet d'améliorer la lisibilité et l'apparence des graphiques :</p>
+<ul>
+    <li>Cliquez sur le graphique pour afficher les onglets <strong>Outils de graphique</strong> (<strong>Création</strong> et <strong>Mise en forme</strong>).</li>
+    <li>Utilisez l'onglet <strong>Création</strong> pour modifier le type de graphique, la disposition rapide, et les styles de graphique.</li>
+    <li>Utilisez l'onglet <strong>Mise en forme</strong> pour ajuster les couleurs, les styles de texte, et les effets de forme.</li>
+</ul>
+<img src="path/to/image_personnalisation_graphiques.png" alt="Personnalisation des graphiques">
+Titres, légendes et étiquettes de données
+<h4 id="titres_legendes_etiquettes_de_donnees" class="graph-subtheme">Titres, légendes et étiquettes de données</h4>
+<p>Ajouter des titres, des légendes et des étiquettes de données permet de rendre les graphiques plus informatifs :</p>
+<ul>
+    <li><strong>Ajouter un titre :</strong> Cliquez sur le graphique, puis utilisez l'onglet <strong>Création</strong> > <strong>Ajouter un élément de graphique</strong> > <strong>Titre du graphique</strong>.</li>
+    <li><strong>Ajouter une légende :</strong> Utilisez l'onglet <strong>Création</strong> > <strong>Ajouter un élément de graphique</strong> > <strong>Légende</strong> et choisissez la position de la légende.</li>
+    <li><strong>Ajouter des étiquettes de données :</strong> Utilisez l'onglet <strong>Création</strong> > <strong>Ajouter un élément de graphique</strong> > <strong>Étiquettes de données</strong> et choisissez la position des étiquettes.</li>
+</ul>
+<img src="path/to/image_titres_legendes_etiquettes.png" alt="Titres, légendes et étiquettes de données">
+Couleurs et styles
+<h4 id="couleurs_et_styles" class="graph-subtheme">Couleurs et styles</h4>
+<p>Personnaliser les couleurs et les styles améliore l'attrait visuel et la clarté des graphiques :</p>
+<ul>
+    <li>Pour changer les couleurs, cliquez sur le graphique, puis allez dans l'onglet <strong>Création</strong> > <strong>Changer les couleurs</strong> et sélectionnez un thème de couleurs.</li>
+    <li>Pour appliquer un style de graphique, utilisez l'onglet <strong>Création</strong> > <strong>Styles de graphique</strong> et choisissez parmi les styles disponibles.</li>
+    <li>Pour personnaliser davantage, utilisez l'onglet <strong>Mise en forme</strong> pour ajuster les bordures, les remplissages, et les effets de forme.</li>
+</ul>
+<img src="path/to/image_couleurs_styles.png" alt="Couleurs et styles">
+Graphiques avancés
+<h4 id="graphiques_avances" class="graph-subtheme">Graphiques avancés</h4>
+<p>Les graphiques avancés offrent des fonctionnalités supplémentaires pour des analyses plus complexes :</p>
+<ul>
+    <li><strong>Graphique avec deux axes :</strong> Utilisé pour comparer deux séries de données avec des unités différentes.</li>
+    <li><strong>Graphique combiné :</strong> Permet de combiner plusieurs types de graphiques dans un seul graphique.</li>
+    <li><strong>Sparklines :</strong> Petits graphiques intégrés dans des cellules pour montrer les tendances.</li>
+</ul>
+<img src="path/to/image_graphiques_avances.png" alt="Graphiques avancés">
+Graphique à partir d'un TCD
+<h4 id="graphique_a_partir_d_un_tcd" class="graph-subtheme">Graphique à partir d'un TCD</h4>
+<p>Créer un graphique à partir d'un tableau croisé dynamique permet de visualiser les données synthétisées :</p>
+<ul>
+    <li>Sélectionnez le TCD que vous souhaitez utiliser pour créer le graphique.</li>
+    <li>Allez dans l'onglet <strong>Analyser</strong> > <strong>Outils de tableau croisé dynamique</strong> > <strong>Graphique croisé dynamique</strong>.</li>
+    <li>Choisissez le type de graphique souhaité et cliquez sur <strong>OK</strong>.</li>
+</ul>
+<img src="path/to/image_graphique_tcd.png" alt="Graphique à partir d'un TCD">
+Graphiques combinés
+<h4 id="graphiques_combines" class="graph-subtheme">Graphiques combinés</h4>
+<p>Les graphiques combinés permettent de visualiser plusieurs types de données dans un seul graphique :</p>
+<ul>
+    <li>Sélectionnez les données à représenter.</li>
+    <li>Allez dans l'onglet <strong>Insertion</strong> > <strong>Graphique combiné</strong>.</li>
+    <li>Choisissez les types de graphiques pour chaque série de données et cliquez sur <strong>OK</strong>.</li>
+</ul>
+<img src="path/to/image_graphiques_combines.png" alt="Graphiques combinés">
+    `
+},
+
+
+"outils-analyse": {
+    "title": "Outils d'analyse",
+    "content": `
+<p>Les outils d'analyse d'Excel sont essentiels pour manipuler et interpréter de grandes quantités de données. Ils permettent de consolider, filtrer, extraire, et regrouper les informations de manière efficace, facilitant ainsi la prise de décision et l'analyse approfondie. Ce chapitre couvre les techniques et fonctionnalités clés pour exploiter au mieux ces outils.</p>
+
+<h4 id="consolidation_des_donnees" class="analysis-subtheme">Consolidation des données</h4>
+<p>La consolidation des données permet de combiner des données provenant de plusieurs sources en une seule feuille de calcul. Cela est particulièrement utile pour résumer des informations provenant de plusieurs feuilles ou fichiers :</p>
+<ul>
+    <li>Ouvrez la feuille de calcul où vous souhaitez consolider les données.</li>
+    <li>Allez dans l'onglet <strong>Données</strong> > <strong>Consolider</strong>.</li>
+    <li>Dans la fenêtre <strong>Consolider</strong>, sélectionnez la fonction de consolidation (Somme, Moyenne, etc.).</li>
+    <li>Cliquez sur <strong>Ajouter</strong> pour sélectionner les plages de données à consolider.</li>
+    <li>Si les plages ont des étiquettes, cochez les cases <strong>Étiquettes en haut de la colonne</strong> et/ou <strong>Étiquettes à gauche des lignes</strong>.</li>
+    <li>Cliquez sur <strong>OK</strong> pour consolider les données.</li>
+</ul>
+<img src="path/to/image_consolidation_donnees.png" alt="Consolidation des données">
+Regrouper les données provenant de plusieurs feuilles / fichiers
+<h4 id="regroupement_donnees" class="analysis-subtheme">Regrouper les données provenant de plusieurs feuilles / fichiers</h4>
+<p>Pour analyser des données réparties sur plusieurs feuilles ou fichiers, il est souvent nécessaire de les regrouper :</p>
+<ul>
+    <li>Utilisez la fonctionnalité <strong>Consolider</strong> pour combiner des données de différentes feuilles ou fichiers (voir la sous-thématique <strong>Consolidation des données</strong>).</li>
+    <li>Pour importer des données à partir de plusieurs fichiers, allez dans l'onglet <strong>Données</strong> > <strong>Obtenir des données</strong> et sélectionnez la source appropriée (fichier Excel, CSV, etc.).</li>
+    <li>Utilisez les requêtes de Power Query pour nettoyer, transformer et combiner des données de plusieurs sources.</li>
+</ul>
+<img src="path/to/image_regroupement_donnees.png" alt="Regrouper les données">
+Utilisation des filtres avancés
+<h4 id="utilisation_des_filtres_avances" class="analysis-subtheme">Utilisation des filtres avancés</h4>
+<p>Les filtres avancés permettent de filtrer des données en utilisant des critères complexes :</p>
+<ul>
+    <li>Sélectionnez la plage de données à filtrer.</li>
+    <li>Allez dans l'onglet <strong>Données</strong> > <strong>Filtrer</strong> pour activer les filtres automatiques.</li>
+    <li>Pour utiliser des filtres avancés, allez dans l'onglet <strong>Données</strong> > <strong>Avancé</strong>.</li>
+    <li>Dans la fenêtre <strong>Filtrer avancé</strong>, sélectionnez <strong>Filtrer la liste, en place</strong> ou <strong>Copier vers un autre emplacement</strong>.</li>
+    <li>Saisissez la plage de critères dans la zone <strong>Plage de critères</strong>.</li>
+    <li>Cliquez sur <strong>OK</strong> pour appliquer le filtre avancé.</li>
+</ul>
+<img src="path/to/image_filtres_avances.png" alt="Utilisation des filtres avancés">
+Critères de filtre complexe
+<h4 id="criteres_filtre_complexe" class="analysis-subtheme">Critères de filtre complexe</h4>
+<p>Les critères de filtre complexe permettent d'appliquer des filtres basés sur plusieurs conditions :</p>
+<ul>
+    <li>Créez une plage de critères au-dessus ou en dessous de votre tableau de données.</li>
+    <li>Dans la première ligne de la plage de critères, saisissez les noms des colonnes à filtrer.</li>
+    <li>Dans les lignes suivantes, saisissez les conditions de filtre pour chaque colonne. Utilisez des opérateurs comme <strong>=</strong>, <strong>&lt;</strong>, <strong>&gt;</strong>, etc.</li>
+    <li>Utilisez des lignes séparées pour des critères <strong>OU</strong> et des colonnes séparées pour des critères <strong>ET</strong>.</li>
+    <li>Appliquez le filtre avancé en utilisant la plage de critères créée.</li>
+</ul>
+<img src="path/to/image_criteres_filtre_complexe.png" alt="Critères de filtre complexe">
+Extraction de données filtrées
+<h4 id="extraction_donnees_filtrees" class="analysis-subtheme">Extraction de données filtrées</h4>
+<p>Extraire des données filtrées permet de copier les résultats de filtre dans une nouvelle plage de cellules :</p>
+<ul>
+    <li>Appliquez un filtre avancé sur la plage de données.</li>
+    <li>Dans la fenêtre <strong>Filtre avancé</strong>, sélectionnez <strong>Copier vers un autre emplacement</strong>.</li>
+    <li>Indiquez la plage de données à filtrer, la plage de critères, et la plage de destination.</li>
+    <li>Cliquez sur <strong>OK</strong> pour extraire les données filtrées vers la nouvelle plage.</li>
+</ul>
+<img src="path/to/image_extraction_donnees_filtrees.png" alt="Extraction de données filtrées">
+Les sous-totaux
+<h4 id="les_sous_totaux" class="analysis-subtheme">Les sous-totaux</h4>
+<p>Les sous-totaux permettent de calculer des totaux partiels pour des groupes de données :</p>
+<ul>
+    <li>Trier les données par la colonne sur laquelle vous souhaitez calculer les sous-totaux.</li>
+    <li>Allez dans l'onglet <strong>Données</strong> > <strong>Sous-total</strong>.</li>
+    <li>Dans la fenêtre <strong>Sous-total</strong>, sélectionnez la colonne de regroupement et la fonction de calcul (Somme, Moyenne, etc.).</li>
+    <li>Choisissez les colonnes pour lesquelles vous souhaitez afficher les sous-totaux.</li>
+    <li>Cliquez sur <strong>OK</strong> pour appliquer les sous-totaux.</li>
+</ul>
+<img src="path/to/image_sous_totaux.png" alt="Les sous-totaux">
     `
 },
 

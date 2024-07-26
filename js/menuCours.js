@@ -29,6 +29,12 @@ dropdownBtns.forEach(btn => {
         }
         if (this.classList.contains('saisie-subtheme')) {
             afficherContenu('saisie-simple'); 
+        }
+        if (this.classList.contains('tcd-subtheme')) {
+            afficherContenu('tableau-croise-dynamique'); 
+        } 
+        if (this.classList.contains('graph-subtheme')) {
+            afficherContenu('graphiques'); 
         } else {
             afficherContenu(id); 
         }
