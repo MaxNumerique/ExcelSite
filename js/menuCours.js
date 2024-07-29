@@ -30,19 +30,66 @@ dropdownBtns.forEach(btn => {
         if (this.classList.contains('saisie-subtheme')) {
             afficherContenu('saisie-simple'); 
         }
+        if (this.classList.contains('addition-subtheme')) {
+            afficherContenu('additionner'); 
+        }
+        if (this.classList.contains('manipuler-nombres-subtheme')) {
+            afficherContenu('manipuler-nombre'); 
+        }
+        if (this.classList.contains('moyenne-subtheme')) {
+            afficherContenu('calculer_moyenne'); 
+        }
+        if (this.classList.contains('valeurs-extremes-subtheme')) {
+            afficherContenu('trouver_valeurs_extremes'); 
+        }
+        if (this.classList.contains('traiter-dates-subtheme')) {
+            afficherContenu('traiter_dates'); 
+        }
+        if (this.classList.contains('compter-subtheme')) {
+            afficherContenu('compter_cellules'); 
+        }
+        if (this.classList.contains('positions-subtheme')) {
+            afficherContenu('utiliser-logique-position'); 
+        }
+        if (this.classList.contains('traiter-texte-subtheme')) {
+            afficherContenu('traiter-texte'); 
+        }
+        if (this.classList.contains('recherche-valeur-subtheme')) {
+            afficherContenu('recherche-valeur'); 
+        }
+        if (this.classList.contains('operateurs-logiques-subtheme')) {
+            afficherContenu('utiliser-operateurs-logiques'); 
+        }
         if (this.classList.contains('tcd-subtheme')) {
             afficherContenu('tableau-croise-dynamique'); 
         } 
         if (this.classList.contains('graph-subtheme')) {
             afficherContenu('graphiques'); 
-        } else {
+        } 
+        if (this.classList.contains('analyse-subtheme')) {
+            afficherContenu('outils-analyse'); 
+        }
+        if (this.classList.contains('liens-subtheme')) {
+            afficherContenu('lier-feuilles'); 
+        }
+        if (this.classList.contains('cellules-subtheme')) {
+            afficherContenu('nommer-cellules'); 
+        }
+        else {
             afficherContenu(id); 
         }
         const targetElement = document.getElementById(id);
         if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' });
+            const headerOffset = 100;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
         } else {
-            window.scrollTo({ top: 0 , behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     });
 });

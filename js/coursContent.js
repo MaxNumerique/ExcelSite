@@ -885,9 +885,9 @@ export const coursContent = {
 
 <p>Ce cours vous guidera à travers les différentes étapes pour effectuer efficacement la saisie de données dans Excel. Vous apprendrez à entrer des données, adapter le format des cellules, valider les données, embellir votre tableau et utiliser des filtres pour trier et afficher des données spécifiques.</p>
 
-<h4 id="saisie-simple" class="saisie-subtheme ">La saisie simple</h4>
+<h4 id="saisie-simple" class="saisie-subtheme">La saisie simple</h4>
 
-<h5>Entrer des données de saisie</h5>
+<h5 id="entrer-donnees-saisie" class="saisie-subtheme ">Entrer des données de saisie</h5>
 <p>Pour saisir des données dans Excel, cliquez sur une cellule et commencez à taper. Voici quelques conseils pour la saisie efficace :</p>
 <ul>
     <li>Utilisez les touches fléchées pour naviguer entre les cellules. Par exemple, <strong>Flèche vers le bas</strong> pour descendre d'une cellule, <strong>Flèche vers la droite</strong> pour passer à la cellule suivante à droite.</li>
@@ -896,7 +896,7 @@ export const coursContent = {
     <li>Pour annuler une saisie en cours, appuyez sur <strong><kbd>Echap</kbd></strong>.</li>
 </ul>
 
-<h5>Utilisation des raccourcis de saisie</h5>
+<h5 id="raccourcis-saisie" class="saisie-subtheme">Utilisation des raccourcis de saisie</h5>
 <p>Excel propose de nombreux raccourcis pour faciliter la saisie des données :</p>
 <ul>
     <li><kbd>Ctrl</kbd> + <kbd>D</kbd> : Copier la cellule au-dessus dans la cellule sélectionnée. Cela est particulièrement utile pour remplir rapidement une colonne avec les mêmes données.</li>
@@ -915,9 +915,9 @@ export const coursContent = {
 
 <hr>
 
-<h4 id="adapter-format-cellules" class="saisie-subtheme "> Adapter le format des cellules</h4>
+<h4 id="adapter-format-cellules" class="saisie-subtheme"> Adapter le format des cellules</h4>
 
-<h5>Format de cellules (nombres, texte, date, ...)</h5>
+<h5 id="format-cellules" class="saisie-subtheme">Format de cellules (nombres, texte, date, ...)</h5>
 <p>Excel propose plusieurs formats de cellule pour adapter la présentation des données :</p>
 
 <ul>
@@ -939,7 +939,7 @@ export const coursContent = {
     <li>Configurez les options spécifiques pour chaque format (décimales, symbole monétaire, etc.).</li>
 </ol>
 
-<h5>Format personnalisé</h5>
+<h5 id="format-personnalise" class="saisie-subtheme">Format personnalisé</h5>
 <p>Pour créer un format personnalisé :</p>
 <ol>
     <li>Ouvrez la boîte de dialogue <strong>Format de cellule</strong> et allez à l'onglet <strong>Nombre</strong>.</li>
@@ -960,10 +960,10 @@ export const coursContent = {
 
 <hr>
 
-<h4 id="validation-donnees" class="saisie-subtheme "> Par validation de données à partir de liste</h4>
+<h4 id="validation-donnees" class="saisie-subtheme"> Par validation de données à partir de liste</h4>
 <p>L'outil de validation des données dans Excel permet de contrôler ce que les utilisateurs peuvent saisir dans une cellule. Cela est particulièrement utile pour éviter les erreurs de saisie et garantir la cohérence des données. Par exemple, vous pouvez limiter les entrées à une liste prédéfinie de valeurs, ce qui réduit les risques d'erreurs et facilite l'analyse des données.</p>
 
-<h5>Création et utilisation de listes déroulantes</h5>
+<h5 id="creation-utilisation-liste" class="saisie-subtheme">Création et utilisation de listes déroulantes</h5>
 <p>Pour créer une liste déroulante :</p>
 <ol>
     <li>Sélectionnez les cellules où vous souhaitez ajouter une liste déroulante. Vous pouvez sélectionner une plage de cellules pour appliquer la liste déroulante à plusieurs cellules à la fois.</li>
@@ -973,7 +973,7 @@ export const coursContent = {
     <li>Cliquez sur <strong>OK</strong> pour créer la liste déroulante. Les cellules sélectionnées afficheront maintenant une flèche déroulante permettant aux utilisateurs de choisir une valeur dans la liste.</li>
 </ol>
 
-<h5>Validation des données pour éviter les erreurs</h5>
+<h5 id="validation-pour-eviter-erreurs" class="saisie-subtheme">Validation des données pour éviter les erreurs</h5>
 <p>Pour configurer la validation des données :</p>
 <ol>
     <li>Sélectionnez les cellules que vous souhaitez valider. Vous pouvez appliquer des règles de validation à une seule cellule, une plage de cellules, ou une colonne entière.</li>
@@ -986,9 +986,9 @@ export const coursContent = {
 
 <hr>
 
-<h4 id="embellissement" class="saisie-subtheme ">Embellissement</h4>
+<h4 id="embellissement" class="saisie-subtheme">Embellissement</h4>
 
-<h5>Mise en forme et alignement</h5>
+<h5 id="miseEnForme-alignement" class="saisie-subtheme ">Mise en forme et alignement</h5>
 <p>Pour mettre en forme vos cellules :</p>
 <ol>
     <li>Sélectionnez les cellules que vous souhaitez formater. Utilisez les outils de sélection pour choisir une seule cellule, une plage de cellules, des colonnes entières, etc.</li>
@@ -997,7 +997,7 @@ export const coursContent = {
     <li>Utilisez le bouton <strong>Orientation du texte</strong> pour faire pivoter le texte dans les cellules.</li>
 </ol>
 
-<h5>Utilisation des bordures et remplissage</h5>
+<h5 id="utilisation-bordures" class="saisie-subtheme">Utilisation des bordures et remplissage</h5>
 <p>Pour ajouter des bordures et des couleurs de remplissage :</p>
 <ol>
     <li>Sélectionnez les cellules que vous souhaitez formater. Utilisez les options de sélection pour choisir une seule cellule, une plage de cellules, ou une feuille entière.</li>
@@ -1133,7 +1133,7 @@ export const coursContent = {
         <code>=A1 + B1 + C1 - (D1 + E1)</code>
     </div>
     
-    <h5>La fonction SOMME</h5>
+    <h5 id="somme" class="addition-subtheme">La fonction SOMME</h5>
     <p>La fonction <code>=SOMME()</code> est une méthode puissante et flexible pour additionner des plages de cellules :</p>
     <ul>
         <li>Saisissez <code>=SOMME(</code> dans une cellule, puis sélectionnez la plage de cellules à additionner. Par exemple :</li>
@@ -1167,7 +1167,7 @@ export const coursContent = {
         <li>Appuyez sur <kbd>Entrée</kbd> pour valider la formule et afficher le résultat.</li>
     </ul>
     
-    <h5>Ajouter des valeurs basées sur des critères spécifiques avec la fonction SOMME.SI</h5>
+    <h5 id="somme-si" class="addition-subtheme">Ajouter des valeurs basées sur des critères spécifiques avec la fonction SOMME.SI</h5>
     <p>La fonction <code>=SOMME.SI()</code> permet d'additionner des valeurs qui répondent à un critère spécifique :</p>
     <ul>
         <li>La syntaxe est <code>=SOMME.SI(plage; critère; [somme_plage])</code>.</li>
@@ -1186,7 +1186,7 @@ export const coursContent = {
         <code>=SOMME.SI(A1:A10; \">100\"; SI(C1:C10 < 50; B1:B10; 0))</code>
     </div>
     
-    <h5>Utiliser des critères multiples avec la fonction SOMME.SI.ENS</h5>
+    <h5 id="somme-si-ens" class="addition-subtheme">Utiliser des critères multiples avec la fonction SOMME.SI.ENS</h5>
     <p>La fonction <code>=SOMME.SI.ENS()</code> permet d'additionner des valeurs en fonction de plusieurs critères :</p>
     <ul>
         <li>La syntaxe est <code>=SOMME.SI.ENS(somme_plage; plage_critère1; critère1; [plage_critère2; critère2]; ...)</code>.</li>
@@ -1228,15 +1228,13 @@ export const coursContent = {
     `
 },
 
-
-
     "manipuler-nombre": {
         title: "Manipuler les nombres",
         content: `
 
 <p>Excel offre une gamme de fonctions pour manipuler les nombres selon vos besoins. Cette section couvre les fonctions courantes pour les produits, les arrondis, les valeurs entières, les tronquages, les quotients, les restes, et pour vérifier la parité des nombres.</p>
 
-<h5>La fonction PRODUIT</h5>
+<h5 id="produit" class="manipuler-nombres-subtheme">La fonction PRODUIT</h5>
 <p>La fonction <code>=PRODUIT()</code> multiplie les valeurs spécifiées :</p>
 <ul>
     <li>La syntaxe est <code>=PRODUIT(nombre1; [nombre2]; ...)</code>.</li>
@@ -1247,7 +1245,7 @@ export const coursContent = {
     <code>=PRODUIT(A1; A2; A3)</code>
 </div>
 
-<h5>La fonction ARRONDI</h5>
+<h5 id="arrondi" class="manipuler-nombres-subtheme">La fonction ARRONDI</h5>
 <p>La fonction <code>=ARRONDI()</code> arrondit un nombre à un certain nombre de chiffres :</p>
 <ul>
     <li>La syntaxe est <code>=ARRONDI(nombre; nombre_de_chiffres)</code>.</li>
@@ -1258,7 +1256,7 @@ export const coursContent = {
     <code>=ARRONDI(A1; 2)</code>
 </div>
 
-<h5>La fonction ENT</h5>
+<h5 id="ent" class="manipuler-nombres-subtheme">La fonction ENT</h5>
 <p>La fonction <code>=ENT()</code> renvoie la partie entière d'un nombre en arrondissant à l'inférieur :</p>
 <ul>
     <li>La syntaxe est <code>=ENT(nombre)</code>.</li>
@@ -1269,7 +1267,7 @@ export const coursContent = {
     <code>=ENT(A1)</code>
 </div>
 
-<h5>La fonction TRONQUE</h5>
+<h5 id="tronque" class="manipuler-nombres-subtheme">La fonction TRONQUE</h5>
 <p>La fonction <code>=TRONQUE()</code> tronque un nombre à un certain nombre de chiffres sans arrondir :</p>
 <ul>
     <li>La syntaxe est <code>=TRONQUE(nombre; [nombre_de_chiffres])</code>.</li>
@@ -1280,7 +1278,7 @@ export const coursContent = {
     <code>=TRONQUE(A1; 2)</code>
 </div>
 
-<h5>La fonction QUOTIENT</h5>
+<h5 id="quotient" class="manipuler-nombres-subtheme">La fonction QUOTIENT</h5>
 <p>La fonction <code>=QUOTIENT()</code> renvoie la partie entière de la division de deux nombres :</p>
 <ul>
     <li>La syntaxe est <code>=QUOTIENT(numérateur; dénominateur)</code>.</li>
@@ -1291,7 +1289,7 @@ export const coursContent = {
     <code>=QUOTIENT(A1; B1)</code>
 </div>
 
-<h5>La fonction MOD</h5>
+<h5 id="mod" class="manipuler-nombres-subtheme">La fonction MOD</h5>
 <p>La fonction <code>=MOD()</code> renvoie le reste de la division de deux nombres :</p>
 <ul>
     <li>La syntaxe est <code>=MOD(numérateur; dénominateur)</code>.</li>
@@ -1302,7 +1300,7 @@ export const coursContent = {
     <code>=MOD(A1; B1)</code>
 </div>
 
-<h5>La fonction PAIR</h5>
+<h5 id="pair" class="manipuler-nombres-subtheme">La fonction PAIR</h5>
 <p>La fonction <code>=EST.PAIR()</code> vérifie si un nombre est pair :</p>
 <ul>
     <li>La syntaxe est <code>=EST.PAIR(nombre)</code>.</li>
@@ -1313,7 +1311,7 @@ export const coursContent = {
     <code>=EST.PAIR(A1)</code>
 </div>
 
-<h5>La fonction IMPAIR</h5>
+<h5 id="impair" class="manipuler-nombres-subtheme">La fonction IMPAIR</h5>
 <p>La fonction <code>=EST.IMPAIR()</code> vérifie si un nombre est impair :</p>
 <ul>
     <li>La syntaxe est <code>=EST.IMPAIR(nombre)</code>.</li>
@@ -1326,172 +1324,12 @@ export const coursContent = {
 `,
     },
 
-"manipuler-nombre": {
-    "title": "Manipuler les nombres",
-    "content": `
-
-    <p>Excel offre une gamme de fonctions pour manipuler les nombres selon vos besoins. Cette section couvre les fonctions courantes pour les produits, les arrondis, les valeurs entières, les tronquages, les quotients, les restes, et pour vérifier la parité des nombres.</p>
-
-    <h5>La fonction PRODUIT</h5>
-    <p>La fonction <code>=PRODUIT()</code> multiplie les valeurs spécifiées :</p>
-    <ul>
-        <li>La syntaxe est <code>=PRODUIT(nombre1; [nombre2]; ...)</code>.</li>
-        <li>Par exemple, pour multiplier les valeurs des cellules A1, A2 et A3 :</li>
-    </ul>
-    <div class="formula-box">
-        <span class="copy-button" onclick="copyToClipboard('=PRODUIT(A1; A2; A3)', this)">📋</span>
-        <code>=PRODUIT(A1; A2; A3)</code>
-    </div>
-    <p>Un exemple plus complexe pourrait être :</p>
-    <ul>
-        <li>Multiplier les valeurs des cellules A1 à A5 et les diviser par le produit des valeurs des cellules B1 à B5 :</li>
-    </ul>
-    <div class="formula-box">
-        <span class="copy-button" onclick="copyToClipboard('=PRODUIT(A1:A5) / PRODUIT(B1:B5)', this)">📋</span>
-        <code>=PRODUIT(A1:A5) / PRODUIT(B1:B5)</code>
-    </div>
-
-    <h5>La fonction ARRONDI</h5>
-    <p>La fonction <code>=ARRONDI()</code> arrondit un nombre à un certain nombre de chiffres :</p>
-    <ul>
-        <li>La syntaxe est <code>=ARRONDI(nombre; nombre_de_chiffres)</code>.</li>
-        <li>Par exemple, pour arrondir la valeur de A1 à 2 chiffres après la virgule :</li>
-    </ul>
-    <div class="formula-box">
-        <span class="copy-button" onclick="copyToClipboard('=ARRONDI(A1; 2)', this)">📋</span>
-        <code>=ARRONDI(A1; 2)</code>
-    </div>
-    <p>Un exemple plus complexe pourrait être :</p>
-    <ul>
-        <li>Arrondir la moyenne des valeurs des cellules A1 à A10 à 1 chiffre après la virgule :</li>
-    </ul>
-    <div class="formula-box">
-        <span class="copy-button" onclick="copyToClipboard('=ARRONDI(MOYENNE(A1:A10); 1)', this)">📋</span>
-        <code>=ARRONDI(MOYENNE(A1:A10); 1)</code>
-    </div>
-
-    <h5>La fonction ENT</h5>
-    <p>La fonction <code>=ENT()</code> renvoie la partie entière d'un nombre en arrondissant à l'inférieur :</p>
-    <ul>
-        <li>La syntaxe est <code>=ENT(nombre)</code>.</li>
-        <li>Par exemple, pour obtenir la partie entière de la valeur de A1 :</li>
-    </ul>
-    <div class="formula-box">
-        <span class="copy-button" onclick="copyToClipboard('=ENT(A1)', this)">📋</span>
-        <code>=ENT(A1)</code>
-    </div>
-    <p>Un exemple plus complexe pourrait être :</p>
-    <ul>
-        <li>Obtenir la partie entière de la somme des valeurs des cellules A1 à A10 divisée par 3 :</li>
-    </ul>
-    <div class="formula-box">
-        <span class="copy-button" onclick="copyToClipboard('=ENT(SOMME(A1:A10) / 3)', this)">📋</span>
-        <code>=ENT(SOMME(A1:A10) / 3)</code>
-    </div>
-
-    <h5>La fonction TRONQUE</h5>
-    <p>La fonction <code>=TRONQUE()</code> tronque un nombre à un certain nombre de chiffres sans arrondir :</p>
-    <ul>
-        <li>La syntaxe est <code>=TRONQUE(nombre; [nombre_de_chiffres])</code>.</li>
-        <li>Par exemple, pour tronquer la valeur de A1 à 2 chiffres après la virgule :</li>
-    </ul>
-    <div class="formula-box">
-        <span class="copy-button" onclick="copyToClipboard('=TRONQUE(A1; 2)', this)">📋</span>
-        <code>=TRONQUE(A1; 2)</code>
-    </div>
-    <p>Un exemple plus complexe pourrait être :</p>
-    <ul>
-        <li>Tronquer la somme des valeurs des cellules A1 à A10 à 1 chiffre après la virgule :</li>
-    </ul>
-    <div class="formula-box">
-        <span class="copy-button" onclick="copyToClipboard('=TRONQUE(SOMME(A1:A10); 1)', this)">📋</span>
-        <code>=TRONQUE(SOMME(A1:A10); 1)</code>
-    </div>
-
-    <h5>La fonction QUOTIENT</h5>
-    <p>La fonction <code>=QUOTIENT()</code> renvoie la partie entière de la division de deux nombres :</p>
-    <ul>
-        <li>La syntaxe est <code>=QUOTIENT(numérateur; dénominateur)</code>.</li>
-        <li>Par exemple, pour obtenir le quotient de la division de A1 par B1 :</li>
-    </ul>
-    <div class="formula-box">
-        <span class="copy-button" onclick="copyToClipboard('=QUOTIENT(A1; B1)', this)">📋</span>
-        <code>=QUOTIENT(A1; B1)</code>
-    </div>
-    <p>Un exemple plus complexe pourrait être :</p>
-    <ul>
-        <li>Obtenir le quotient de la somme des valeurs des cellules A1 à A10 divisée par le produit des valeurs des cellules B1 à B10 :</li>
-    </ul>
-    <div class="formula-box">
-        <span class="copy-button" onclick="copyToClipboard('=QUOTIENT(SOMME(A1:A10); PRODUIT(B1:B10))', this)">📋</span>
-        <code>=QUOTIENT(SOMME(A1:A10); PRODUIT(B1:B10))</code>
-    </div>
-
-    <h5>La fonction MOD</h5>
-    <p>La fonction <code>=MOD()</code> renvoie le reste de la division de deux nombres :</p>
-    <ul>
-        <li>La syntaxe est <code>=MOD(numérateur; dénominateur)</code>.</li>
-        <li>Par exemple, pour obtenir le reste de la division de A1 par B1 :</li>
-    </ul>
-    <div class="formula-box">
-        <span class="copy-button" onclick="copyToClipboard('=MOD(A1; B1)', this)">📋</span>
-        <code>=MOD(A1; B1)</code>
-    </div>
-    <p>Un exemple plus complexe pourrait être :</p>
-    <ul>
-        <li>Obtenir le reste de la division de la somme des valeurs des cellules A1 à A10 par la somme des valeurs des cellules B1 à B10 :</li>
-    </ul>
-    <div class="formula-box">
-        <span class="copy-button" onclick="copyToClipboard('=MOD(SOMME(A1:A10); SOMME(B1:B10))', this)">📋</span>
-        <code>=MOD(SOMME(A1:A10); SOMME(B1:B10))</code>
-    </div>
-
-    <h5>La fonction PAIR</h5>
-    <p>La fonction <code>=EST.PAIR()</code> vérifie si un nombre est pair :</p>
-    <ul>
-        <li>La syntaxe est <code>=EST.PAIR(nombre)</code>.</li>
-        <li>Par exemple, pour vérifier si la valeur de A1 est paire :</li>
-    </ul>
-    <div class="formula-box">
-        <span class="copy-button" onclick="copyToClipboard('=EST.PAIR(A1)', this)">📋</span>
-        <code>=EST.PAIR(A1)</code>
-    </div>
-    <p>Un exemple plus complexe pourrait être :</p>
-    <ul>
-        <li>Vérifier si le produit des valeurs des cellules A1 à A5 est pair :</li>
-    </ul>
-    <div class="formula-box">
-        <span class="copy-button" onclick="copyToClipboard('=EST.PAIR(PRODUIT(A1:A5))', this)">📋</span>
-        <code>=EST.PAIR(PRODUIT(A1:A5))</code>
-    </div>
-
-    <h5>La fonction IMPAIR</h5>
-    <p>La fonction <code>=EST.IMPAIR()</code> vérifie si un nombre est impair :</p>
-    <ul>
-        <li>La syntaxe est <code>=EST.IMPAIR(nombre)</code>.</li>
-        <li>Par exemple, pour vérifier si la valeur de A1 est impaire :</li>
-    </ul>
-    <div class="formula-box">
-        <span class="copy-button" onclick="copyToClipboard('=EST.IMPAIR(A1)', this)">📋</span>
-        <code>=EST.IMPAIR(A1)</code>
-    </div>
-    <p>Un exemple plus complexe pourrait être :</p>
-    <ul>
-        <li>Vérifier si la différence entre les valeurs des cellules A1 et B1 est impaire :</li>
-    </ul>
-    <div class="formula-box">
-        <span class="copy-button" onclick="copyToClipboard('=EST.IMPAIR(A1 - B1)', this)">📋</span>
-        <code>=EST.IMPAIR(A1 - B1)</code>
-    </div>
-    `
-},
-
 "calculer_moyenne": {
     "title": "Calculer une moyenne",
     "content": `
 <p>Les fonctions de calcul de moyenne dans Excel vous permettent de déterminer la valeur moyenne d'un ensemble de données. Cette section couvre les fonctions MOYENNE, MOYENNE.SI, et MOYENNE.SI.ENS pour vous aider à calculer des moyennes simples et conditionnelles dans vos feuilles de calcul.</p>
 
-<h5>Utiliser la fonction MOYENNE</h5>
+<h5 id="moyenne" class="moyenne-subtheme">Utiliser la fonction MOYENNE</h5>
 <p>La fonction <code>=MOYENNE()</code> calcule la moyenne arithmétique d'une plage de cellules :</p>
 <ul>
     <li>La syntaxe est <code>=MOYENNE(nombre1; [nombre2]; ...)</code>.</li>
@@ -1510,7 +1348,7 @@ export const coursContent = {
     <code>=MOYENNE(A1:A10; C1:C10)</code>
 </div>
 
-<h5>Utiliser la fonction MOYENNE.SI</h5>
+<h5 id="moyenne-si" class="moyenne-subtheme">Utiliser la fonction MOYENNE.SI</h5>
 <p>La fonction <code>=MOYENNE.SI()</code> calcule la moyenne des cellules qui répondent à un critère spécifique :</p>
 <ul>
     <li>La syntaxe est <code>=MOYENNE.SI(plage; critère; [plage_moyenne])</code>.</li>
@@ -1529,7 +1367,7 @@ export const coursContent = {
     <code>=MOYENNE.SI(A1:A10; "Oui"; B1:B10)</code>
 </div>
 
-<h5>Utiliser la fonction MOYENNE.SI.ENS</h5>
+<h5 id="moyenne-si-ens" class="moyenne-subtheme">Utiliser la fonction MOYENNE.SI.ENS</h5>
 <p>La fonction <code>=MOYENNE.SI.ENS()</code> calcule la moyenne des cellules qui répondent à plusieurs critères :</p>
 <ul>
     <li>La syntaxe est <code>=MOYENNE.SI.ENS(plage_moyenne; plage_critère1; critère1; [plage_critère2; critère2]; ...)</code>.</li>
@@ -1556,7 +1394,7 @@ export const coursContent = {
 
     <p>Excel offre plusieurs fonctions pour compter des cellules en fonction de différents critères. Cette section vous guidera à travers l'utilisation des fonctions COMPTE, NB.SI, NB.SI.ENS, NBVAL et NB.VIDE pour effectuer des comptages dans vos feuilles de calcul.</p>
 
-    <h5>Utiliser la fonction COMPTE</h5>
+    <h5 id="compte" class="compter-subtheme">Utiliser la fonction COMPTE</h5>
     <p>La fonction <code>=COMPTE()</code> permet de compter le nombre de cellules contenant des nombres dans une plage :</p>
     <ul>
         <li>Saisissez <code>=COMPTE(</code> dans une cellule, puis sélectionnez la plage de cellules que vous souhaitez compter. Par exemple :</li>
@@ -1574,7 +1412,7 @@ export const coursContent = {
         <code>=COMPTE(A1:A10) + COMPTE(B1:B10)</code>
     </div>
 
-    <h5>Utiliser la fonction NB.SI</h5>
+    <h5 id="nb-si" class="compter-subtheme">Utiliser la fonction NB.SI</h5>
     <p>La fonction <code>=NB.SI()</code> permet de compter le nombre de cellules qui répondent à un critère spécifique :</p>
     <ul>
         <li>La syntaxe est <code>=NB.SI(plage; critère)</code>.</li>
@@ -1593,7 +1431,7 @@ export const coursContent = {
         <code>=NB.SI(A1:A10; "Oui") + NB.SI(B1:B10; "Non")</code>
     </div>
 
-    <h5>Utiliser des critères multiples avec la fonction NB.SI.ENS</h5>
+    <h5 id="nb-si-ens" class="compter-subtheme">Utiliser des critères multiples avec la fonction NB.SI.ENS</h5>
     <p>La fonction <code>=NB.SI.ENS()</code> permet de compter le nombre de cellules qui répondent à plusieurs critères :</p>
     <ul>
         <li>La syntaxe est <code>=NB.SI.ENS(plage_critère1; critère1; [plage_critère2; critère2]; ...)</code>.</li>
@@ -1612,7 +1450,7 @@ export const coursContent = {
         <code>=NB.SI.ENS(D1:D10; A1:A10; "<50"; B1:B10; "Oui"; C1:C10; "<>")</code>
     </div>
 
-    <h5>Utiliser la fonction NBVAL</h5>
+    <h5 id="nbval" class="compter-subtheme">Utiliser la fonction NBVAL</h5>
     <p>La fonction <code>=NBVAL()</code> permet de compter le nombre de cellules non vides dans une plage :</p>
     <ul>
         <li>Saisissez <code>=NBVAL(</code> dans une cellule, puis sélectionnez la plage de cellules que vous souhaitez compter. Par exemple :</li>
@@ -1630,7 +1468,7 @@ export const coursContent = {
         <code>=NBVAL(A1:A10) + NBVAL(B1:B10)</code>
     </div>
 
-    <h5>Utiliser la fonction NB.VIDE</h5>
+    <h5 id="nb-vide" class="compter-subtheme">Utiliser la fonction NB.VIDE</h5>
     <p>La fonction <code>=NB.VIDE()</code> permet de compter le nombre de cellules vides dans une plage :</p>
     <ul>
         <li>Saisissez <code>=NB.VIDE(</code> dans une cellule, puis sélectionnez la plage de cellules que vous souhaitez compter. Par exemple :</li>
@@ -1659,7 +1497,7 @@ export const coursContent = {
 
     <p>Excel offre plusieurs fonctions pour trouver les valeurs minimales et maximales dans une plage de données. Cette section vous guidera à travers l'utilisation des fonctions MIN, MIN.SI.ENS, MAX et MAX.SI.ENS pour identifier les valeurs extrêmes dans vos feuilles de calcul.</p>
 
-    <h5>Utiliser la fonction MIN</h5>
+    <h5 id="min" class="valeurs-extremes-subtheme">Utiliser la fonction MIN</h5>
     <p>La fonction <code>=MIN()</code> permet de trouver la valeur minimale dans une plage de cellules :</p>
     <ul>
         <li>Saisissez <code>=MIN(</code> dans une cellule, puis sélectionnez la plage de cellules dont vous souhaitez trouver la valeur minimale. Par exemple :</li>
@@ -1677,7 +1515,7 @@ export const coursContent = {
         <code>=MIN(MIN(A1:A10); MIN(B1:B10))</code>
     </div>
 
-    <h5>Utiliser la fonction MIN.SI.ENS</h5>
+    <h5 id="min-si-ens" class="valeurs-extremes-subtheme">Utiliser la fonction MIN.SI.ENS</h5>
     <p>La fonction <code>=MIN.SI.ENS()</code> permet de trouver la valeur minimale dans une plage en fonction de plusieurs critères :</p>
     <ul>
         <li>La syntaxe est <code>=MIN.SI.ENS(min_plage; plage_critère1; critère1; [plage_critère2; critère2]; ...)</code>.</li>
@@ -1696,7 +1534,7 @@ export const coursContent = {
         <code>=MIN.SI.ENS(C1:C10; A1:A10; ">50"; B1:B10; "Oui"; D1:D10; "<500")</code>
     </div>
 
-    <h5>Utiliser la fonction MAX</h5>
+    <h5 id="max" class="valeurs-extremes-subtheme">Utiliser la fonction MAX</h5>
     <p>La fonction <code>=MAX()</code> permet de trouver la valeur maximale dans une plage de cellules :</p>
     <ul>
         <li>Saisissez <code>=MAX(</code> dans une cellule, puis sélectionnez la plage de cellules dont vous souhaitez trouver la valeur maximale. Par exemple :</li>
@@ -1714,7 +1552,7 @@ export const coursContent = {
         <code>=MAX(MAX(A1:A10); MAX(B1:B10))</code>
     </div>
 
-    <h5>Utiliser la fonction MAX.SI.ENS</h5>
+    <h5 id="max-si-ens" class="valeurs-extremes-subtheme">Utiliser la fonction MAX.SI.ENS</h5>
     <p>La fonction <code>=MAX.SI.ENS()</code> permet de trouver la valeur maximale dans une plage en fonction de plusieurs critères :</p>
     <ul>
         <li>La syntaxe est <code>=MAX.SI.ENS(max_plage; plage_critère1; critère1; [plage_critère2; critère2]; ...)</code>.</li>
@@ -1741,7 +1579,7 @@ export const coursContent = {
 
     <p>Excel offre plusieurs fonctions pour manipuler et extraire des informations à partir de dates et d'heures. Cette section vous guidera à travers les fonctions AUJOURD'HUI, MAINTENANT, JOUR, MOIS, ANNEE, JOURSEM, HEURE, MINUTE, et SECONDE pour vous aider à gérer efficacement les dates dans vos feuilles de calcul.</p>
 
-    <h5>Utiliser la fonction AUJOURD'HUI</h5>
+    <h5 id="aujourd'hui" class="traiter-dates-subtheme">Utiliser la fonction AUJOURD'HUI</h5>
     <p>La fonction <code>=AUJOURD'HUI()</code> renvoie la date actuelle sans l'heure :</p>
     <ul>
         <li>Entrez <code>=AUJOURD'HUI()</code> dans une cellule pour afficher la date du jour.</li>
@@ -1751,7 +1589,7 @@ export const coursContent = {
         <code>=AUJOURD'HUI()</code>
     </div>
 
-    <h5>Utiliser la fonction MAINTENANT</h5>
+    <h5 id="maintenant" class="traiter-dates-subtheme">Utiliser la fonction MAINTENANT</h5>
     <p>La fonction <code>=MAINTENANT()</code> renvoie la date et l'heure actuelles :</p>
     <ul>
         <li>Entrez <code>=MAINTENANT()</code> dans une cellule pour afficher la date et l'heure courantes.</li>
@@ -1761,7 +1599,7 @@ export const coursContent = {
         <code>=MAINTENANT()</code>
     </div>
 
-    <h5>Utiliser la fonction JOUR</h5>
+    <h5 id="jour" class="traiter-dates-subtheme">Utiliser la fonction JOUR</h5>
     <p>La fonction <code>=JOUR()</code> extrait le jour du mois à partir d'une date :</p>
     <ul>
         <li>Saisissez <code>=JOUR(date)</code> dans une cellule, où <code>date</code> est la cellule contenant la date ou une date au format <code>JJ/MM/AAAA</code>. Par exemple :</li>
@@ -1771,7 +1609,7 @@ export const coursContent = {
         <code>=JOUR(A1)</code>
     </div>
 
-    <h5>Utiliser la fonction MOIS</h5>
+    <h5 id="mois" class="traiter-dates-subtheme">Utiliser la fonction MOIS</h5>
     <p>La fonction <code>=MOIS()</code> extrait le mois à partir d'une date :</p>
     <ul>
         <li>Saisissez <code>=MOIS(date)</code> dans une cellule, où <code>date</code> est la cellule contenant la date ou une date au format <code>JJ/MM/AAAA</code>. Par exemple :</li>
@@ -1789,7 +1627,7 @@ export const coursContent = {
         <code>=MOIS(MAINTENANT())-1</code>
     </div>
 
-    <h5>Utiliser la fonction ANNEE</h5>
+    <h5 id="annee" class="traiter-dates-subtheme">Utiliser la fonction ANNEE</h5>
     <p>La fonction <code>=ANNEE()</code> extrait l'année à partir d'une date :</p>
     <ul>
         <li>Saisissez <code>=ANNEE(date)</code> dans une cellule, où <code>date</code> est la cellule contenant la date ou une date au format <code>JJ/MM/AAAA</code>. Par exemple :</li>
@@ -1807,7 +1645,7 @@ export const coursContent = {
         <code>=SI(MOD(ANNEE(A1);4)=0; SI(MOD(ANNEE(A1);100)<>0; VRAI; MOD(ANNEE(A1);400)=0); FAUX)</code>
     </div>
 
-    <h5>Utiliser la fonction JOURSEM</h5>
+    <h5 id="joursem" class="traiter-dates-subtheme">Utiliser la fonction JOURSEM</h5>
     <p>La fonction <code>=JOURSEM()</code> renvoie le jour de la semaine pour une date donnée :</p>
     <ul>
         <li>Saisissez <code>=JOURSEM(date; [type])</code> dans une cellule. Le paramètre <code>[type]</code> détermine le format du jour (1 pour dimanche, 2 pour lundi, etc.). Par exemple :</li>
@@ -1817,7 +1655,7 @@ export const coursContent = {
         <code>=JOURSEM(A1; 2)</code>
     </div>
 
-    <h5>Utiliser la fonction HEURE</h5>
+    <h5 id="heure" class="traiter-dates-subtheme">Utiliser la fonction HEURE</h5>
     <p>La fonction <code>=HEURE()</code> extrait l'heure d'une date-heure :</p>
     <ul>
         <li>Saisissez <code>=HEURE(date_heure)</code> dans une cellule, où <code>date_heure</code> est la cellule contenant une date et une heure. Par exemple :</li>
@@ -1835,7 +1673,7 @@ export const coursContent = {
         <code>=HEURE(TEMPSVAL("2:30 PM"))</code>
     </div>
 
-    <h5>Utiliser la fonction MINUTE</h5>
+    <h5 id="minute" class="traiter-dates-subtheme">Utiliser la fonction MINUTE</h5>
     <p>La fonction <code>=MINUTE()</code> extrait les minutes d'une date-heure :</p>
     <ul>
         <li>Saisissez <code>=MINUTE(date_heure)</code> dans une cellule, où <code>date_heure</code> est la cellule contenant une date et une heure. Par exemple :</li>
@@ -1853,7 +1691,7 @@ export const coursContent = {
         <code>=MINUTE(TEMPSVAL("14:45"))</code>
     </div>
 
-    <h5>Utiliser la fonction SECONDE</h5>
+    <h5 id="seconde" class="traiter-dates-subtheme">Utiliser la fonction SECONDE</h5>
     <p>La fonction <code>=SECONDE()</code> extrait les secondes d'une date-heure :</p>
     <ul>
         <li>Saisissez <code>=SECONDE(date_heure)</code> dans une cellule, où <code>date_heure</code> est la cellule contenant une date et une heure. Par exemple :</li>
@@ -1879,7 +1717,7 @@ export const coursContent = {
 
 <p>Les opérateurs logiques dans Excel permettent de créer des formules conditionnelles pour effectuer des actions basées sur des critères spécifiques. Cette section couvre les fonctions SI, ET, OU, ESTVIDE, et SIERREUR pour vous aider à intégrer des conditions et gérer les erreurs dans vos formules.</p>
 
-<h5>Utiliser la fonction SI</h5>
+<h5 id="si" class="operateurs-logiques-subtheme">Utiliser la fonction SI</h5>
 <p>La fonction <code>=SI()</code> évalue une condition et renvoie une valeur si la condition est vraie et une autre valeur si elle est fausse :</p>
 <ul>
     <li>La syntaxe est <code>=SI(condition; valeur_si_vrai; valeur_si_faux)</code>.</li>
@@ -1898,7 +1736,7 @@ export const coursContent = {
     <code>=SI(A1 > 100; &quot;Bon&quot;; SI(A1 >= 50; &quot;Moyen&quot;; &quot;Faible&quot;))</code>
 </div>
 
-<h5>Utiliser la fonction ET</h5>
+<h5 id="et" class="operateurs-logiques-subtheme">Utiliser la fonction ET</h5>
 <p>La fonction <code>=ET()</code> vérifie si toutes les conditions spécifiées sont vraies :</p>
 <ul>
     <li>La syntaxe est <code>=ET(condition1; condition2; ...)</code>.</li>
@@ -1917,7 +1755,7 @@ export const coursContent = {
     <code>=ET(A1 > 50; B1 < 100; C1 = "OK")</code>
 </div>
 
-<h5>Utiliser la fonction OU</h5>
+<h5 id="ou" class="operateurs-logiques-subtheme">Utiliser la fonction OU</h5>
 <p>La fonction <code>=OU()</code> vérifie si au moins une des conditions spécifiées est vraie :</p>
 <ul>
     <li>La syntaxe est <code>=OU(condition1; condition2; ...)</code>.</li>
@@ -1936,7 +1774,7 @@ export const coursContent = {
     <code>=OU(A1 < 5; B1 > 10; C1 = "Urgent")</code>
 </div>
 
-<h5>Utiliser la fonction ESTVIDE</h5>
+<h5 id="estvide" class="operateurs-logiques-subtheme">Utiliser la fonction ESTVIDE</h5>
 <p>La fonction <code>=ESTVIDE()</code> vérifie si une cellule est vide :</p>
 <ul>
     <li>La syntaxe est <code>=ESTVIDE(cellule)</code>.</li>
@@ -1955,7 +1793,7 @@ export const coursContent = {
     <code>=ET(ESTVIDE(A1); ESTVIDE(B1))</code>
 </div>
 
-<h5>Utiliser la fonction SIERREUR</h5>
+<h5 id="sierreur" class="operateurs-logiques-subtheme">Utiliser la fonction SIERREUR</h5>
 <p>La fonction <code>=SIERREUR()</code> renvoie une valeur spécifiée si une formule génère une erreur, sinon elle renvoie le résultat de la formule :</p>
 <ul>
     <li>La syntaxe est <code>=SIERREUR(formule; valeur_si_erreur)</code>.</li>
@@ -1982,7 +1820,7 @@ export const coursContent = {
 
 <p>Les fonctions de logique de position dans Excel permettent de manipuler et d'extraire des parties spécifiques de texte ou de trouver des informations à l'intérieur des chaînes de caractères. Cette section couvre les fonctions GAUCHE, DROITE, TROUVE, et CONCATENER pour vous aider à travailler efficacement avec du texte.</p>
 
-<h5>Utiliser la fonction GAUCHE</h5>
+<h5 id="gauche" class="positions-subtheme">Utiliser la fonction GAUCHE</h5>
 <p>La fonction <code>=GAUCHE()</code> extrait un nombre spécifié de caractères à partir du début d'une chaîne de texte :</p>
 <ul>
     <li>La syntaxe est <code>=GAUCHE(texte; [nombre_de_caractères])</code>.</li>
@@ -2001,7 +1839,7 @@ export const coursContent = {
     <code>=GAUCHE(DROITE(A1; NBCAR(A1) - CHERCHE("-"; A1)); 3)</code>
 </div>
 
-<h5>Utiliser la fonction DROITE</h5>
+<h5 id="droite" class="positions-subtheme">Utiliser la fonction DROITE</h5>
 <p>La fonction <code>=DROITE()</code> extrait un nombre spécifié de caractères à partir de la fin d'une chaîne de texte :</p>
 <ul>
     <li>La syntaxe est <code>=DROITE(texte; [nombre_de_caractères])</code>.</li>
@@ -2020,7 +1858,7 @@ export const coursContent = {
     <code>=DROITE(A1; NBCAR(A1) - TROUVE(" "; A1; TROUVE(" "; A1) + 1))</code>
 </div>
 
-<h5>Utiliser la fonction TROUVE</h5>
+<h5 id="trouve" class="positions-subtheme">Utiliser la fonction TROUVE</h5>
 <p>La fonction <code>=TROUVE()</code> renvoie la position d'une chaîne de texte à l'intérieur d'une autre chaîne de texte :</p>
 <ul>
     <li>La syntaxe est <code>=TROUVE(chaîne_cherchée; texte; [numéro_de_départ])</code>.</li>
@@ -2039,7 +1877,7 @@ export const coursContent = {
     <code>=TROUVE("-"; A1)</code>
 </div>
 
-<h5>Utiliser la fonction CONCATENER</h5>
+<h5 id="concatener" class="positions-subtheme">Utiliser la fonction CONCATENER</h5>
 <p>La fonction <code>=CONCATENER()</code> combine plusieurs chaînes de texte en une seule chaîne :</p>
 <ul>
     <li>La syntaxe est <code>=CONCATENER(texte1; [texte2]; ...)</code>.</li>
@@ -2066,7 +1904,7 @@ export const coursContent = {
 
 <p>Les fonctions de traitement du texte dans Excel vous permettent de manipuler et de formater des chaînes de caractères de différentes manières. Cette section couvre les fonctions MINUSCULE, MAJUSCULE, NBCAR, REMPLACER, et EXACT pour vous aider à gérer le texte dans vos feuilles de calcul.</p>
 
-<h5>Utiliser la fonction MINUSCULE</h5>
+<h5 id="minuscule" class="traiter-texte-subtheme">Utiliser la fonction MINUSCULE</h5>
 <p>La fonction <code>=MINUSCULE()</code> convertit tous les caractères d'une chaîne de texte en minuscules :</p>
 <ul>
     <li>La syntaxe est <code>=MINUSCULE(texte)</code>.</li>
@@ -2085,7 +1923,7 @@ export const coursContent = {
     <code>=MINUSCULE(DROITE(A1; NBCAR(A1) - TROUVE(" "; A1)))</code>
 </div>
 
-<h5>Utiliser la fonction MAJUSCULE</h5>
+<h5 id="majuscule" class="traiter-texte-subtheme">Utiliser la fonction MAJUSCULE</h5>
 <p>La fonction <code>=MAJUSCULE()</code> convertit tous les caractères d'une chaîne de texte en majuscules :</p>
 <ul>
     <li>La syntaxe est <code>=MAJUSCULE(texte)</code>.</li>
@@ -2104,7 +1942,7 @@ export const coursContent = {
     <code>=MAJUSCULE(GAUCHE(A1; TROUVE("-"; A1) - 1))</code>
 </div>
 
-<h5>Utiliser la fonction NBCAR</h5>
+<h5 id="nbcar" class="traiter-texte-subtheme">Utiliser la fonction NBCAR</h5>
 <p>La fonction <code>=NBCAR()</code> renvoie le nombre de caractères dans une chaîne de texte :</p>
 <ul>
     <li>La syntaxe est <code>=NBCAR(texte)</code>.</li>
@@ -2123,7 +1961,7 @@ export const coursContent = {
     <code>=NBCAR(DROITE(A1; NBCAR(A1) - TROUVE(" "; A1)))</code>
 </div>
 
-<h5>Utiliser la fonction REMPLACER</h5>
+<h5 id="remplacer" class="traiter-texte-subtheme">Utiliser la fonction REMPLACER</h5>
 <p>La fonction <code>=REMPLACER()</code> remplace une partie spécifique d'une chaîne de texte par une autre chaîne :</p>
 <ul>
     <li>La syntaxe est <code>=REMPLACER(texte; début; nombre_de_caractères; nouveau_texte)</code>.</li>
@@ -2142,7 +1980,7 @@ export const coursContent = {
     <code>=REMPLACER(A1; TROUVE("-"; A1); NBCAR(A1) - TROUVE("-"; A1) + 1; "Nouveau Texte")</code>
 </div>
 
-<h5>Utiliser la fonction EXACT</h5>
+<h5 id="exact" class="traiter-texte-subtheme">Utiliser la fonction EXACT</h5>
 <p>La fonction <code>=EXACT()</code> compare deux chaînes de texte et renvoie VRAI si elles sont exactement identiques, y compris la casse :</p>
 <ul>
     <li>La syntaxe est <code>=EXACT(texte1; texte2)</code>.</li>
@@ -2169,7 +2007,7 @@ export const coursContent = {
 
 <p>Les fonctions de recherche dans Excel permettent de trouver des valeurs spécifiques dans vos données. Cette section couvre les fonctions RECHERCHEV, RECHERCHH, RECHERCHX, et INDEX pour vous aider à effectuer des recherches précises dans vos feuilles de calcul.</p>
 
-<h5>Utiliser la fonction RECHERCHEV</h5>
+<h5 id="recherche-valeur" class="recherche-valeur-subtheme">Utiliser la fonction RECHERCHEV</h5>
 <p>La fonction <code>=RECHERCHEV()</code> recherche une valeur dans la première colonne d'une plage et renvoie une valeur dans la même ligne d'une colonne spécifiée :</p>
 <ul>
     <li>La syntaxe est <code>=RECHERCHEV(valeur_recherchée; table_array; col_index_num; [valeur_proche])</code>.</li>
@@ -2188,7 +2026,7 @@ export const coursContent = {
     <code>=RECHERCHEV(A1; B1:D10; B11; FAUX)</code>
 </div>
 
-<h5>Utiliser la fonction RECHERCHH</h5>
+<h5 id="rechercheV-rechercheH" class="recherche-valeur-subtheme">Utiliser la fonction RECHERCHH</h5>
 <p>La fonction <code>=RECHERCHH()</code> recherche une valeur dans la première ligne d'une plage et renvoie une valeur dans la même colonne d'une ligne spécifiée :</p>
 <ul>
     <li>La syntaxe est <code>=RECHERCHH(valeur_recherchée; table_array; row_index_num; [valeur_proche])</code>.</li>
@@ -2207,7 +2045,7 @@ export const coursContent = {
     <code>=RECHERCHH(A1; B1:D10; C1; FAUX)</code>
 </div>
 
-<h5>Utiliser la fonction RECHERCHX</h5>
+<h5 id="rechercheX" class="recherche-valeur-subtheme">Utiliser la fonction RECHERCHX</h5>
 <p>La fonction <code>=RECHERCHX()</code> est une fonction de recherche avancée qui peut remplacer RECHERCHEV et RECHERCHH. Elle recherche une valeur dans une plage et renvoie une valeur correspondante d'une autre plage :</p>
 <ul>
     <li>La syntaxe est <code>=RECHERCHX(valeur_recherchée; plage_recherche; plage_retour; [valeur_si_non_trouvé])</code>.</li>
@@ -2226,7 +2064,7 @@ export const coursContent = {
     <code>=RECHERCHX(A1; B1:B10; C1:C10; "Non Trouvé")</code>
 </div>
 
-<h5>Utiliser la fonction INDEX</h5>
+<h5 id="index" class="recherche-valeur-subtheme">Utiliser la fonction INDEX</h5>
 <p>La fonction <code>=INDEX()</code> renvoie la valeur d'une cellule dans une plage en fonction des numéros de ligne et de colonne spécifiés :</p>
 <ul>
     <li>La syntaxe est <code>=INDEX(plage; no_ligne; [no_colonne])</code>.</li>
@@ -2261,7 +2099,7 @@ export const coursContent = {
     <p>Un tableau croisé dynamique (TCD) est une fonction d'Excel qui permet de synthétiser et analyser de grandes quantités de données rapidement et facilement. Voici un aperçu détaillé de ce que sont les TCD et de leurs principales caractéristiques :</p>
     <img src="path/to/image1.png" alt="Présentation d'un TCD">
 
-    <h5 id="definition_et_utilite" class="">Définition et utilité</h5>
+    <h5 id="présentation-tcd" class="">Définition et utilité</h5>
     <p>Un TCD est un outil interactif qui vous permet de réorganiser et résumer des ensembles de données volumineux sans modifier les données originales. Il offre une vue d'ensemble rapide de vos données et vous aide à identifier les tendances et les motifs.</p>
     <p>Les principales utilisations des TCD incluent :</p>
     <ul>
@@ -2339,7 +2177,7 @@ export const coursContent = {
     <h5 id="utilisation_de_liresdonneestabcroisdynamique" class="tcd-subtheme">Utilisation de la fonction LIREDONNEESTABCROISDYNAMIQUE()</h5>
     <p>La fonction <code>=LIREDONNEESTABCROISDYNAMIQUE()</code> permet d'extraire des données spécifiques à partir d'un tableau croisé dynamique (TCD) dans Excel. Cette fonction est particulièrement utile pour créer des rapports dynamiques ou pour référencer des données de TCD dans d'autres parties de votre feuille de calcul.</p>
     <div class="formula-box">
-        <span class="copy-button show" onclick="copyToClipboard('=LIREDONNEESTABCROISDYNAMIQUE(champ_valeur; tableau_croisé_dynamique; [champ1, élément1, champ2, élément2, ...])'; this)">📋</span>
+        <span class="copy-button show" onclick="copyToClipboard('=LIREDONNEESTABCROISDYNAMIQUE(champ_valeur\\; tableau_croisé_dynamique\\; [champ1, élément1, champ2, élément2, ...])', this)">📋</span>
         <code>=LIREDONNEESTABCROISDYNAMIQUE(champ_valeur; tableau_croisé_dynamique; [champ1, élément1, champ2, élément2, ...])</code>
     </div>
     <ul>
@@ -2366,11 +2204,7 @@ export const coursContent = {
     </div>
     <img src="../assets/TCD_Exemple01.png" alt="Utilisation de LIREDONNEESTABCROISDYNAMIQUE()">
 
-    <h4 id="configuration_tcd" class="tcd-subtheme">Configuration d'un TCD</h4>
-    <p>Après avoir inséré un TCD, la configuration permet de définir les champs de valeurs, lignes, colonnes et filtres. Ces configurations structurent le TCD pour afficher les données de manière significative.</p>
-    <img src="path/to/image8.png" alt="Configuration d'un TCD">
-
-    <h4 id="champs_de_valeurs_lignes_colonnes_filtres" class="tcd-subtheme">Champs de valeurs, lignes, colonnes et filtres</h4>
+    <h4 id="valeur-lignes-colonnes-filtres" class="tcd-subtheme">Champs de valeurs, lignes, colonnes et filtres</h4>
     <p>Les champs de valeurs, lignes, colonnes et filtres sont essentiels pour structurer les TCD :</p>
     <ul>
         <li><strong>Champs de valeurs</strong> : Les données numériques à analyser (somme, moyenne, comptage, etc.).</li>
@@ -2380,19 +2214,19 @@ export const coursContent = {
     </ul>
     <img src="path/to/image9.png" alt="Champs de valeurs, lignes, colonnes et filtres">
 
-    <h4 id="groupement_de_donnees" class="tcd-subtheme">Groupement de données</h4>
+    <h4 id="groupement-donnees" class="tcd-subtheme">Groupement de données</h4>
     <p>Le groupement de données permet de regrouper des champs par date, nombre ou autres critères pour une analyse plus précise. Par exemple, vous pouvez regrouper des dates par mois ou trimestre, ou regrouper des valeurs numériques en intervalles.</p> 
     <img src="path/to/image10.png" alt="Groupement de données">
 
-    <h4 id="personnalisation_mise_en_forme" class="tcd-subtheme">Personnalisation et mise en forme</h4>
+    <h4 id="personnalisation-mise-en-forme" class="tcd-subtheme">Personnalisation et mise en forme</h4>
     <p>Personnalisez et mettez en forme votre TCD pour améliorer la lisibilité et l'impact visuel. Utilisez les options de format de données, disposition et styles pour créer des rapports professionnels.</p>
     <img src="path/to/image11.png" alt="Personnalisation et mise en forme">
 
-    <h4 id="format_de_donnees" class="tcd-subtheme">Format de données</h4>
+    <h4 id="format-donnees" class="tcd-subtheme">Format de données</h4>
     <p>Appliquez des formats de données appropriés aux champs de valeurs pour une meilleure compréhension. Par exemple, formatez les nombres en monnaie, en pourcentages ou en dates selon le contexte de votre analyse.</p>
     <img src="path/to/image12.png" alt="Format de données">
 
-    <h4 id="disposition_et_style" class="tcd-subtheme">Disposition et style</h4>
+    <h4 id="disposition-style" class="tcd-subtheme">Disposition et style</h4>
     <p>Changez la disposition des TCD pour améliorer la présentation des données :</p>
     <ul>
         <li>Utilisez différentes dispositions de rapport pour afficher les données de manière compacte ou étendue.</li>
@@ -2400,11 +2234,11 @@ export const coursContent = {
     </ul>
     <img src="path/to/image13.png" alt="Disposition et style">
 
-    <h4 id="calculs_tcd" class="tcd-subtheme">Calculs dans les tableaux croisés dynamiques</h4>
+    <h4 id="calculs-tcd" class="tcd-subtheme">Calculs dans les tableaux croisés dynamiques</h4>
     <p>Les TCD permettent d'effectuer des calculs avancés pour des analyses plus poussées. Utilisez des champs calculés et des éléments calculés pour créer des nouvelles métriques à partir des données existantes.</p>
     <img src="path/to/image14.png" alt="Calculs dans les TCD">
 
-    <h4 id="champs_calcules" class="tcd-subtheme">Champs calculés</h4>
+    <h4 id="champs-calcules" class="tcd-subtheme">Champs calculés</h4>
     <p>Les champs calculés sont des colonnes supplémentaires dans votre TCD qui effectuent des calculs sur les autres champs :</p>
     <ul>
         <li>Accédez à l'onglet <strong>Analyse</strong> et cliquez sur <strong>Champs, éléments et jeux</strong> &gt; <strong>Champ calculé</strong>.</li>
@@ -2412,7 +2246,7 @@ export const coursContent = {
     </ul>
     <img src="path/to/image15.png" alt="Champs calculés">
 
-    <h4 id="elements_calcules" class="tcd-subtheme">Eléments calculés</h4>
+    <h4 id="elements-calcules" class="tcd-subtheme">Eléments calculés</h4>
     <p>Les éléments calculés permettent de créer de nouveaux éléments à partir des données existantes :</p>
     <ul>
         <li>Accédez à l'onglet <strong>Analyse</strong> et cliquez sur <strong>Champs, éléments et jeux</strong> &gt; <strong>Elément calculé</strong>.</li>
@@ -2420,7 +2254,7 @@ export const coursContent = {
     </ul>
     <img src="path/to/image16.png" alt="Eléments calculés">
 
-    <h4 id="utilisation_des_segments" class="tcd-subtheme">Utilisation des segments pour filtrer les données</h4>
+    <h4 id="segment-filtrage" class="tcd-subtheme">Utilisation des segments pour filtrer les données</h4>
     <p>Les segments sont des outils visuels pour filtrer rapidement les données dans un TCD :</p>
     <ul>
         <li>Pour ajouter un segment, sélectionnez le TCD et allez dans <strong>Outils de tableau croisé dynamique</strong> &gt; <strong>Analyser</strong> &gt; <strong>Insérer un segment</strong>.</li>
@@ -2429,7 +2263,7 @@ export const coursContent = {
     </ul>
     <img src="path/to/image17.png" alt="Utilisation des segments pour filtrer les données">
 
-    <h4 id="utilisation_des_filtres_chronologiques" class="tcd-subtheme">Utilisation des filtres chronologiques</h4>
+    <h4 id="filtres-chronologiques" class="tcd-subtheme">Utilisation des filtres chronologiques</h4>
     <p>Les filtres chronologiques permettent de filtrer les données d'un TCD par date :</p>
     <ul>
         <li>Pour ajouter un filtre chronologique, sélectionnez le TCD et allez dans <strong>Outils de tableau croisé dynamique</strong> &gt; <strong>Analyser</strong> &gt; <strong>Insérer un filtre chronologique</strong>.</li>
@@ -2448,7 +2282,7 @@ export const coursContent = {
     "content": `
     <p>Les graphiques sont des outils puissants dans Excel pour visualiser et analyser des données. Ils permettent de transformer des données brutes en représentations visuelles claires et compréhensibles. Ce chapitre couvre tout ce que vous devez savoir pour créer et personnaliser des graphiques dans Excel.</p>
 
-    <h4 id="insertion_de_graphiques" class="graph-subtheme">Insertion de graphiques</h4>
+    <h4 id="insertion-graphique" class="graph-subtheme">Insertion de graphiques</h4>
 <p>Les graphiques permettent de visualiser les données de manière plus compréhensible. Voici comment insérer un graphique dans Excel :</p>
 <ul>
     <li>Sélectionnez les données que vous souhaitez représenter graphiquement.</li>
@@ -2458,7 +2292,7 @@ export const coursContent = {
 </ul>
 <img src="path/to/image_insertion_graphique.png" alt="Insertion de graphiques">
 Types de graphiques
-<h4 id="types_de_graphiques" class="graph-subtheme">Types de graphiques</h4>
+<h4 id="type-graphiques" class="graph-subtheme">Types de graphiques</h4>
 <p>Excel offre une variété de types de graphiques pour répondre à divers besoins analytiques :</p>
 <ul>
     <li><strong>Histogrammes :</strong> Utilisés pour représenter des données catégorielles.</li>
@@ -2470,7 +2304,7 @@ Types de graphiques
 </ul>
 <img src="path/to/image_types_graphiques.png" alt="Types de graphiques">
 Sélection des données
-<h4 id="selection_des_donnees" class="graph-subtheme">Sélection des données</h4>
+<h4 id="selection-donnees-graph" class="graph-subtheme">Sélection des données</h4>
 <p>La sélection des données est cruciale pour la création de graphiques précis et significatifs :</p>
 <ul>
     <li>Sélectionnez les données que vous souhaitez inclure dans le graphique, y compris les étiquettes de colonnes et de lignes.</li>
@@ -2479,7 +2313,7 @@ Sélection des données
 </ul>
 <img src="path/to/image_selection_donnees.png" alt="Sélection des données">
 Personnalisation des graphiques
-<h4 id="personnalisation_des_graphiques" class="graph-subtheme">Personnalisation des graphiques</h4>
+<h4 id="personnalisation-graphiques" class="graph-subtheme">Personnalisation des graphiques</h4>
 <p>La personnalisation permet d'améliorer la lisibilité et l'apparence des graphiques :</p>
 <ul>
     <li>Cliquez sur le graphique pour afficher les onglets <strong>Outils de graphique</strong> (<strong>Création</strong> et <strong>Mise en forme</strong>).</li>
@@ -2488,7 +2322,7 @@ Personnalisation des graphiques
 </ul>
 <img src="path/to/image_personnalisation_graphiques.png" alt="Personnalisation des graphiques">
 Titres, légendes et étiquettes de données
-<h4 id="titres_legendes_etiquettes_de_donnees" class="graph-subtheme">Titres, légendes et étiquettes de données</h4>
+<h4 id="titres-legendes-etiquettes" class="graph-subtheme">Titres, légendes et étiquettes de données</h4>
 <p>Ajouter des titres, des légendes et des étiquettes de données permet de rendre les graphiques plus informatifs :</p>
 <ul>
     <li><strong>Ajouter un titre :</strong> Cliquez sur le graphique, puis utilisez l'onglet <strong>Création</strong> > <strong>Ajouter un élément de graphique</strong> > <strong>Titre du graphique</strong>.</li>
@@ -2506,7 +2340,7 @@ Couleurs et styles
 </ul>
 <img src="path/to/image_couleurs_styles.png" alt="Couleurs et styles">
 Graphiques avancés
-<h4 id="graphiques_avances" class="graph-subtheme">Graphiques avancés</h4>
+<h4 id="graphiques-avances" class="graph-subtheme">Graphiques avancés</h4>
 <p>Les graphiques avancés offrent des fonctionnalités supplémentaires pour des analyses plus complexes :</p>
 <ul>
     <li><strong>Graphique avec deux axes :</strong> Utilisé pour comparer deux séries de données avec des unités différentes.</li>
@@ -2515,7 +2349,7 @@ Graphiques avancés
 </ul>
 <img src="path/to/image_graphiques_avances.png" alt="Graphiques avancés">
 Graphique à partir d'un TCD
-<h4 id="graphique_a_partir_d_un_tcd" class="graph-subtheme">Graphique à partir d'un TCD</h4>
+<h4 id="graphique-et-tcd" class="graph-subtheme">Graphique à partir d'un TCD</h4>
 <p>Créer un graphique à partir d'un tableau croisé dynamique permet de visualiser les données synthétisées :</p>
 <ul>
     <li>Sélectionnez le TCD que vous souhaitez utiliser pour créer le graphique.</li>
@@ -2524,7 +2358,7 @@ Graphique à partir d'un TCD
 </ul>
 <img src="path/to/image_graphique_tcd.png" alt="Graphique à partir d'un TCD">
 Graphiques combinés
-<h4 id="graphiques_combines" class="graph-subtheme">Graphiques combinés</h4>
+<h4 id="graphiques-combines" class="graph-subtheme">Graphiques combinés</h4>
 <p>Les graphiques combinés permettent de visualiser plusieurs types de données dans un seul graphique :</p>
 <ul>
     <li>Sélectionnez les données à représenter.</li>
@@ -2541,7 +2375,7 @@ Graphiques combinés
     "content": `
 <p>Les outils d'analyse d'Excel sont essentiels pour manipuler et interpréter de grandes quantités de données. Ils permettent de consolider, filtrer, extraire, et regrouper les informations de manière efficace, facilitant ainsi la prise de décision et l'analyse approfondie. Ce chapitre couvre les techniques et fonctionnalités clés pour exploiter au mieux ces outils.</p>
 
-<h4 id="consolidation_des_donnees" class="analysis-subtheme">Consolidation des données</h4>
+<h4 id="consolidation-donnees" class="analyse-subtheme">Consolidation des données</h4>
 <p>La consolidation des données permet de combiner des données provenant de plusieurs sources en une seule feuille de calcul. Cela est particulièrement utile pour résumer des informations provenant de plusieurs feuilles ou fichiers :</p>
 <ul>
     <li>Ouvrez la feuille de calcul où vous souhaitez consolider les données.</li>
@@ -2553,7 +2387,7 @@ Graphiques combinés
 </ul>
 <img src="path/to/image_consolidation_donnees.png" alt="Consolidation des données">
 Regrouper les données provenant de plusieurs feuilles / fichiers
-<h4 id="regroupement_donnees" class="analysis-subtheme">Regrouper les données provenant de plusieurs feuilles / fichiers</h4>
+<h4 id="regrouper-donnees" class="analyse-subtheme">Regrouper les données provenant de plusieurs feuilles / fichiers</h4>
 <p>Pour analyser des données réparties sur plusieurs feuilles ou fichiers, il est souvent nécessaire de les regrouper :</p>
 <ul>
     <li>Utilisez la fonctionnalité <strong>Consolider</strong> pour combiner des données de différentes feuilles ou fichiers (voir la sous-thématique <strong>Consolidation des données</strong>).</li>
@@ -2562,7 +2396,7 @@ Regrouper les données provenant de plusieurs feuilles / fichiers
 </ul>
 <img src="path/to/image_regroupement_donnees.png" alt="Regrouper les données">
 Utilisation des filtres avancés
-<h4 id="utilisation_des_filtres_avances" class="analysis-subtheme">Utilisation des filtres avancés</h4>
+<h4 id="filtres-avances" class="analyse-subtheme">Utilisation des filtres avancés</h4>
 <p>Les filtres avancés permettent de filtrer des données en utilisant des critères complexes :</p>
 <ul>
     <li>Sélectionnez la plage de données à filtrer.</li>
@@ -2574,7 +2408,7 @@ Utilisation des filtres avancés
 </ul>
 <img src="path/to/image_filtres_avances.png" alt="Utilisation des filtres avancés">
 Critères de filtre complexe
-<h4 id="criteres_filtre_complexe" class="analysis-subtheme">Critères de filtre complexe</h4>
+<h4 id="criteres-filtres" class="analyse-subtheme">Critères de filtre complexe</h4>
 <p>Les critères de filtre complexe permettent d'appliquer des filtres basés sur plusieurs conditions :</p>
 <ul>
     <li>Créez une plage de critères au-dessus ou en dessous de votre tableau de données.</li>
@@ -2585,7 +2419,7 @@ Critères de filtre complexe
 </ul>
 <img src="path/to/image_criteres_filtre_complexe.png" alt="Critères de filtre complexe">
 Extraction de données filtrées
-<h4 id="extraction_donnees_filtrees" class="analysis-subtheme">Extraction de données filtrées</h4>
+<h4 id="extraction-donnees-filtres" class="analyse-subtheme">Extraction de données filtrées</h4>
 <p>Extraire des données filtrées permet de copier les résultats de filtre dans une nouvelle plage de cellules :</p>
 <ul>
     <li>Appliquez un filtre avancé sur la plage de données.</li>
@@ -2595,7 +2429,7 @@ Extraction de données filtrées
 </ul>
 <img src="path/to/image_extraction_donnees_filtrees.png" alt="Extraction de données filtrées">
 Les sous-totaux
-<h4 id="les_sous_totaux" class="analysis-subtheme">Les sous-totaux</h4>
+<h4 id="sous-totaux" class="analyse-subtheme">Les sous-totaux</h4>
 <p>Les sous-totaux permettent de calculer des totaux partiels pour des groupes de données :</p>
 <ul>
     <li>Trier les données par la colonne sur laquelle vous souhaitez calculer les sous-totaux.</li>
@@ -2605,6 +2439,132 @@ Les sous-totaux
     <li>Cliquez sur <strong>OK</strong> pour appliquer les sous-totaux.</li>
 </ul>
 <img src="path/to/image_sous_totaux.png" alt="Les sous-totaux">
+    `
+},
+
+
+"lier-feuilles": {
+    "title": "Lier les feuilles ou les fichiers",
+    "content": `
+    <p>Lier les feuilles ou les fichiers dans Excel permet de créer des connexions entre différentes sources de données, facilitant ainsi la gestion et l'analyse de grandes quantités d'informations. Cette section couvre les méthodes pour sélectionner, gérer, et traiter les données liées, ainsi que des conseils pour éviter les erreurs courantes.</p>
+
+    <h4 id="selection-donnees-liens" class="link-subtheme">Sélection des données</h4>
+    <p>Pour lier des feuilles ou des fichiers, la première étape consiste à sélectionner correctement les données à connecter :</p>
+    <ul>
+        <li>Ouvrez les feuilles ou fichiers contenant les données que vous souhaitez lier.</li>
+        <li>Sélectionnez les plages de données pertinentes dans chaque feuille ou fichier.</li>
+        <li>Assurez-vous que les données sont correctement formatées et nommées pour éviter toute confusion lors de la liaison.</li>
+    </ul>
+    <img src="path/to/image_selection_donnees.png" alt="Sélection des données">
+
+    <h4 id="références-entre-feuilles" class="link-subtheme">Gestion des références entre les feuilles / fichiers</h4>
+    <p>La gestion des références est cruciale pour maintenir l'intégrité des données liées :</p>
+    <ul>
+        <li>Utilisez des références absolues pour les cellules et les plages de données afin de garantir que les liaisons restent intactes lors des modifications.</li>
+        <li>Pour créer une référence entre feuilles, sélectionnez une cellule et tapez <code>=NomDeLaFeuille!Cellule</code>.</li>
+        <li>Pour lier des données entre fichiers, utilisez la syntaxe <code>=[NomDuFichier.xlsx]NomDeLaFeuille!Cellule</code>.</li>
+        <li>Utilisez le gestionnaire de liaisons (Données > Modifier les liaisons) pour surveiller et mettre à jour les liaisons entre fichiers.</li>
+    </ul>
+    <img src="path/to/image_gestion_references.png" alt="Gestion des références">
+
+    <h4 id="traiter-donnees-liées" class="link-subtheme">Traiter les données liées</h4>
+    <p>Une fois les données liées, il est important de savoir comment les traiter et les actualiser :</p>
+    <ul>
+        <li>Les données liées se mettent à jour automatiquement lorsque les sources de données changent. Vous pouvez forcer une mise à jour en appuyant sur <strong>F9</strong>.</li>
+        <li>Utilisez des formules pour calculer des valeurs basées sur les données liées, par exemple, pour faire des sommes ou des moyennes de données provenant de différentes feuilles.</li>
+        <li>Vérifiez régulièrement les liaisons pour vous assurer qu'elles pointent toujours vers les bonnes sources de données.</li>
+    </ul>
+    <img src="path/to/image_traiter_donnees_liees.png" alt="Traiter les données liées">
+
+    <h4 id="utiliser-forumules-liaison" class="link-subtheme">Utilisation des formules de liaison</h4>
+    <p>Les formules de liaison permettent de créer des connexions dynamiques entre les données de différentes feuilles ou fichiers :</p>
+    <ul>
+        <li>Utilisez des formules comme <code>LIREDONNEESTABCROISDYNAMIQUE</code> pour extraire des données spécifiques de tableaux croisés dynamiques.</li>
+        <li>Utilisez <code>INDEX</code> et <code>EQUIV</code> pour créer des liaisons plus complexes entre différentes sources de données.</li>
+        <li>Pour lier des cellules spécifiques, utilisez la syntaxe <code>=[NomDuFichier.xlsx]NomDeLaFeuille!Cellule</code>.</li>
+    </ul>
+    <img src="path/to/image_formules_liaison.png" alt="Utilisation des formules de liaison">
+
+    <h4 id="MaJ-liaison" class="link-subtheme">Mise à jour des liaisons</h4>
+    <p>Les liaisons entre feuilles et fichiers doivent être mises à jour régulièrement pour garantir l'exactitude des données :</p>
+    <ul>
+        <li>Excel met à jour les liaisons automatiquement lors de l'ouverture des fichiers. Vous pouvez également forcer une mise à jour en allant dans <strong>Données</strong> > <strong>Modifier les liaisons</strong> et en cliquant sur <strong>Mettre à jour les valeurs</strong>.</li>
+        <li>Pour vérifier les liaisons manuellement, utilisez le gestionnaire de liaisons (Données > Modifier les liaisons).</li>
+        <li>Si une source de données n'est pas disponible, Excel affichera un message d'erreur. Assurez-vous que toutes les sources sont accessibles et mises à jour.</li>
+    </ul>
+    <img src="path/to/image_mise_a_jour_liaisons.png" alt="Mise à jour des liaisons">
+
+    <h4 id="gestion-erreurs" class="link-subtheme">Gestion des erreurs de liaison</h4>
+    <p>Les erreurs de liaison peuvent survenir lorsque les fichiers sources sont déplacés, renommés ou supprimés :</p>
+    <ul>
+        <li>Lorsque vous ouvrez un fichier avec des liaisons brisées, Excel affiche un message d'avertissement. Utilisez le gestionnaire de liaisons pour identifier et corriger les erreurs.</li>
+        <li>Pour éviter les erreurs, utilisez des chemins relatifs pour les liaisons internes au même dossier, ou conservez une structure de dossier cohérente.</li>
+        <li>Si une liaison est définitivement perdue, vous pouvez choisir de rompre la liaison et de conserver les valeurs statiques actuelles dans votre fichier.</li>
+    </ul>
+    <img src="path/to/image_gestion_erreurs_liaison.png" alt="Gestion des erreurs de liaison">
+
+    <h4 id="consolider-données" class="link-subtheme">Consolidation des données liées</h4>
+    <p>La consolidation des données liées permet de créer des rapports et des analyses intégrant des données de plusieurs feuilles ou fichiers :</p>
+    <ul>
+        <li>Utilisez la fonctionnalité de consolidation (Données > Consolider) pour combiner des données provenant de différentes sources.</li>
+        <li>Appliquez des fonctions de résumé comme la somme, la moyenne, le compte, etc., sur les données consolidées.</li>
+        <li>Utilisez des tableaux croisés dynamiques pour créer des rapports interactifs basés sur les données consolidées.</li>
+    </ul>
+    <img src="path/to/image_consolidation_donnees_liees.png" alt="Consolidation des données liées">
+    `
+},
+
+"nommer-cellules": {
+    "title": "Nommer les cellules",
+    "content": `
+    <p>Nommer les cellules dans Excel permet de simplifier la gestion des formules, d'améliorer la lisibilité des feuilles de calcul et de réduire les erreurs. Cette section aborde la création, l'utilisation et la gestion des noms de cellules, ainsi que des applications avancées pour optimiser vos feuilles de calcul.</p>
+
+    <h4 id="gestion-noms-cellules" class="name-subtheme">Création et gestion des noms de cellules</h4>
+    <p>La création et la gestion des noms de cellules permettent de référencer facilement des plages de données spécifiques :</p>
+    <ul>
+        <li>Pour nommer une cellule ou une plage de cellules, sélectionnez la cellule ou la plage de cellules.</li>
+        <li>Allez dans l'onglet <strong>Formules</strong> > <strong>Définir un nom</strong> ou utilisez la zone de nom à gauche de la barre de formule.</li>
+        <li>Dans la fenêtre <strong>Nouveau nom</strong>, entrez le nom souhaité. Les noms doivent commencer par une lettre, un trait de soulignement (_) et ne doivent pas contenir d'espaces.</li>
+        <li>Définissez la portée du nom (Feuille de calcul ou Classeur) et cliquez sur <strong>OK</strong>.</li>
+        <li>Pour gérer les noms existants, allez dans l'onglet <strong>Formules</strong> > <strong>Gestionnaire de noms</strong> pour modifier ou supprimer des noms.</li>
+    </ul>
+    <img src="path/to/image_creation_gestion_noms_cellules.png" alt="Création et gestion des noms de cellules">
+
+    <h4 id="utilisation-noms-formules" class="name-subtheme">Utilisation des noms dans les formules</h4>
+    <p>Les noms de cellules facilitent l'écriture et la compréhension des formules :</p>
+    <ul>
+        <li>Utilisez les noms de cellules directement dans les formules. Par exemple, au lieu de <code>=SOMME(A1:A10)</code>, utilisez <code>=SOMME(Ventes)</code> si la plage A1:A10 est nommée "Ventes".</li>
+        <li>Les noms rendent les formules plus lisibles et compréhensibles, ce qui est particulièrement utile pour les utilisateurs non techniques.</li>
+        <li>Les noms de cellules peuvent être utilisés dans toutes les fonctions Excel, comme <code>RECHERCHEV</code>, <code>INDEX</code>, et <code>EQUIV</code>.</li>
+    </ul>
+    <img src="path/to/image_utilisation_noms_formules.png" alt="Utilisation des noms dans les formules">
+
+    <h4 id="avantages-noms-cellules" class="name-subtheme">Avantages de l'utilisation des noms de cellules</h4>
+    <p>Nommer les cellules présente plusieurs avantages pour la gestion des feuilles de calcul :</p>
+    <ul>
+        <li>Les noms améliorent la clarté des formules en remplaçant les références de cellules cryptiques par des libellés significatifs.</li>
+        <li>Les noms de cellules réduisent les erreurs en facilitant la vérification et la correction des formules.</li>
+        <li>Ils simplifient la gestion des plages de données lors de la modification de la structure des feuilles de calcul, car les noms sont automatiquement mis à jour.</li>
+    </ul>
+    <img src="path/to/image_avantages_noms_cellules.png" alt="Avantages de l'utilisation des noms de cellules">
+
+    <h4 id="modifs-suppression-noms-cellules" class="name-subtheme">Modification et suppression des noms de cellules</h4>
+    <p>Il est parfois nécessaire de modifier ou de supprimer des noms de cellules pour maintenir l'exactitude des données :</p>
+    <ul>
+        <li>Pour modifier un nom de cellule, allez dans l'onglet <strong>Formules</strong> > <strong>Gestionnaire de noms</strong>.</li>
+        <li>Sélectionnez le nom à modifier et cliquez sur <strong>Modifier</strong>. Faites les changements nécessaires et cliquez sur <strong>OK</strong>.</li>
+        <li>Pour supprimer un nom, sélectionnez-le dans le gestionnaire de noms et cliquez sur <strong>Supprimer</strong>. Confirmez la suppression pour retirer le nom du classeur.</li>
+    </ul>
+    <img src="path/to/image_modification_suppression_noms_cellules.png" alt="Modification et suppression des noms de cellules">
+
+    <h4 id="applications-avancées-noms-cellules" class="name-subtheme">Applications avancées des noms de cellules</h4>
+    <p>Les noms de cellules peuvent être utilisés de manière avancée pour optimiser les feuilles de calcul :</p>
+    <ul>
+        <li>Utilisez des noms de cellules dans les tableaux croisés dynamiques pour créer des rapports dynamiques basés sur des plages de données nommées.</li>
+        <li>Créez des plages dynamiques en utilisant des formules dans les noms de cellules. Par exemple, utilisez <code>DECALER</code> pour créer une plage de données qui s'ajuste automatiquement en fonction du nombre de lignes ou de colonnes.</li>
+        <li>Utilisez des noms de cellules pour simplifier les macros VBA en remplaçant les références de cellules par des noms significatifs.</li>
+    </ul>
+    <img src="path/to/image_applications_avancees_noms_cellules.png" alt="Applications avancées des noms de cellules">
     `
 },
 
