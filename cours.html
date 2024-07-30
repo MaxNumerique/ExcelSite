@@ -298,25 +298,37 @@
         </div>
     </footer>
 
-    <script>
-        function copyToClipboard(text, element) {
-    const tempInput = document.createElement('input');
-    tempInput.value = text;
-    document.body.appendChild(tempInput);
-    tempInput.select();
-    document.execCommand('copy');
-    document.body.removeChild(tempInput);
+    <script type="module">
+        import { afficherContenu } from "/js/menuCours.js";
 
-    // Change the icon to checkmark for a short duration
-    const originalIcon = element.textContent;
-    element.textContent = 'Copié ✔';
-    setTimeout(() => {
-        element.textContent = originalIcon;
-    }, 600);
-}
+        window.addEventListener("DOMContentLoaded", function () {
+            const fromIndex = localStorage.getItem('fromIndex') === 'true';
+            const courseId = localStorage.getItem('randomCourse');
 
+            if (courseId && fromIndex) {
+                afficherContenu(courseId);
+
+                const targetElement = document.getElementById(courseId);
+                if (targetElement) {
+                    const headerOffset = 100;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+
+                // Nettoyer localStorage après utilisation
+                localStorage.removeItem('randomCourse');
+                localStorage.removeItem('fromIndex');
+            }
+        });
     </script>
-    
+    <script src="/copyToClipboard.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 

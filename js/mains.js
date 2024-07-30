@@ -39,9 +39,13 @@ window.addEventListener("scroll", function () {
 
 window.addEventListener("DOMContentLoaded", function () {
     const navigation = document.getElementById("navigationPages");
-    const currentPage = document.title;
+    const currentPageTitle = document.title;
 
-    const previousPage = document.referrer.split("/").pop().split(".")[0];
+    // Récupérer la page actuelle sans l'extension .html
+    const currentPagePath = window.location.pathname.replace(/\.html$/, '').split("/").pop();
+
+    // Récupérer la page précédente enregistrée dans le localStorage
+    const previousPage = localStorage.getItem("previousPage") || "index";
 
     function capitalizeWords(str) {
         return str.replace(/\b\w/g, char => char.toUpperCase());
@@ -49,26 +53,31 @@ window.addEventListener("DOMContentLoaded", function () {
 
     let navigationChemin = "";
 
-    if (currentPage === "Formation Excel") {
+    if (currentPageTitle === "Formation Excel") {
         navigationChemin += `Accueil`;
     } else {
         if (previousPage) {
             const previousPageFormatted = previousPage === "index" ? "Accueil" : capitalizeWords(previousPage.replace(/-/g, ' '));
-            navigationChemin += ` <a href="${previousPageFormatted}">${previousPageFormatted}</a> > `;
+            const previousPageLink = previousPage === "index" ? "/" : `/${previousPage}`;
+            navigationChemin += ` <a href="${previousPageLink}">${previousPageFormatted}</a> > `;
         }
-        navigationChemin += `${currentPage}`;
+        navigationChemin += `${capitalizeWords(currentPagePath.replace(/-/g, ' '))}`;
     }
 
     navigation.innerHTML = navigationChemin;
 
     const previousPageLink = navigation.querySelector("a");
-    if (previousPage && currentPage !== "Accueil") {
+    if (previousPage && currentPagePath !== "index" && previousPageLink) {
         previousPageLink.addEventListener("click", function (event) {
             event.preventDefault();
             window.history.back();
         });
     }
+
+    // Enregistrer la page actuelle comme la page précédente pour la prochaine navigation
+    localStorage.setItem("previousPage", currentPagePath);
 });
+
 
 // ==== BUTTON DELAY =====
 
