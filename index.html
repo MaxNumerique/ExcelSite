@@ -41,7 +41,7 @@
       <div class="header-right">
         <nav>
           <ul id="mainMenu">
-            <li><a class="links" href="cours.html">Cours</a></li>
+            <li><a class="links random" href="cours.html">Cours</a></li>
             <li><a class="links" href="exercices.html">Exercices</a></li>
             <li><a class="links" href="exemples.html">Exemples</a></li>
             <li><a class="links" href="contact.html">Contact</a></li>
@@ -67,11 +67,13 @@
 
             <br /><br />Prêt à commencer ? Découvrez nos cours dès maintenant !
           </p>
-          <a class="butt delayed" id="buttonCoursHTML" href="cours.html"
+          <a class="butt delayed random" id="buttonCoursHTML" href="cours.html"
             ><button class="buttonExcel" role="button">START 💼</button></a
           >
         </div>
       </section>
+
+
       <section>
         <div class="formules">
             <img class="imgFor" src="/assets/mathematics-animate.svg" alt="" />
@@ -100,20 +102,6 @@
         </div>
     </section>
 
-    <script>
-      document.getElementById('formules').addEventListener('click', function (event) {
-          event.preventDefault();
-          const courses = [
-              "additionner", "manipuler-nombre", "calculer_moyenne", "compter_cellules", "trouver_valeurs_extremes", "traiter_dates", "utiliser-operateurs-logiques", "utiliser-logique-position", "recherche-valeur"
-          ];
-  
-          const randomCourse = courses[Math.floor(Math.random() * courses.length)];
-          localStorage.setItem('randomCourse', randomCourse);
-          localStorage.setItem('fromIndex', 'true');
-          window.location.href = 'cours.html';
-      });
-  </script>
-
       <section>
         <div class="tableaux">
           <img
@@ -122,25 +110,17 @@
             alt=""
           />
           <video src="/assets/"></video>
-          <h2 class="titreTer">MISE EN FORME</h2>
+          <h2 class="titreTer">EXEMPLES SOLiHA</h2>
           <p class="descTab">
-            Découvrez comment donner <span>vie</span> à vos données avec des
-            tableaux croisés dynamiques et des graphiques croisés dynamiques
-            dans Excel ! <br />
-            Cette section vous guidera à travers les étapes pour
-            <span>organiser</span>, <span>analyser</span> et
-            <span>visualiser</span> vos données de manière efficace et
-            percutante. Apprenez à créer des rapports dynamiques, à identifier
-            les <span>tendances clés</span> et à prendre des décisions éclairées
-            grâce à des outils de mise en forme avancés. <br />
-            <br />
-            Que vous cherchiez à créer des rapports dynamiques ou à explorer de
-            nouvelles méthodes de mise en forme, notre section sur la mise en
-            forme des données vous offre les connaissances et les compétences
-            nécessaires pour transformer vos feuilles de calcul en
-            <span>œuvres d'art</span> informatives.
+            Découvrez comment traiter vos <span>données</span> en utilisant Excel. En passant par faire apparaître des tableaux <span>structurés</span> par créer des <span>tableaux croisés dynamiques</span> qui s'actualiseront automatiquement à chaque traitement.
+            <br>
+            Maitrisez le fait de lier plusieurs fichiers Excel provenants de logiciels métier pour les fusionner ou créer de la <span>valeur</span> à partir de plusieurs fichiers.
+            <br>
+            
+            <br><br>
+            Découvrez les utilisations des <span>formules</span> afin de simplifier vos <span>calculs</span> ainsi que vos besoin de <span>restitution</span>.
           </p>
-          <a class="buttTab delayed" id="buttonCoursHTML" href="tableaux.html"
+          <a class="buttTab delayed" id="buttonCoursHTML" href="exemples.html"
             ><button class="buttonExcel" role="button">START 📊</button></a
           >
         </div>
@@ -292,22 +272,19 @@
         <div class="footerMidCol">
           <h4>MENU</h4>
           <ul>
-            <li><a href="index.html">index</a></li>
-            <li><a href="cours.html">Cours</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cours.html" class="random">Cours</a></li>
             <li><a href="exemples.html">Exemples</a></li>
             <li><a href="exercices.html">Exercices</a></li>
-            <!-- <li><a href=".html">Partage</a></li> -->
           </ul>
         </div>
 
         <div class="footerRightCol">
           <h4>DERNIERES MODIFICATIONS</h4>
           <ul>
-            <li><a href="index.html">index</a></li>
-            <li><a href="cours.html">Cours</a></li>
-            <li><a href="exemples.html">Exemples</a></li>
-            <li><a href="exercices.html">Exercices</a></li>
-            <!-- <li><a href=".html">Partage</a></li> -->
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cours.html" class="random">Cours</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>

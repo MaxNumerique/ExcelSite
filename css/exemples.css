@@ -1,0 +1,60 @@
+
+.NavCours {
+    position: fixed;
+    top: 200px; 
+    left: 0;
+    width: 17%; 
+    padding: 20px;
+    z-index: 1000; 
+}
+
+.NavCours ul {
+    list-style: none;
+    padding: 0;
+}
+
+.NavCours li {
+    margin-bottom: 6px;
+}
+
+.NavCours a {
+    color: var(--mainTitleFontColor);
+    text-decoration: none;
+    font-weight: bold;
+    
+    &:hover {
+        color: var(--hoverColor);
+    }
+}
+
+.coursContent {
+    margin-left: 420px;
+}
+
+.NavCours h4 {
+    color: var(--mainTitleFontColor);
+    font-size: 22px;
+}
+
+.NavCours h4 {
+    margin-bottom: 6px;
+}
+
+.NavCours a.active {
+    color: var(--activeColor);
+}
+
+.exemple img {
+    max-width: 100%;
+    height: auto;
+    margin : 20px 0 20px 0;
+}
+
+.exemple a {
+    color: var(--paraFontColorSombre);
+
+    &:hover {
+        color: var(--hoverColor);
+    }
+}
+

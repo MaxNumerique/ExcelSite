@@ -1,0 +1,23 @@
+.example-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.NavCours ul {
+    list-style: none;
+    padding: 0;
+}
+
+.NavCours li {
+    margin-bottom: 6px;
+}
+
+.NavCours a {
+    color: var(--mainTitleFontColor);
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+        color: var(--hoverColor);
+    }
+}

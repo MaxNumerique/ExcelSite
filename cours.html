@@ -269,7 +269,7 @@
             <div class="footerMidCol">
                 <h4>MENU</h4>
                 <ul>
-                    <li><a href="index.html">index</a></li>
+                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="cours.html">Cours</a></li>
                     <li><a href="exemples.html">Exemples</a></li>
                     <li><a href="exercices.html">Exercices</a></li>
@@ -279,10 +279,9 @@
             <div class="footerRightCol">
                 <h4>DERNIERES MODIFICATIONS</h4>
                 <ul>
-                    <li><a href="index.html">index</a></li>
+                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="cours.html">Cours</a></li>
-                    <li><a href="exemples.html">Exemples</a></li>
-                    <li><a href="exercices.html">Exercices</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -298,35 +297,7 @@
         </div>
     </footer>
 
-    <script type="module">
-        import { afficherContenu } from "/js/menuCours.js";
-
-        window.addEventListener("DOMContentLoaded", function () {
-            const fromIndex = localStorage.getItem('fromIndex') === 'true';
-            const courseId = localStorage.getItem('randomCourse');
-
-            if (courseId && fromIndex) {
-                afficherContenu(courseId);
-
-                const targetElement = document.getElementById(courseId);
-                if (targetElement) {
-                    const headerOffset = 100;
-                    const elementPosition = targetElement.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-                } else {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-
-                // Nettoyer localStorage après utilisation
-                localStorage.removeItem('randomCourse');
-                localStorage.removeItem('fromIndex');
-            }
-        });
+    
     </script>
     <script src="/copyToClipboard.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

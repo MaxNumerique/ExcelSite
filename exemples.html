@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemples</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="shortcut icon" href="/assets/Forme 1 - S entier (3).png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/exemples.css" />
+</head>
+
+<body>
+    <header id="mainHeader">
+        <div class="header-left">
+            <a href="index.html" class="logo-header"><img src="/assets/Logo-Pyrénées-Béarn-Bigorre.png"
+                    alt="logo_headerNoir" class="logo-headerNoir" /></a>
+            <a href="index.html" class="logo-header">
+                <img src="/assets/output-onlinepngtools.png" alt="logo-headerBlanc" class="logo-headerBlanc"
+                    style="display: none" />
+            </a>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul id="mainMenu">
+                    <li><a class="links" href="cours.html">Cours</a></li>
+                    <li><a class="links" href="exercices.html">Exercices</a></li>
+                    <li><a class="links" href="exemples.html">Exemples</a></li>
+                    <li><a class="links" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="navigationPages"></div>
+
+        <h1 class="coursTittle">Exemples Pratiques d'Excel</h1>
+        <div id="mainCours">
+            <div class="NavCours">
+                <h4>Exemples Rapides</h4>
+                <ul>
+                    <li><a href="#" id="exemple1">Budget Personnel</a></li>
+                    <li><a href="#" id="exemple2">Gestion de Projet</a></li>
+                </ul>
+                <h4 style="margin-top: 30px;">Exemples SOLiHA</h4>
+                <ul>
+                    <li><a href="#" id="exemple3">Exemple 3: Analyse de Ventes</a></li>
+                    <li><a href="#" id="exemple4">Exemple 4: Modélisation Financière</a></li>
+                </ul>
+            </div>
+            <div class="coursContent">
+
+
+                <div id="exemple1Content" class="exemple" style="display: none;">
+                    <h2>Budget Personnel</h2>
+                    <p>Dans cet exemple, nous allons voir comment utiliser les formules et les tableaux croisés dynamiques pour traiter les données de votre budget personnel. L'exemple est réalisé avec l'aide du site <a href="https://www.mockaroo.com/">Mockaroo</a> qui permet de générer des données aleatoires en paramétrant les colonnes.</p>
+
+                    <h3>Étape 1: Préparation des données</h3>
+                    <p>1. <strong>Création des données :</strong></p>
+                    <img src="/assets/budget/mockaroo.png" alt="Importation des données" />
+                    <p>On a créé 300 lignes de données. On retrouves les colonnes suivante :</p>
+                    <ul>
+                        <li><strong>id</strong> (valeur itérative automatique);</li>
+                        <li><strong>lieu</strong> (des noms de lieux générés aleatoirement);</li>
+                        <li><strong>date</strong> (des dates générée aleatoirement en format dd/mm/yyyy);</li>
+                        <li><strong>categorie</strong> (une liste de différentes catégories précisées sur l'image);</li>
+                        <li><strong>prix</strong> (des prix générés aleatoirement allant de 5 à 120 avec 2 décimales possibles);</li>
+                        <li><strong>quantite</strong> (une quantité aleatoire allant de 1 à 10);</li>
+                        <li><strong>description</strong> (des descriptions générées aleatoirement);</li>
+                        <li><strong>nom_magasin</strong> (des noms de magasins générés aleatoirement);</li>
+                        <li><strong>moyen_payement</strong> (une liste de moyens de paiement prédefinis dans l'image).</li>
+                    </ul>
+                    <p>Une fois les données préparées, nous pouvons ouvrir le fichier pour visualiser la structure des données. On peut remarquer également que nous avons une seule feuille qui porte le nom <strong>data</strong>.</p>
+                    <p>2. <strong>Visualisation des données :</strong></p>
+                    <img src="/assets/budget/visualisation.png" alt="Importation des données"/>
+                    <p>On voit alors que la structure des données est e naccord avec ce qu'on a paramétré sur Mockaroo. </p>
+
+                    <h3>Étape 2 (facultative): Utilisation des filtres sur les en-tête de colonnes</h3>
+                    <p>Pour mieux visualiser ou simplement trouver une ou plusieurs valeur(s) qui nous intéresse(nt), on peut utiliser les filtres pour faire ressortir seulement les données voulues. </p>
+                    <p>Sélectionnez la ligne 1 du fichier pour sélectionner toute la ligne et cliquez sur <strong>Filtrer</strong>dasn le menu déroulant <strong>Trier et filtrer</strong> de l'onglet <strong>Accueil</strong>.</p>
+                    <img src="/assets/budget/filtrer.png" alt="Colonne Mois" />
+                    <p>Disons que nous voulons afficher seulement les achats faits avec une carte bleue. Cliquez alors sur la flèche correspondant a la colonne <strong>moyen_paiement</strong>.</p>
+                    <img src="/assets/budget/filtrepaiement.png" alt="">
+                    <p>Maintenant, si nous voulons trier les achats qui ont été fait par carte bleue au mois de Juillet 2021, nous pouvons très bien utiliser le filtre de la même manière, mais l'opération est juste trop longue et l'exécution comporte trop de risque d'oublis.</p>
+                    
+                    <h3>Étape 3: Utilisation des formules pour créer de nouvelles colonnes</h3>
+                    <p>1. <strong>Création de colonnes "mois", "annee"</strong></p>
+                    <p>Donc, pour reprendre l'exemple ci-dessus, on va ajouter une colonne <strong>mois</strong> et une colonne <strong>annee</strong>. On a besoin de créer de nouvelles colonnes pour pouvoir travailler sur les données. Il est important de toujours faire attention à l'ordre des colonnes pour la structure de votre fichier, qu'elle soit cohérente avec le traitement que vous faites. Pour ça, on va faire un clic droit sur la colonne à droite de  <strong>date</strong> (donc la colonne <strong>D</strong>) et choisir Insertion. On répète l'opération 1 fois pour <strong>annee</strong>.</p>
+                    <img src="/assets/budget/insertion.png" alt="">
+
+                    <p>2. <strong>Utilisation des formules</strong></p>
+                    <p>Il faut penser à bien réinitialiser les filtres quand vous utilisez des formules qui font références à d'autres cellules et que vous <strong>étirez</strong> cette même formule.</p>
+                    <p>Une fois nos 2 colonnes créées, on peut alors utiliser les formules <code>=MOIS()</code> et <code>=ANNEE()</code> pour les colonnes <strong>mois</strong> et <strong>annee</strong>. </p>
+                    <br>
+                    <p>Dans la ceullule <strong>C2</strong> (colonne <strong>mois</strong>), on a bien la formule :</p>
+                    <div class="formula-box">
+                        <span class="copy-button" onclick="copyToClipboard('=MOIS(C2)', this)">📋</span>
+                        <code>=MOIS(C2)</code>
+                    </div>
+                    <br>
+                    <p>De la même manière pour l'année, dans la cellule <strong>E2</strong>, vous aurez :</p>
+                    <div class="formula-box">
+                        <span class="copy-button" onclick="copyToClipboard('=ANNEE(C2)', this)">📋</span>
+                        <code>=ANNEE(C2)</code>
+                    </div>
+                    <br>
+                    <p>Vous pouvez alors passez votre souris dans le coin bas droit de la cellule <strong>C2</strong> pour faire un double clic gauche pour étendre la formule sur toute la longueur du tableau. Vous pouvez également faire de même avec la cellule E2. </p>
+                    <img src="/assets/budget/moisetannee.png" alt="">
+                    <p>Pour faire apparaitre seulement les achats de juillet 2021, par carte bleue, on peut réappliquer le filtre sur la colonne <strong>moyen_paiement</strong> et appliquer les filtres <strong>7</strong> et <strong>2021</strong> pour les colonnes <strong>mois</strong> et <strong>annee</strong> respectivement.</p>
+                    <br>
+                    <p>On a alors le rendu suivant:</p>
+                    <img src="/assets/budget/moisEtAnneeFiltré.png" alt="">
+
+                    <h3>Étape 3: Analyse des données avec des tableaux croisés dynamiques</h3>
+                    <p>Les <strong>tableaux croisés dynamiques</strong> sont très utiles pour faire ressortir très vite les données dans un tableau croisé.</p>
+                    <br>
+                    <p>Pour l'exemple, nous allons créer un nouvel onglet qui permettra de tracer les tables croisées dynamiques plus facilement. </p>
+                    <p>Cliquez sur le ➕ à côté de l'onglet <strong>data</strong> pour ajouter un nouvel onglet. On lui donnera le nom <strong>traitement</strong></p>
+                    <img src="/assets/budget/nouvelOnglet.png" alt="">
+                    <p>Pour insécrer un tableau croisé dynamique, nous allons cliquer sur une cellule vide pouvant accueillir le tableau, aller dans l'onglet <strong>Insertion</strong>, et cliquer sur <strong>Tableau croisé dynamique</strong>. Dans le champs <strong>Choisissez les données à anlyser</strong>, nous allons sélectionner l'ensemble de nos données (nom filtrées) de l'onglet <strong>data</strong> et cliquer sur <strong>OK</strong>. </p>
+                    <br>
+                    <p>Une fois inséré, vous pouvez cliquer dessus et insérer les champs nécessaire à votre traitement.pour l'exemple, nous allons insérer en ligne, les valeur du champs <strong>mois</strong>, en colonne, les valeurs du champs <strong>moyen_payement</strong> et en valeurs, nous allons choisir les valeurs du champs <strong>id</strong>. De cette manière, les achats seront répartis en fonction du moyen de paiement et affichés par mois.</p>
+                    <p>Si jamais les données contenues dans dans data devaient changées à l'avenir, il nous suffirait d'aller sur ce nouvel onglet et actualiser les données pour visualiser à nouveau le traitement.</p>
+                    <br>
+                    <p>Voici à quoi ressemblerait ce tableau: </p>
+                    <img src="/assets/budget/TCDcréé.png" alt="">
+                    <p>On peut également, si souhaité, faire apparaitre seulement certaines valeurs en fonction du tableau croisé dynamique en filtrant les données des champs, ou simplement en cliquant sur une des valeurs contenues dans les cellules du tableau crosié dynamique. Les valeurs seront affichées dans un nouvel onglet automatiquement. Voici un exemple: </p>
+                    <img src="/assets/budget/donnéesCliquées.png" alt="">
+
+                    <h3>Étape 4: Traitement des dépense par mois</h3>
+                    <p>Maintenant qu'on sait </p>
+                    <br>
+                </div>
+
+
+                <div id="exemple2Content" class="exemple" style="display: none;">
+                    <h2>Exemple 2: Gestion de Projet</h2>
+                    <p>Utilisez Excel pour planifier et suivre l'avancement de vos projets.</p>
+                    <img src="/assets/project-management-example.png" alt="Gestion de Projet" />
+                    <p>Téléchargez le modèle de gestion de projet <a href="#">ici</a>.</p>
+                </div>
+
+
+                <div id="exemple3Content" class="exemple" style="display: none;">
+                    <h2>Exemple 3: Analyse de Ventes</h2>
+                    <p>Analysez vos données de ventes pour prendre des décisions informées.</p>
+                    <img src="/assets/sales-analysis-example.png" alt="Analyse de Ventes" />
+                    <p>Vous pouvez télécharger le modèle d'analyse de ventes <a href="#">ici</a>.</p>
+                </div>
+
+
+                <div id="exemple4Content" class="exemple" style="display: none;">
+                    <h2>Exemple 4: Modélisation Financière</h2>
+                    <p>Créez des modèles financiers complexes pour prévoir les performances futures.</p>
+                    <img src="/assets/financial-modeling-example.png" alt="Modélisation Financière" />
+                    <p>Vous pouvez télécharger le modèle de modélisation financière <a href="#">ici</a>.</p>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerTop">
+            <div class="footerLeftCol">
+                <h4>CONTACT</h4>
+                <p>
+                    52 Boulevard d'Alsace Lorraine <br />
+                    64000 PAU <br />
+                    05 59 14 60 60 <br />
+                    Maximilien Landois <br />
+                    Alternant Développeur Web <br />
+                    <a href="mailto:alternant.informatique@soliha.fr">alternant.informatique@soliha.fr</a>
+                </p>
+            </div>
+
+            <div class="footerMidCol">
+                <h4>MENU</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cours.html">Cours</a></li>
+                    <li><a href="exemples.html">Exemples</a></li>
+                    <li><a href="exercices.html">Exercices</a></li>
+                </ul>
+            </div>
+
+            <div class="footerRightCol">
+                <h4>DERNIERES MODIFICATIONS</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cours.html">Cours</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="footerBottom">
+            <img src="/assets/output-onlinepngtools.png" alt="logo-headerBlanc" class="logoFooter" />
+
+            <p>
+                &copy; 2023 - SOliHA Pyrénées-Béarn-Bigorre. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <script src="/copyToClipboard.js"></script>
+    <script src="/js/exemples.js"></script>
+    <script src="/js/mains.js"></script>
+</body>
+
+</html>

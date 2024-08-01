@@ -7,12 +7,6 @@ const mainCours = document.querySelector('.coursContent');
 const pageTitle = document.querySelector('h1');
 
 // ==== AFFICHER LE CONTENU =====
-// function afficherContenu(id) {
-//     const cours = coursContent[id];
-//     if (cours) {
-//         mainCours.innerHTML = `<h2>${cours.title}</h2> ${cours.content}`;
-//     }
-// }
 
 export function afficherContenu(id) {
     const cours = coursContent[id];
