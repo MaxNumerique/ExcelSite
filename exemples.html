@@ -57,6 +57,7 @@
             <div class="coursContent">
 
 
+
                 <div id="exemple1Content" class="exemple" style="display: none;">
                     <h2>Budget Personnel</h2>
                     <p>Dans cet exemple, nous allons voir comment utiliser les formules et les tableaux croisés dynamiques pour traiter les données de votre budget personnel. L'exemple est réalisé avec l'aide du site <a href="https://www.mockaroo.com/">Mockaroo</a> qui permet de générer des données aleatoires en paramétrant les colonnes.</p>
@@ -133,10 +134,40 @@
                     <p>On peut également, si souhaité, faire apparaitre seulement certaines valeurs en fonction du tableau croisé dynamique en filtrant les données des champs, ou simplement en cliquant sur une des valeurs contenues dans les cellules du tableau crosié dynamique. Les valeurs seront affichées dans un nouvel onglet automatiquement. Voici un exemple: </p>
                     <img src="/assets/budget/donnéesCliquées.png" alt="">
 
-                    <h3>Étape 4: Traitement des dépense par mois</h3>
-                    <p>Maintenant qu'on sait </p>
+                    <h3>Étape 4: Traitement des dépenses par mois</h3>
+                    <p>On peut ajouter un nouveau tableau pour  mettre en valeur les dépenses par mois. <br>
+                    Pour vous faciliter la tâche, vous pouvez simplement <strong>copier</strong> le précédent tableau croisé dynamique et le coller dans un emplacement capable d'accueillir le nouveau tableau. Ca aura pour effet de <strong>copier</strong> la source des données. Donc ça évite de devoir ré-insérer un nouveau tableau et resélectionner les données à traiter à nouveau. 
                     <br>
+                    Même si, pour le traitement on va voir qu'on va vouloir changer la source des données puisqu'on veut rajouter une colonne qui calculera <strong>la quantité * le prix</strong>. On va donc seulement insérer une nouvelle colonne et nommer l'en-tête <strong>total_depenses</strong>. </p>
+                    <br>
+                    <p>On va vouloir insérer ce calcul dans la cellule <strong>I2</strong> de la colonne <strong>total_depenses</strong> :</p>
+                    <div class="formula-box">
+                        <span class="copy-button" onclick="copyToClipboard('=G2*H2', this)">📋</span>
+                        <code>=G2*H2</code>
+                    </div>
+                    <br>
+                    <p>Il faut vous assurer que la source des données est bien conforme. Il faut prendre l'entiereté des données de l'onglet data et notamment la colonne que nous venons d'insérer <strong>total_depenses</strong>.
+                    <br>
+                    Pour ça, nous allons devoir cliquer dasn le tableau croisé dynamique et <strong>Actualiser</strong> les données depuis l'onglet <strong>Analyse</strong> pour vérifier que dans les champs possibles à afficher on voit bien <strong>total_depenses</strong>.</p>
+                    <img src="/assets/budget/changer_source_données.png" alt="">
+                    <br>
+                    <p>Si le champs n'aparait pas, nous devons alors <strong>Changer la source des données</strong> depuis l'onglet <strong>Analyse</strong> pour sélectionner toutes les données de la feuille <strong>data</strong>.</p>
+                    <br>
+                    <br>
+                    <p>Il ne vous manque plus qu'à affecté les champs au tableau croisé dynamique. On va vouloir mettre en ligne le champs <strong>mois</strong> et en valeurs le champs <strong>total_depenses</strong>. Assurez vous surtout que ce soit la <strong>somme des valeurs</strong> qui soit sélectionnée et non le compte. Vous pouvez le modifier en faisant un lcic droit dans la colonne concernée et sélectionner <strong>paramètres des champs de valeurs...</strong>.</p>
+                    <br>
+                    <img src="/assets/budget/dépenses_totale_tcd.png" alt="">
+                    <br>
+                    <br>
+                    <p>Vous pouvez toujours approfondir d'autant plus ces données en faisant différents traitement sur les champs disponibles ou en faisant apparaitre d'autres tableaux croisés dynamiques ou encore des graphiques, etc. </p>
+                    <br>
+                    <br>
+                    <p><strong>Je vous laisse la possibilité de télécharger le projet  <a href="/excels/Budget Personnel.xlsx">ici</a>.</strong></p>
                 </div>
+
+
+
+
 
 
                 <div id="exemple2Content" class="exemple" style="display: none;">
@@ -148,7 +179,7 @@
 
 
                 <div id="exemple3Content" class="exemple" style="display: none;">
-                    <h2>Exemple 3: Analyse de Ventes</h2>
+                    <h2>Utilisation de Solidata</h2>
                     <p>Analysez vos données de ventes pour prendre des décisions informées.</p>
                     <img src="/assets/sales-analysis-example.png" alt="Analyse de Ventes" />
                     <p>Vous pouvez télécharger le modèle d'analyse de ventes <a href="#">ici</a>.</p>
@@ -156,7 +187,7 @@
 
 
                 <div id="exemple4Content" class="exemple" style="display: none;">
-                    <h2>Exemple 4: Modélisation Financière</h2>
+                    <h2>traitement des données via logiciels métier</h2>
                     <p>Créez des modèles financiers complexes pour prévoir les performances futures.</p>
                     <img src="/assets/financial-modeling-example.png" alt="Modélisation Financière" />
                     <p>Vous pouvez télécharger le modèle de modélisation financière <a href="#">ici</a>.</p>
