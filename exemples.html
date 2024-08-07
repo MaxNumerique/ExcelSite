@@ -46,12 +46,12 @@
                 <h4>Exemples Rapides</h4>
                 <ul>
                     <li><a href="#" id="exemple1">Budget Personnel</a></li>
-                    <li><a href="#" id="exemple2">Gestion de Projet</a></li>
+                    <li><a href="#" id="exemple2">Fusion des Données de Ventes et Produits</a></li>
                 </ul>
                 <h4 style="margin-top: 30px;">Exemples SOLiHA</h4>
                 <ul>
-                    <li><a href="#" id="exemple3">Exemple 3: Analyse de Ventes</a></li>
-                    <li><a href="#" id="exemple4">Exemple 4: Modélisation Financière</a></li>
+                    <li><a href="#" id="exemple3">Exemple 3: Utilisation de Solidata</a></li>
+                    <li><a href="#" id="exemple4">Exemple 4: Traitement de données via logiciel métier</a></li>
                 </ul>
             </div>
             <div class="coursContent">
@@ -60,7 +60,7 @@
 
                 <div id="exemple1Content" class="exemple" style="display: none;">
                     <h2>Budget Personnel</h2>
-                    <p>Dans cet exemple, nous allons voir comment utiliser les formules et les tableaux croisés dynamiques pour traiter les données de votre budget personnel. L'exemple est réalisé avec l'aide du site <a href="https://www.mockaroo.com/">Mockaroo</a> qui permet de générer des données aleatoires en paramétrant les colonnes.</p>
+                    <p>Dans cet exemple, nous allons voir comment utiliser les formules et les tableaux croisés dynamiques pour traiter les données de votre budget personnel. L'exemple est réalisé avec l'aide du site <a href="https://www.mockaroo.com/"><strong>Mockaroo</strong></a> qui permet de générer des données aleatoires en paramétrant les colonnes.</p>
 
                     <h3>Étape 1: Préparation des données</h3>
                     <p>1. <strong>Création des données :</strong></p>
@@ -169,28 +169,211 @@
 
 
 
-
                 <div id="exemple2Content" class="exemple" style="display: none;">
-                    <h2>Exemple 2: Gestion de Projet</h2>
-                    <p>Utilisez Excel pour planifier et suivre l'avancement de vos projets.</p>
-                    <img src="/assets/project-management-example.png" alt="Gestion de Projet" />
-                    <p>Téléchargez le modèle de gestion de projet <a href="#">ici</a>.</p>
+                    <h2>Combiner des Données de Plusieurs Sources</h2>
+                    <p>Dans cet exemple, nous allons voir comment combiner deux jeux de données en utilisant des formules de recherche dans Excel. Cela nous permettra d'enrichir notre analyse en ajoutant des données supplémentaires provenant d'une table liée.</p>
+                
+                    <h3>Étape 1 : Préparation des Jeux de Données</h3>
+                    <p>Comme pour le premier exemple, nous allons utiliser le site <a href="https://www.mockaroo.com/"><strong>Mockaroo</strong></a> qui nous permet de génrer des données à partir de crières imposés. Il faudra néanmoins retravailler les données pour •qu'elles puissent être liées (ajuster les clés primaires et secondaires).</p>
+                    <img src="/assets/fusion/mockaroo.png" alt="">
+
+                    <p>Nous allons utiliser deux jeux de données :</p>
+                    <ul>
+                        <li><strong>Jeu de Données 1 (Ventes) : "produits_vente.xlsx"</strong> Contient des détails de ventes incluant un identifiant produit.</li>
+                        <li><strong>Jeu de Données 2 (Produits) : "produits_infos.xlsx"</strong> Contient des détails des produits que nous allons lier aux ventes en utilisant l'identifiant produit.</li>
+                    </ul>
+                    <p>Nous obtenons pour cet exemple ce genre de jeu de données, dans 2 fichiers Excel distincts.</p>
+                    <img src="/assets/fusion/préparation_données.png" alt="">
+                
+                    <h3>Étape 2 : Utilisation des Formules de Recherche</h3>
+                    <p>Admettons que les données présentées ici sont des export issus de logiciels métiers que nous utilisons régulièrement. Nous avons besoin de faire en sorte que ces données soient exploitables le plus facilement possible. Pour ce faire, nous allons utiliser des formules qui lieront les tables entre elles.</p>
+                    <p>Comme on retrouve les mêmes identifiants dans les 2 datasets <strong>"id_produit"</strong>, on va pouvoir les lier entre eux en utilisant la formule <code>=RECHERCHEV()</code>.</p>
+                    <br>
+                    
+                    <p>Nous allons utiliser la formule <code>=RECHERCHEV()</code> pour récupérer les détails des produits et les ajouter à nos données de ventes. Suivez ces étapes :</p>
+                    <ol>
+                        <li>Insérez de nouvelles colonnes dans le Jeu de Données 1 pour les détails des produits (<strong>nom_produit</strong>, <strong>categorie</strong>, <strong>stock_disponible</strong>,...).</li>
+                        <li>Utilisez la formule <code>RECHERCHEV</code> dans les nouvelles colonnes pour récupérer les données du Jeu de Données 2.</li>
+                    </ol>
+                    <p>Exemple de formule pour ajouter le nom du produit :</p>
+                    <div class="formula-box">
+                        <span class="copy-button" onclick="copyToClipboard('=RECHERCHEV(B2;[produits_infos.xlsx]Feuil1!$A$1:$F$38;2;FAUX)', this)">📋</span>
+                        <code>=RECHERCHEV(B2;[produits_infos.xlsx]Feuil1!$A$1:$F$38;2;FAUX)</code>
+                    </div>
+                    <img src="/assets/fusion/rechercheV1.png" alt="Exemple de RECHERCHEV"/>
+                    <ul>
+                        <li><strong>B2</strong> : valeur recherchée. On pourrait bloquer la colonne en ajoutant un <strong>$</strong>, ça donnerait <strong>$B2</strong></li>
+                        <li><strong>[produits_infos.xlsx]Feuil1!$A$1:$F$38</strong> : plage de cellules ciblée pour la recherche</li>
+                        <li><strong>2</strong> : position de la colonne cible</li>
+                        <li><strong>FAUX</strong> : valeur par défaut</li>
+                    </ul>
+
+                    <p>En répétant cette étape pour les colonne <strong>catégorie</strong> et <strong>stock_disponible</strong> on obtient le résultat suivant :</p>
+
+                    <img src="/assets/fusion/rechercheV2.png" alt="">
+                
+                    <h3>Étape 3 : Analyser les Données Combinées</h3>
+                    <p>Disons que nous voulions faire apparaitre les ventes totales pour chaque categorie de produits.
+                    <br>
+                    Il va nous falloir une nouvelle colonne sur notre dataset principal : <strong>total_vente</strong> qui prendra la <strong>quantite * prix_unitaire</strong>.</p>
+                    <img src="/assets/fusion/total_vente.png" alt="">
+                    <p>Maintenant, nous voulons créer un <strong>tableau croisé dynamique</strong> pour faire apparaitre les ventes totales par categorie en fonction du moyen de paiement utilisé. Je la nommerai "<strong>traitement</strong>. On suit alors les étapes suivante pour créer et insérer le tableau croisé dynamique et ses champs :</p>
+                    <ol>
+                        <li>Insérer le tableau croisé dynamqie dans une cellule de la feuille <strong>traitement</strong>.</li>
+                        <li>Prenez l'ensemble du dataset de votre feuille <strong>data</strong>. Il est recommandé de prendre un peu plus large pour que, si vous ajoutez de nouvelles lignes, vous n'ayez à changer la source des données. <strong>Attention !</strong> Vous ne pourrez pas sélectionner des en-têtes vides puisque le tableau croisé dynamique ne pourra pas proposer de champs associés.</li>
+                        <li> Appliquez les champs dans le tableau croissant dynamique. </li>
+                            <ul>
+                                <li>En colonne : <strong>moyen_paiement</strong></li>
+                                <li>En ligne : <strong>categorie</strong></li>
+                                <li>En valeur : total_vente (<strong>attention à bien changer dans les paramètres du champs d'afficher par "somme" et non pas par "nombre"). </strong></li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p>Vous devriez avoir un rendu tel que : </p>
+                    <img src="/assets/fusion/tcdcomplexe.png" alt="">
+
+                    <h3>Etape 4 : insertion de filtre sur le tableau croisé dynamique</h3>
+                    <p>Dans cette partie, notre objectif est de faire appraitre les ventes totales par catégorie en fonction du moyen de paiement <strong>tout en triant par mois</strong></p>
+                    <p>Pour ce faire, nous allons insérer une nouvelle colonne à coté de <strong>date_vente</strong>. De cette manière, on pourra utiliser la formule <code>=MOIS()</code> pour récupérer le mois de <strong>date_vente</strong>.</p>
+                    <div class="formula-box">
+                        <span class="copy-button" onclick="copyToClipboard('=MOIS(G2)', this)">📋</span>
+                        <code>=MOIS(G2)</code>
+                    </div>
+                    <img src="/assets/fusion/mois_ajout.png" alt="">
+                    <p>On peut alors retourner sur notre onglet <strong>traitement</strong> pour insérer le champs <strong>mois_vente</strong> dans le champs lié aux <strong>filtres</strong> du tableau croisé dynamique. Pour l'exemple on va sélectionner le mois de Juillet, donc dans la liste déroulante du filtre, on sélectionne le <strong>7</strong>. 
+                    <br>
+                    <strong>Pensez à bien actualiser les données pour faire apparaitre tous les champs dans la liste des champs, et notamment ici "mois_vente" que nous venons d'ajouter.</strong></p>
+                    <p>Votre tableau croisé dynamqie devrait ressembler à ça :</p>
+                    <img src="/assets/fusion/filtre_tcd.png" alt="">
+                    <p>Concrètement, ce que nous indique ce tableau c'est : 
+                        <ul>
+                            <li>En Juillet (peu importe l'année), on a un total 571,93 de valeur de vente en comptant tout les moyens de paiement et toutes les catégories.</li>
+                            <li>Aucune vente comptabilisée par chèque au mois de Juillet (peu importe l'année)</li>
+                            <li>La catégrorie de  produit qui se vend le mieux au mois de Juillet (peu importe l'année) est <strong>"les Accessoires"</strong></li>
+                        </ul>
+                    </p>
+
+                    <p>Pour affiner ce tableau encore plus sur une année précise, on peut tout à fait refaire ce que nous avons fait pour la colonne (et champs) <strong>mois_vente</strong>. Voici ce que ça donnerait pour <strong>le mois de Juillet de l'année 2023 :</strong></p>
+                    <img src="/assets/fusion/juillet_2023_traitement.png" alt="">
+                    <p>Donc depuis ce tableau, on peut utiliser les filtres selon nos besoins pour faire ressortir une année particulière ou un mois particulier ou les 2.</p>
+                    <br>
+
+                    <h3>Etape 5 : Insertion d'un segment</h3>
+                    <p>Il peut être pratique d'avoir une interface utilisateur plus facile pour appliquer des filtres surtout pour une durée. C'est là que le <strong>filtre chronologique</strong> ou le <strong>segment</strong> entre en jeu.
+                    <br>
+                    Pour pouvoir insérer un segment, on va établir un nouveau tableau croisé dynamique qui montrera la somme des stocks disponibles en fonction de l'année sur tout les produits confondus.
+                    <br>
+                    Voici ce que donne ce tableau :
+                    </p>
+                    <img src="/assets/fusion/total_stock.png" alt="">
+                    <p>Pour insérer un <strong>segment</strong>, on clique sur <strong>Insérer un segment</strong> depuis l'onglet <strong>Analyse</strong> après avoir cliqué sur le tableau croisé dynamique. Puis, on choisit <strong>annee_vente</strong>.</p>
+                    <img src="/assets/fusion/inserer_segment.png" alt="">
+                    <p>On se retrouve avec un segment qui ressemble à une fenêtre volante qui nous permet de chosiir l'année ou l'intervalle d'année que l'on souhaite voir. Pour réinitialiser le segment, on clique sur le bouton <img style="width: 20px; height: 20px; vertical-align: middle" src="/assets/fusion/supprimer_filtre.png" alt=""></p>
+                    <p>Voici ce qu'on doit avoir pour l'affichage pour la tranche d'années 2021 à 2023 : </p>
+                    <img src="/assets/fusion/segment_annees_2021-2023.png" alt="">
+                    <p>Le segment fait office de filtre plus interactif qu'un filtre plus classique.</p>
+
+                    <h3>Etape 6 : Récupération des données depuis un TCD</h3>
+                    <p>Les tableaux croisés dynamiques peuvent, si beaucoup de données lui sont liées devenir une usine à gaz et complexifier l'interprétation de ceux-ci. Il est possible de reprendre seulement les donnée importantes que l'on souhaite faire apparaitre pour alimenter un nouveau tableau ou insérer le résultat dans une cellule. On peut également utiliser la référence via des formules etc.</p>
+                    <p>Pour cette nouvelle étape on va faire apparaitre un nouveau tableau croisé dynamique. Il montrera la proportion totale des ventes par catégorie. Avec une <strong>ligne intermédiaire</strong> pour afficher le détail des dates de vente. Voici à quoi ressemblerait ce nouveau TCD :</p>
+                    <img src="/assets/fusion/proportion_vente_categorie.png" alt="">
+                    <p>Dans notre exemple, on sait déjà facilement quelle va être la proprtion sur chaque catégorie comme le dataset est sur un total de 100. Mais nous allons quand même montrer comment on peut utiliser les références des données du tableau croisé dynamique. 
+                    <br>
+                    Pour l'exemple, nous voulons la proportion de la catégorie <strong>"Accessoire"</strong>. Pour ce faire, nous allons rentrer la cellule suivante : 
+                    </p>
+                    <div class="formula-box">
+                        <span class="copy-button" onclick="copyToClipboard('=LIREDONNEESTABCROISDYNAMIQUE(&quot;total_vente&quot;;$C$5;&quot;categorie&quot;;&quot;Accessoires&quot;)/LIREDONNEESTABCROISDYNAMIQUE(&quot;total_vente&quot;;$C$5)', this)">📋</span>
+                        <code>=LIREDONNEESTABCROISDYNAMIQUE("total_vente";$C$5;"categorie";"Accessoires ")/LIREDONNEESTABCROISDYNAMIQUE("total_vente";$C$5)</code>
+                    </div>
+                    <p>On prend la valeur correspondant à la catégorie <strong>Accessoires</strong> et on la divise par le <strong>total des ventes</strong>. Puis, on change le  format de cellule de <strong>Standard</strong> à <strong>Pourcentage</strong>. Quand on fait nos formules, on va simplement cliquer sur la cellule qui contient la valeur que l'on souhaite utiliser pour y faire référence. 
+                    <br>
+                    Petite précision : la fonction <code>=LIREDONNEESTABCROISDYNAMIQUE()</code> est automatiquement actualisée à chaque actualisation du tableau croisé dynamique.
+                    <br>
+                    Vous devriez avoir ceci :</p>
+                    <img src="/assets/fusion/proportion_tcd.png" alt="">
+                    <p>Vous pouvez tout à fait faire des calculs plus complexes, tout en mêlant des valeurs récupérées depuis d'autres TCD.</p>
+                    <p><strong>Je vous laisse la possiblité de télécharger le projet <a href="/assets/fusion/produits_vente.xlsx">ici</a> et l'autre fichier Excel qui sert de liaison <a href="/assets/fusion/produits_infos.xlsx">ici</a></strong></p>
                 </div>
+                
+
+
+
 
 
                 <div id="exemple3Content" class="exemple" style="display: none;">
                     <h2>Utilisation de Solidata</h2>
-                    <p>Analysez vos données de ventes pour prendre des décisions informées.</p>
-                    <img src="/assets/sales-analysis-example.png" alt="Analyse de Ventes" />
-                    <p>Vous pouvez télécharger le modèle d'analyse de ventes <a href="#">ici</a>.</p>
+                    <img src="/assets/Solidata/solidata_dossier_travaux.png" alt="">
+                    <img src="/assets/Solidata/solidata_suivi_social.png" alt="">
+
+                    <h3>Introduction à Solidata</h3>
+                    <p>Solidata est un outil d'Intrados qui permet consulter les et traiter les données des différentes <strong>strates</strong>. Il est possible de le télécharger sur votre espace Intrados via l'icone <strong>Mes Outils</strong> en sélectionannt ensuite <strong>Solidata</strong>.
+                    <br>
+                    Actuellement, la version est la 5.1.2, mais les versions précédentes, notamment la version 3.0.6 fonctionne également.
+                    <br>
+                    Cet outil est directement connecté à la base de données Intrados et donc s'actualise via le bouton <strong>Actualiser les données</strong> de l'onglet <strong>Accueil</strong>.
+                    </p>
+                    <h3>Premiers pas sur Solidata</h3>
+                    <p>Il vous faut déjà cliquer sur <strong>Activer le contenu</strong> pour pouvoir utiliser les différentes fonctionnalités de Solidata.</p>
+                    <img src="/assets/Solidata/activer_le_contenu.png" alt="">
+                    <p>Avant toute chose, il sera nécesaire d'<strong>Actualiser les données</strong> en cliquant sur le bouton correspondant. Sélectionner ensuite la <strong>strate</strong> voulue pour votre projet. <strong>Il est important de noter que le choix de strate est définitif. Si vous voulez faire un rapport sur une autre strate, il faudra utiliser un nouveau fichier Solidata</strong>
+                    Pour notre exemple, nous allons choisir la <strong>strate Dossier</strong> pour les dossiers travaux
+                    <br>
+                    Pour la suite, vous devez séctionner différents paramètres. Du <strong>filtre de données à appliquer</strong> aux <strong>Produits</strong> en passant par la <strong>Période</strong>. Vous pouvez changer ces paramètres à tout instant en passant par le même bouton <strong>Actualiser les données</strong>.
+                    
+                    </p>
+                    <img src="/assets/Solidata/paramétrage_strate.png" alt="">
+                    <p>Selon votre projet, vous aurez à sélectionner plusieurs produits. Vous pouvez ensuite cliquer sur le bouton <strong>Créer un rapport</strong>pour continuer le paramétrage de votre projet.</p>
+                    <img src="/assets/Solidata/suite_paramétrage.png" alt="">
+                    <img src="/assets/Solidata/suite_paramétrage_2.png" alt="">
+                    <p>L'étape de paramétrage de la dernière image vous demande de sélectionner les différentes en-têtes de colonne pour l'afichage de votre rapport. <strong>Ce n'est pas grave de sélectionner plus de champs que seulement le nécessaire.</strong> Si, toutefois, vous choisissez de ne prendre les champs qui sont seulement nécessaires, vous pourrez à tout moment modifier cette étape via le même bouton sur l'onglet <strong>Accueil</strong>.
+                    <br>
+                    Pour notre exemple, je vais tout sélectionner sur un produit pour qu'on ait un rapport le plus complet pour ce même produit. Le dataset, une fois généré, aura besoin d'être nommé, puis sera intégré à un nouvel onglet.</p>
+                    <img src="/assets/Solidata/datacomplet.png" alt="">
+                    
+
+                    <h3>Traitement des données</h3>
+                    <p>
+                        Une fois que vous avez votre dataset, vous pourrez alors commencer à traiter les données à l'aide de tableaux croisés dynamiques. Vous pouvez les intégrer dans un nouvel onglet pour que ce soit plus lisible. 
+                        <br>
+                        Dans ce nouvel onglet, nous allons simplement insérer un tableau croisé dynamique à l'endroit que vous voulez et sélectionner l'intégralité du dataset pour commencer votre traitement.
+                        <br>
+                        <strong>Astuce : Lors de la sélection des données à l'insertion d'un TCD, vous pouvez sélection plus facilement les données en cliquant sur la première cellule en haut à gauche et en maintenant les touches Ctrl+Shift et en appuyant sur les flèches directionnelles droite et bas, vous sélectionnerez l'intégralité du dataset.</strong>
+                    </p>
+                    <img src="/assets/Solidata/tuto_selection.gif" alt="">
+                    <p>Une fois que vous avez créer votre <strong>tableau croisé dynamique</strong>, vous pouvez sélectionner dans la liste des champs de votre tableau croisé dynamique des chmps adéquats à votre rapport.
+                    <br>
+                    Pour l'exemple, on va créer un <strong>tableau croisé dynamique</strong> nous permettant de mettre en valeur le nombre de <strong>dossiers</strong> en fonction de leur <strong>Staut</strong>. Pour ce faire, nous allons dans la liste des champs du TCD, sélectionner <strong>Code Dossier</strong>(qui est l'id d'un dossier) qu'on met en <strong>valeur</strong>, <strong>Statut Dossier</strong> qu'on met en <strong>lignes</strong>.  Vous obtiendrez alors un résultat similaire à :</p>
+                    <img src="/assets/Solidata/tcd_exemple_solidata.png" alt="">
+                    <p>Vous pouvez, de cette manière créer de nouveaux TCD pour votre rapport.
+                    <br>
+                    <strong>Astuce : Pour optimiser les ressources d'Excel, vous pouvez simplement sélectionner un tableau croisé dynamique existant et le copier pour le coller à l'endroit souhaité. Plutôt ue de passer par l'onglet Insertion > Insérer un tableau croisé dynamique.</strong>
+                </p>
+                <img src="/assets/Solidata/tuto_copier_tcd.gif" alt="">
+                <p>Pour traiter certaines données, vous aurez peut être besoin de calculer des valeurs à l'aide de <strong>formules</strong>. L'espace <strong>Cours</strong> répertorie en partie, des formules pratiques qui vous permettront de traiter à biens vos données.
+                <br>
+                On peut même imaginer des graphiques dynamiques ou bien des filtres chronologiques ou segments pour trier plus visuelment des tableaux/graphiques croisés dynamiques.
+                <br>
+                Voici quelques exemples :</p>
+                <img src="/assets/Solidata/exemple1.png" alt="">
+                <img src="/assets/Solidata/exemple2.png" alt="">
+                
+                <h3>Réutilisation de Solidata et exploitation des données</h3>
+                <p>Une fois que votre rapport est complet. Vous pouvez simplement sauvegarder le rapport pour le consulter <strong>traité et à jour</strong> ultérieurment.
+                <br>
+                Il faudra seulement actualiser les données via le bouton <strong>Actualiser les données</strong> dans l'onglet <strong>Accueil</strong>. Sélectionner la bonne tranche horaire et valider.</p>
+                <img src="assets/Solidata/bouton_actualiser.png" alt="">
+                <p> Une bonne pratique pour le traitement via des tableaux/graphiques croisés dynamiques c'est d'actualiser les données via l'onglet <strong>Données</strong>.</p>
+                <img src="assets/Solidata/bouton_tcd.png" alt="">
                 </div>
 
 
+
+
+
+
                 <div id="exemple4Content" class="exemple" style="display: none;">
-                    <h2>traitement des données via logiciels métier</h2>
-                    <p>Créez des modèles financiers complexes pour prévoir les performances futures.</p>
-                    <img src="/assets/financial-modeling-example.png" alt="Modélisation Financière" />
-                    <p>Vous pouvez télécharger le modèle de modélisation financière <a href="#">ici</a>.</p>
+                    <h2>En cours de production ...</h2>
+                    
                 </div>
 
 
