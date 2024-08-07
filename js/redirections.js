@@ -1,4 +1,4 @@
-import {coursContent} from '/coursContent.js';
+import {coursContent} from './coursContent.js';
 
 document.addEventListener('DOMContentLoaded', function () {
     function redirectToRandomCourse(event, specificCourses, expandAll = false) {
@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log("expandAll après stockage:", localStorage.getItem('expandAll'));
 
         // Ajout d'un délai pour s'assurer que les données sont stockées
-        // setTimeout(() => {
-        //     window.location.href = 'cours';
-        // }, 100);
+        setTimeout(() => {
+            window.location.href = '../cours.html';
+        }, 100);
     }
 
     const formulesButton = document.getElementById('formules');
