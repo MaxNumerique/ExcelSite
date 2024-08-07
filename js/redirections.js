@@ -56,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const mainCours = document.querySelector('.coursContent');
 
         const randomCourse = localStorage.getItem('randomCourse');
-        console.log();
         console.log("Cours aléatoire récupéré:", randomCourse);
         const expandAll = localStorage.getItem('expandAll') === 'true';
 
