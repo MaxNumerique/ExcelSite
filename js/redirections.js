@@ -3,12 +3,22 @@ import { coursContent } from './coursContent.js';
 document.addEventListener('DOMContentLoaded', function () {
     function redirectToRandomCourse(event, specificCourses, expandAll = false) {
         event.preventDefault();
+        
+        // Vérification que coursContent est bien chargé
+        console.log("coursContent:", coursContent);
+
         const courses = specificCourses ? specificCourses : Object.keys(coursContent);
         const randomCourse = courses[Math.floor(Math.random() * courses.length)];
+        
         console.log("Cours aléatoire sélectionné:", randomCourse);
+        
         localStorage.setItem('randomCourse', randomCourse);
         localStorage.setItem('expandAll', expandAll);
+
+        // Vérification que les données sont bien stockées
         console.log("randomCourse après stockage:", localStorage.getItem('randomCourse'));
+        console.log("expandAll après stockage:", localStorage.getItem('expandAll'));
+
         window.location.href = 'cours.html';
     }
 
