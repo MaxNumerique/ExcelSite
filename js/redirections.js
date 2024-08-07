@@ -5,8 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault();
         const courses = specificCourses ? specificCourses : Object.keys(coursContent);
         const randomCourse = courses[Math.floor(Math.random() * courses.length)];
+        console.log("Cours aléatoire sélectionné:", randomCourse);
         localStorage.setItem('randomCourse', randomCourse);
         localStorage.setItem('expandAll', expandAll);
+        console.log("randomCourse après stockage:", localStorage.getItem('randomCourse'));
         window.location.href = 'cours.html';
     }
 
