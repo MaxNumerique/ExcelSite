@@ -21,3 +21,22 @@
         color: var(--hoverColor);
     }
 }
+
+ul li {
+    margin-bottom: 6px;
+}
+
+ul li a {
+    /* text-decoration: none; */
+    color: var(--paraFontColorSombre);
+    font-weight: 600;
+    text-underline-offset: 3px;
+
+    &:hover {
+        color: var(--hoverColor);
+    }
+}
+
+h2 { 
+    margin-bottom: 30px;
+}
