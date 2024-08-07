@@ -1,4 +1,4 @@
-import { coursContent } from '../js/coursContent';
+import { coursContent } from '../js/coursContent.js';
 
 document.addEventListener('DOMContentLoaded', function () {
     function redirectToRandomCourse(event, specificCourses, expandAll = false) {
