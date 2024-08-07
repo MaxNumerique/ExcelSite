@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Écouteurs d'événements pour les liens Cours dans le header et le footer
-    const coursLinks = document.querySelectorAll('a[href="cours.html"]');
+    const coursLinks = document.querySelectorAll('a[href="/cours.html"]');
     coursLinks.forEach(link => {
         link.addEventListener('click', function (event) {
             redirectToRandomCourse(event, null, true);
