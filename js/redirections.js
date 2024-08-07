@@ -37,8 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    const coursLinks = document.querySelectorAll('a[href="cours.html"], a[href="/cours"]');
-
+    const coursLinks = document.querySelectorAll('a[href="cours.html"], a[href="/cours"], a[href="./cours"], a[href="./cours.html"]');
     coursLinks.forEach(link => {
         link.addEventListener('click', function (event) {
             redirectToRandomCourse(event, null, true);
