@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    if (window.location.pathname.includes('cours.html')) {
+    if (window.location.pathname.includes('cours')) {
         console.log("Nous sommes sur la page cours.html");
         const mainCours = document.querySelector('.coursContent');
 
