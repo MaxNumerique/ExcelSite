@@ -15,6 +15,17 @@
 </head>
 
 <body>
+
+    <script>
+        try {
+            localStorage.setItem('test', 'test');
+            localStorage.removeItem('test');
+            document.body.innerHTML = '<p>localStorage est disponible.</p>';
+        } catch (e) {
+            document.body.innerHTML = '<p>localStorage n\'est pas disponible.</p>';
+        }
+    </script>
+
     <header id="mainHeader">
         <div class="header-left">
             <a href="index.html" class="logo-header"><img src="/assets/Logo-Pyrénées-Béarn-Bigorre.png"
