@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('expandAll', expandAll);
 
         // Rediriger vers cours.html
-        window.location.href = '/cours.html';
+        window.location.href = '/cours';
     }
 
     // Écouteur d'événement pour le bouton formules dans index.html
